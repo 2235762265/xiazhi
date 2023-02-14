@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>九、前端规范化工程 | Fade away</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script type="text/javascript" src="/js/mouseClick.js"></script>
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <meta name="description" content="花有重开日，人无在少年">
+    <meta name="keywords" content="随便写写">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="robots" content="all">
+    <meta name="author" content="xiazhi">
+    
+    <link rel="preload" href="/assets/css/0.styles.51678963.css" as="style"><link rel="preload" href="/assets/js/app.947b52f8.js" as="script"><link rel="preload" href="/assets/js/4.f3f18f69.js" as="script"><link rel="preload" href="/assets/js/1.17f7b324.js" as="script"><link rel="preload" href="/assets/js/99.ec5eb42d.js" as="script"><link rel="preload" href="/assets/js/10.bbd8e87d.js" as="script"><link rel="prefetch" href="/assets/js/100.56b8a2e3.js"><link rel="prefetch" href="/assets/js/101.16ba3c31.js"><link rel="prefetch" href="/assets/js/102.d1d712f7.js"><link rel="prefetch" href="/assets/js/103.caf2b7b2.js"><link rel="prefetch" href="/assets/js/104.a66f2777.js"><link rel="prefetch" href="/assets/js/105.00db8b5d.js"><link rel="prefetch" href="/assets/js/106.04ddd74a.js"><link rel="prefetch" href="/assets/js/107.6d70fce1.js"><link rel="prefetch" href="/assets/js/108.ef578b41.js"><link rel="prefetch" href="/assets/js/109.5fcbe8a4.js"><link rel="prefetch" href="/assets/js/11.79ecafaf.js"><link rel="prefetch" href="/assets/js/110.8e64a744.js"><link rel="prefetch" href="/assets/js/111.5447bfcb.js"><link rel="prefetch" href="/assets/js/112.ec6a558a.js"><link rel="prefetch" href="/assets/js/12.a86563b8.js"><link rel="prefetch" href="/assets/js/13.1612c1d6.js"><link rel="prefetch" href="/assets/js/14.54b7b25a.js"><link rel="prefetch" href="/assets/js/15.404ce59b.js"><link rel="prefetch" href="/assets/js/16.1fffce5f.js"><link rel="prefetch" href="/assets/js/17.b295769c.js"><link rel="prefetch" href="/assets/js/18.2669f498.js"><link rel="prefetch" href="/assets/js/19.e40793d0.js"><link rel="prefetch" href="/assets/js/20.a71dadf7.js"><link rel="prefetch" href="/assets/js/21.7bfdae89.js"><link rel="prefetch" href="/assets/js/22.a594e5a6.js"><link rel="prefetch" href="/assets/js/23.3b821b35.js"><link rel="prefetch" href="/assets/js/24.137dfb89.js"><link rel="prefetch" href="/assets/js/25.1d54a910.js"><link rel="prefetch" href="/assets/js/26.827b0d08.js"><link rel="prefetch" href="/assets/js/27.61f95baa.js"><link rel="prefetch" href="/assets/js/28.e0756330.js"><link rel="prefetch" href="/assets/js/29.8467d751.js"><link rel="prefetch" href="/assets/js/30.be6b7404.js"><link rel="prefetch" href="/assets/js/31.4199c7b0.js"><link rel="prefetch" href="/assets/js/32.b8e323e5.js"><link rel="prefetch" href="/assets/js/33.149471e7.js"><link rel="prefetch" href="/assets/js/34.2c1b4866.js"><link rel="prefetch" href="/assets/js/35.2fb7d147.js"><link rel="prefetch" href="/assets/js/36.ed604657.js"><link rel="prefetch" href="/assets/js/37.20eedfaa.js"><link rel="prefetch" href="/assets/js/38.30609674.js"><link rel="prefetch" href="/assets/js/39.cc40fd1d.js"><link rel="prefetch" href="/assets/js/40.b26b74f5.js"><link rel="prefetch" href="/assets/js/41.49607e3b.js"><link rel="prefetch" href="/assets/js/42.aa83ee12.js"><link rel="prefetch" href="/assets/js/43.f7fd6346.js"><link rel="prefetch" href="/assets/js/44.797fd337.js"><link rel="prefetch" href="/assets/js/45.51ac58c8.js"><link rel="prefetch" href="/assets/js/46.e6ff1346.js"><link rel="prefetch" href="/assets/js/47.aa9bcd53.js"><link rel="prefetch" href="/assets/js/48.b3d0d4e9.js"><link rel="prefetch" href="/assets/js/49.422d59a0.js"><link rel="prefetch" href="/assets/js/5.fed30aef.js"><link rel="prefetch" href="/assets/js/50.490d2b39.js"><link rel="prefetch" href="/assets/js/51.ed845385.js"><link rel="prefetch" href="/assets/js/52.8ffcc81f.js"><link rel="prefetch" href="/assets/js/53.460bf3ad.js"><link rel="prefetch" href="/assets/js/54.d329f29f.js"><link rel="prefetch" href="/assets/js/55.f79d983b.js"><link rel="prefetch" href="/assets/js/56.47f6c703.js"><link rel="prefetch" href="/assets/js/57.dff25fee.js"><link rel="prefetch" href="/assets/js/58.5bd57e5c.js"><link rel="prefetch" href="/assets/js/59.2ca2bfb6.js"><link rel="prefetch" href="/assets/js/6.92600697.js"><link rel="prefetch" href="/assets/js/60.0ee93707.js"><link rel="prefetch" href="/assets/js/61.c497af8a.js"><link rel="prefetch" href="/assets/js/62.b6d61ead.js"><link rel="prefetch" href="/assets/js/63.bb36fdc7.js"><link rel="prefetch" href="/assets/js/64.d00c4f98.js"><link rel="prefetch" href="/assets/js/65.09eaf145.js"><link rel="prefetch" href="/assets/js/66.6e8afaf0.js"><link rel="prefetch" href="/assets/js/67.99f8e162.js"><link rel="prefetch" href="/assets/js/68.79e57d7d.js"><link rel="prefetch" href="/assets/js/69.f2463712.js"><link rel="prefetch" href="/assets/js/7.19930ea2.js"><link rel="prefetch" href="/assets/js/70.10da55a8.js"><link rel="prefetch" href="/assets/js/71.fdf23300.js"><link rel="prefetch" href="/assets/js/72.2aa880d2.js"><link rel="prefetch" href="/assets/js/73.f003d34d.js"><link rel="prefetch" href="/assets/js/74.4010a9d5.js"><link rel="prefetch" href="/assets/js/75.352754ed.js"><link rel="prefetch" href="/assets/js/76.3579f40f.js"><link rel="prefetch" href="/assets/js/77.fe7a6144.js"><link rel="prefetch" href="/assets/js/78.c1614aed.js"><link rel="prefetch" href="/assets/js/79.bde3f765.js"><link rel="prefetch" href="/assets/js/8.90380888.js"><link rel="prefetch" href="/assets/js/80.990a1c18.js"><link rel="prefetch" href="/assets/js/81.6baaa341.js"><link rel="prefetch" href="/assets/js/82.f5ae3b43.js"><link rel="prefetch" href="/assets/js/83.d708ebb3.js"><link rel="prefetch" href="/assets/js/84.b92486c8.js"><link rel="prefetch" href="/assets/js/85.b75354a1.js"><link rel="prefetch" href="/assets/js/86.412a4ec5.js"><link rel="prefetch" href="/assets/js/87.2e7618b3.js"><link rel="prefetch" href="/assets/js/88.937f08fa.js"><link rel="prefetch" href="/assets/js/89.a7e87c14.js"><link rel="prefetch" href="/assets/js/9.b6e162b4.js"><link rel="prefetch" href="/assets/js/90.988451fd.js"><link rel="prefetch" href="/assets/js/91.449d8a4f.js"><link rel="prefetch" href="/assets/js/92.00719c01.js"><link rel="prefetch" href="/assets/js/93.b78075d0.js"><link rel="prefetch" href="/assets/js/94.00444007.js"><link rel="prefetch" href="/assets/js/95.5926e3bf.js"><link rel="prefetch" href="/assets/js/96.c635166a.js"><link rel="prefetch" href="/assets/js/97.44054ca4.js"><link rel="prefetch" href="/assets/js/98.e44eac78.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.714eeafe.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.51678963.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-4698c43e><div data-v-4698c43e><div id="loader-wrapper" class="loading-wrapper" data-v-1c4f0192 data-v-4698c43e data-v-4698c43e><div class="loader-main" data-v-1c4f0192><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-6cbeab0a data-v-4698c43e data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>Fade away</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>夏至</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-4698c43e><header class="navbar" data-v-4698c43e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Fade away</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      前端三剑客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Html</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/Html/1.Html初识.html" class="nav-link"><i class="iconfont undefined"></i>
+  Html
+</a></li></ul></li><li class="dropdown-item"><h4>CSS</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS基础/1.引入css样式表.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS基础
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS3新增/1.新增选择器.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS3新增
+</a></li></ul></li><li class="dropdown-item"><h4>JavaScript</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js基础/01.js基础语法.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js基础
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js高级/01.this关键字.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js高级
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Vue</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/Vue/Vue2/01.Vue基础.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue2
+</a></li><li class="dropdown-subitem"><a href="/框架/Vue/Vue3/1.创建Vue3项目.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue3
+</a></li></ul></li><li class="dropdown-item"><h4>React</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/React/01.React入门.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Node.js/01.初识Node.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></div><div class="nav-item"><a href="/学习git/git学习.html" class="nav-link"><i class="iconfont undefined"></i>
+  学习git
+</a></div><div class="nav-item"><a href="/面试题/01.一阶段面试题.html" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4698c43e></div> <aside class="sidebar" data-v-4698c43e><div class="personal-info-wrapper" data-v-6c8ffc9c><!----> <h3 class="name" data-v-6c8ffc9c>
+    夏至
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>0</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>0</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      前端三剑客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Html</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/Html/1.Html初识.html" class="nav-link"><i class="iconfont undefined"></i>
+  Html
+</a></li></ul></li><li class="dropdown-item"><h4>CSS</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS基础/1.引入css样式表.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS基础
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS3新增/1.新增选择器.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS3新增
+</a></li></ul></li><li class="dropdown-item"><h4>JavaScript</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js基础/01.js基础语法.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js基础
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js高级/01.this关键字.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js高级
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Vue</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/Vue/Vue2/01.Vue基础.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue2
+</a></li><li class="dropdown-subitem"><a href="/框架/Vue/Vue3/1.创建Vue3项目.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue3
+</a></li></ul></li><li class="dropdown-item"><h4>React</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/React/01.React入门.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Node.js/01.初识Node.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></div><div class="nav-item"><a href="/学习git/git学习.html" class="nav-link"><i class="iconfont undefined"></i>
+  学习git
+</a></div><div class="nav-item"><a href="/面试题/01.一阶段面试题.html" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue2</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/框架/Vue/Vue2/01.Vue基础.html" class="sidebar-link">一、Vue核心</a></li><li><a href="/框架/Vue/Vue2/02.组件化编程.html" class="sidebar-link">二、Vue组件化编程</a></li><li><a href="/框架/Vue/Vue2/03.组件通信.html" class="sidebar-link">三、组件通信</a></li><li><a href="/框架/Vue/Vue2/04.过渡与动画.html" class="sidebar-link">四、过渡与动画</a></li><li><a href="/框架/Vue/Vue2/05.配置代理.html" class="sidebar-link">五、配置代理</a></li><li><a href="/框架/Vue/Vue2/06.插槽.html" class="sidebar-link">六、slot 插槽</a></li><li><a href="/框架/Vue/Vue2/07.Vuex.html" class="sidebar-link">七、Vuex</a></li><li><a href="/框架/Vue/Vue2/08.路由Router.html" class="sidebar-link">八、路由Router</a></li><li><a href="/框架/Vue/Vue2/09.项目规范化.html" class="active sidebar-link">九、前端规范化工程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#准备" class="sidebar-link">准备</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#为啥学" class="sidebar-link">为啥学</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#eslint" class="sidebar-link">ESLint</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#prettier" class="sidebar-link">Prettier</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#开发-保存" class="sidebar-link">开发 - 保存</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#开发-push-先不搞" class="sidebar-link">开发 - push  （先不搞）</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#commitlint-先不搞" class="sidebar-link">CommitLint（先不搞）</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#ui设计稿" class="sidebar-link">UI设计稿</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#开发思想" class="sidebar-link">开发思想</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#技术栈" class="sidebar-link">技术栈</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#开发框架" class="sidebar-link">开发框架</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#ui框架-组件库" class="sidebar-link">UI框架/组件库</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#清空无效代码" class="sidebar-link">清空无效代码</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#去掉警告" class="sidebar-link">去掉警告</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#vetur、eslint" class="sidebar-link">Vetur、ESLint</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#prettier-2" class="sidebar-link">Prettier</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#commitlint模块安装-先不搞" class="sidebar-link">CommitLint模块安装（先不搞）</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#老大" class="sidebar-link">老大</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#员工" class="sidebar-link">员工</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#不封装" class="sidebar-link">不封装</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/09.项目规范化.html#封装" class="sidebar-link">封装？</a></li></ul></li><li><a href="/框架/Vue/Vue2/10.fetch axios.html" class="sidebar-link">十、fetch axios</a></li><li><a href="/框架/Vue/Vue2/11.webpack.html" class="sidebar-link">十一、webpack</a></li><li><a href="/框架/Vue/Vue2/13.vue2移动端.html" class="sidebar-link">1.自适应解决方案</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6cbeab0a data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a></h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>夏至</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2023
+        </a></span></div></div> <div data-v-4698c43e><main class="page"><!----> <div class="page-title" style="display:none;"><h1>九、前端规范化工程</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>夏至</span></i> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default" style="display:none;"><h1 id="九、前端规范化工程"><a href="#九、前端规范化工程" class="header-anchor">#</a> 九、前端规范化工程</h1> <h2 id="准备"><a href="#准备" class="header-anchor">#</a> 准备</h2> <p>vscode1.64.2+    eslint、prettier</p> <p>Git-2.35+   husky</p> <p>卸载eslint插件</p> <p>卸载prettier插件</p> <p>卸载一些代码格式化插件：JS-CSS-HTML Formatter</p> <p>删除setting.json只保留</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;window.zoomLevel&quot;: 2
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="为啥学"><a href="#为啥学" class="header-anchor">#</a> 为啥学</h2> <p>原因：工作中，需要多人协同开发，不同开发者具有不同的编码习惯和喜好，增加后期维护成本。</p> <p>场景：代码规范、文档规范、接口规范、甚至是提交日志规范等等</p> <p>解决</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ESLint 概念-javascript代码检测工具，应用：后期工作老大配置好规则例如不能写alert、缩进2个空格等不符合规则报错；
+Stylelint css代码检测工具；
+Prettier 概念-代码格式化工具，应用：按照老大规定的标准格式化代码，避免频繁出现eslint报错；
+CommitLint 概念-git提交备注检查工具，应用：后期工作老大用来约束git commit语义化提交；    容易报错
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="eslint"><a href="#eslint" class="header-anchor">#</a> ESLint</h2> <ul><li>概念：javascript代码检测工具</li> <li>应用：后期工作老大配置好规则例如不能写alert、缩进2个空格等不符合规则报错；</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>不能定义数组或对象最后多余的逗号
+对象key不能重复
+允许使用 async-await
+开发模式允许使用 console
+开发模式允许使用 debugger
+不允许使用var变量
+确保运算符周围有空格
+不允许使用 == 
+函数圆括号之前没有空格
+禁止出现多个空行
+统一逗号周围空格风格
+等
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><ul><li>安装：cnpm i eslint@7.32.0 -g</li> <li>语法</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>生成配置：eslint --init 
+检查代码：eslint 路径文件名后缀
+修复代码：eslint 路径文件名后缀 --fix （注：后期vue项目不是敲这个命令  而是 cnpm run lint
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>生成配置：  eslint --init</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>1.# 如何使用ESLink
+How would you like to use ESLint?  
+	To check syntax only // 只检查语法性错误，例如：代码示例中的fn(就是 语法错误。
+	To check syntax and find problems // 检查语法错误并且发现问题代码，例如：fn() 未定义就是用
+	// 检查语法错误，发现问题代码，校验代码风格，例如：代码不统一，空格太多等问题
+&gt; To check syntax, find problems, and enforce code style 
+
+2.# 项目代码中使用哪种模块开发
+What type of modules dos your project use? 
+	JavaScript modules (import/export) // ECMA：允许使用import/export
+&gt; CommonJS (require/exports) // CommonJS：允许使用require/exports
+	None of these // 没有用到任何模块化
+
+3.# 当前项目使用的那款框架
+Which framework does you project use?
+ 	React
+	Vue.js
+&gt; None of these
+
+4.# 项目是否使用了TypeScript，本例选择No
+✔ Does your project use TypeScript? · No / Yes
+
+5.# 代码最终将运行在什么环境中。
+根据运行环境，判断是否允许使用相应环境下的API，例如：
+浏览器环境：window
+node环境：process.cwd()
+Where does you code run? // 多选
+(*) Browser // 浏览器环境 
+(*) Node // node环境
+
+6.# 指定怎样定义项目的代码风格
+How would you like to define a style for your project?
+&gt; Use a popular style guide // 使用一个市面上的主流风格
+	Answer questions about your style // 通过回答问题，形成一个风格
+	Inspect your JavaScript file(s) // 根据JS代码文件，推断代码风格
+	
+7.# 根据具体主流风格
+	Which style guide do you want to follow? 
+	Airbnb: https://github.com/airbnb/javascript
+&gt; Standard: https://github.com/standard/standard   // 开源社区的编码规范
+  Google: https://github.com/google/eslint-config-google   
+
+8.# 指定配置文件的文件类型。
+What format do you want your config file to be in? 
+&gt; JavaScript // 方便在配置文件中添加一些条件判断
+  YAML
+  JSON
+
+9.# 以上功能需要一些npm模块，这里提示是否安装它们 选yes安装
+Would you like to install them now with npm?  No / Yes
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br></div></div><ul><li>练习：test1.js</li></ul> <blockquote><div class="language- line-numbers-mode"><pre class="language-text"><code>https://eslint.bootcss.com/docs/rules/
+需求1：先通过命令检查问题，再根据手册明确啥问题，并解决
+需求2：通过命令解决
+
+let username = '双击666';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></blockquote> <ul><li>配置规则</li></ul> <blockquote><p>局部</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>/* eslint 规则名: &quot;off&quot; 或 0 */
+/* eslint 规则名: &quot;warn&quot; 或 1 */
+/* eslint 规则名: &quot;error&quot; 或 2 */
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>全局</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>rules: {
+	&quot;no-unused-vars&quot;: [&quot;warn&quot;],
+	&quot;no-unused-vars&quot;: &quot;off&quot; 或 0
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></blockquote> <ul><li>总结步骤</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>安装：cnpm i eslint -g
+下载：cnpm init -y    
+然后：eslint --init
+
+最后：创建xxx.js ，然后通过命令 eslint 路径及文件名验证
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="prettier"><a href="#prettier" class="header-anchor">#</a> Prettier</h2> <ul><li>概念：代码格式化工具</li> <li>应用：按照老大规定的标准格式化代码，避免频繁出现eslint报错；</li> <li>安装：cnpm i prettier -g</li> <li>语法：prettier --write 路径及文件名后缀</li> <li>练习：</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function fn(){console.log(&quot;hello&quot;)}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>其他：具体配置、忽略配置后期需要的百度</li> <li>.prettierrc.json</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;tabWidth&quot;: 2,
+  &quot;useTabs&quot;: false,
+  &quot;endOfLine&quot;: &quot;auto&quot;,
+  &quot;singleQuote&quot;: false,
+  &quot;semi&quot;: true,
+  &quot;trailingComma&quot;: &quot;none&quot;,
+  &quot;bracketSpacing&quot;: true
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="开发-保存"><a href="#开发-保存" class="header-anchor">#</a> 开发 - 保存</h2> <p>步骤1：下载 eslint 插件 （切记切记切记🐧    依赖第三方模块  否则下了没用</p> <p>步骤2：下载 prettier 插件（切记切记切记🐧  有没有第三方模块都可以玩，但是必须修改settings.json文件</p> <p>步骤3：配置</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;editor.mouseWheelZoom&quot;: true, // 是否开启编辑器字体缩放：按Ctrl键并滚动鼠标滚轮
+    &quot;workbench.iconTheme&quot;: &quot;simple-icons&quot;, // 个人主题配置（可忽略）
+    &quot;terminal.integrated.fontFamily&quot;: &quot;Hack Nerd Font&quot;, // 个人主题配置（可忽略）
+    /* eslint配置 */
+    &quot;eslint.validate&quot;: [&quot;vue&quot;, &quot;javascript&quot;], // 声明eslint检查的文件
+    &quot;editor.codeActionsOnSave&quot;: {
+        &quot;source.fixAll.eslint&quot;: true
+    }, // 是否开启eslint自动修正
+    /* prettier配置 */
+    &quot;editor.formatOnSave&quot;: true, // 是否开启保存自动代码格式化
+    &quot;[vue]&quot;: {
+        // 声明.vue文件采用prettier-vscode插件进行代码格式化
+        &quot;editor.defaultFormatter&quot;: &quot;esbenp.prettier-vscode&quot;
+    },
+    &quot;[html]&quot;: {
+        // 声明.js文件采用prettier-vscode插件进行代码格式化
+        &quot;editor.defaultFormatter&quot;: &quot;esbenp.prettier-vscode&quot;
+    },
+    &quot;[javascript]&quot;: {
+        // 声明.js文件采用prettier-vscode插件进行代码格式化
+        &quot;editor.defaultFormatter&quot;: &quot;esbenp.prettier-vscode&quot;
+    },
+    &quot;[javascriptreact]&quot;: {
+        // 声明.js文件采用prettier-vscode插件进行代码格式化
+        &quot;editor.defaultFormatter&quot;: &quot;esbenp.prettier-vscode&quot;
+    },
+    &quot;prettier.tabWidth&quot;: 2, // 缩进字节数
+    &quot;prettier.useTabs&quot;: false, // 缩进不使用tab，使用空格
+    &quot;prettier.semi&quot;: false, // 句尾添加分号
+    &quot;prettier.singleQuote&quot;: true, // 使用单引号
+    &quot;prettier.proseWrap&quot;: &quot;preserve&quot;, // 默认值。因为使用了一些折行敏感型的渲染器（如GitHub comment）而按照markdown文本样式进行折行
+    &quot;prettier.arrowParens&quot;: &quot;always&quot;, //  (x) =&gt; {} 箭头函数参数只有一个时是否要有小括号：avoid-省略括号、always-总是有括号
+    &quot;prettier.bracketSpacing&quot;: true, // 在对象，数组括号与文字之间加空格 &quot;{ foo: bar }&quot;
+    &quot;prettier.endOfLine&quot;: &quot;auto&quot;, // 结尾是 \n \r \n\r auto
+    &quot;prettier.htmlWhitespaceSensitivity&quot;: &quot;ignore&quot;,
+    &quot;prettier.trailingComma&quot;: &quot;es5&quot;,
+    &quot;liveServer.settings.donotShowInfoMsg&quot;: true,
+    &quot;liveServer.settings.donotVerifyTags&quot;: true,
+    &quot;volar.codeLens.pugTools&quot;: true,
+    &quot;volar.codeLens.scriptSetupTools&quot;: true,
+    &quot;powermode.enabled&quot;: true,
+    &quot;powermode.presets&quot;: &quot;flames&quot;,
+    &quot;powermode.combo.timeout&quot;: 0,
+    &quot;powermode.shake.intensity&quot;: 0,
+    &quot;workbench.startupEditor&quot;: &quot;none&quot;,
+    &quot;bracket-pair-colorizer-2.depreciation-notice&quot;: false,
+    &quot;px2rem.rootFontSize&quot;: 100,
+    &quot;editor.guides.bracketPairs&quot;: true,
+    &quot;window.zoomLevel&quot;: 1 // 在对象或数组最后一个元素后面是否加逗号（在ES5中加尾逗号）
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br></div></div><h2 id="开发-push-先不搞"><a href="#开发-push-先不搞" class="header-anchor">#</a> 开发 - push  （先不搞）</h2> <p>需求：监控执行git push命令，执行代码检查和格式化，避免有同事没有配置或者配置的不一样</p> <p>留心：切记代码eslint检查不通过，等于push白敲  也就是需要解决验证，然后重新敲push命令</p> <p>模块：pre-commit、husky</p> <p>使用</p> <blockquote><p>pre-commit （落后）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>步骤1：安装  cnpm i pre-commit -D
+步骤2：更改package.json文件
+&quot;scripts&quot;: {
+	&quot;lint&quot;: &quot;eslint b.js&quot;
+},
+&quot;pre-commit&quot;: [
+	&quot;lint&quot;
+],
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>husky （5+以后略难</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>.gitignore  切记在这个文件里面写  node_modules/
+git init 
+cnpm i husky@4.3.8 -D 
+
+&quot;scripts&quot;: {
+	&quot;lint&quot;: &quot;eslint --ext .js 目录/&quot;  
+},
+
+&quot;husky&quot;: {
+    &quot;hooks&quot;: {
+       &quot;pre-commit&quot;: &quot;npm run lint&quot;
+    }
+},
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div></blockquote> <p>练习</p> <blockquote><p>步骤1：修改文件  package.json</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&quot;scripts&quot;: {
+  &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;,
+  &quot;lint&quot;: &quot;eslint --fix --ext .js ./&quot;,
+  &quot;pretty&quot;: &quot;prettier --write ./*.js&quot;
+},
+&quot;husky&quot;: {
+  &quot;hooks&quot;: {
+    &quot;pre-commit&quot;: &quot;npm run pretty &amp;&amp; npm run lint&quot;
+  }
+},
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>步骤2：生成本地仓库    git  init</p> <p>步骤3：创建.gitignore去忽略node_modules</p> <p>步骤4：安装 husky    cnpm i husky@4.3.8 -D</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>切记切记切记 这个模块安装过程中会去修改.git下面的东西
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>步骤5：git add .   git commit -m '备注' 检查</p></blockquote> <blockquote><p>留心：很多人用不了 因为版本问题</p></blockquote> <h2 id="commitlint-先不搞"><a href="#commitlint-先不搞" class="header-anchor">#</a> CommitLint（先不搞）</h2> <p>是什么：git提交备注检查工具，</p> <p>哪里用：后期工作老大用来约束git commit语义化提交；</p> <p>怎么用：</p> <blockquote><p>步骤1：cnpm  i   @commitlint/config-conventional @commitlint/cli  -D</p> <p>步骤2：commitlint.config.js</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>module.exports = {extends: ['@commitlint/config-conventional']};
+
+
+或者
+
+
+module.exports = {
+  extends: [
+    &quot;@commitlint/config-conventional&quot;
+  ],
+  rules: {
+    'type-enum': [2, 'always', [
+      'upd', 'feat', 'fix', 'refactor', 'docs', 'chore', 'style', 'revert'
+     ]],
+    'type-case': [0],
+    'type-empty': [0],
+    'scope-empty': [0],
+    'scope-case': [0],
+    'subject-full-stop': [0, 'never'],
+    'subject-case': [0, 'never'],
+    'header-max-length': [0, 'always', 72]
+  }
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p>步骤3：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&quot;husky&quot;: {
+ &quot;hooks&quot;: {
+   &quot;pre-commit&quot;: &quot;npm run pretty &amp;&amp; npm run lint&quot;,
+   &quot;commit-msg&quot;: &quot;commitlint -E HUSKY_GIT_PARAMS&quot;
+ }
+},
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>步骤4：后续 git commit -m &quot;类型(范围): 描述&quot;  （切记必须英文冒号，切记必须加空格）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>类型	描述
+feat	新特性、新功能（feature）
+fix	  修改bug
+
+perf	优化相关，比如提升性能、体验
+style	代码格式修改, 注意不是 css 修改
+
+build	编译相关的修改，例如发布版本、对项目构建或者依赖的改动
+chore	其他修改, 比如改变构建流程、或者增加依赖库、工具等
+ci	持续集成修改
+docs	文档修改
+refactor	代码重构
+revert	回滚到上一个版本
+test	测试用例修改
+
+git commit -m 'fix(account): 修复xxx的bug'
+git commit -m 'refactor: 重构整个项目'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div></blockquote> <h1 id="■-铺垫2-项目介绍"><a href="#■-铺垫2-项目介绍" class="header-anchor">#</a> ■ 铺垫2：项目介绍</h1> <h2 id="ui设计稿"><a href="#ui设计稿" class="header-anchor">#</a> UI设计稿</h2> <p>实战</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>很久很久以前：UI挨个单独发
+后来：用第三方平台
+现在流行：蓝湖 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>切记：后台就是实现 商品管理、订单管理、用户管理等等  然后主要一个模块/功能实现了 其他一样。</p> <h2 id="开发思想"><a href="#开发思想" class="header-anchor">#</a> 开发思想</h2> <blockquote><p>后台情况1：自己用ui框架布局封装</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>iview 北京
+elementui 饿了么（最热门）
+antdV 蚂蚁
+...
+
+http://qf-fengtuanadmin.zhaodashen.cn   
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>后台情况2：基于开源项目二次开发（这个开源项目利用ui框架布局封装好了，你下载下来直接开发功能；例如： vue-element-admin、vue-admin-design等）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>vue-element-admin
+
+##### 效果图1：https://panjiachen.github.io/vue-element-admin/#/
+##### 效果图2：https://panjiachen.gitee.io/vue-admin-template/#/login?redirect=%2Fdashboard
+
+vue-admin-design
+
+##### 完整演示地址：http://42.194.194.178/（1M带宽初次访问比较慢）
+##### 前端演示地址1：https://baimingxuan.net/page-admin-design
+##### 前端演示地址2：https://baimingxuan.gitee.io/page-admin-design
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div></blockquote> <h2 id="技术栈"><a href="#技术栈" class="header-anchor">#</a> 技术栈</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>###技术栈
+
+#大前端（MVVM）
+vue-element-admin：仿知名开源项目定制开发
+element-ui：基于饿了么的 element-ui 组件库
+axios：基于 axios 发送网络请求
+driver：基于 driver 实现新用户引导
+animate：基于 animate C3 动画库 和 transition组件 实现后台动画
+echarts：基于百度echarts实现数据可视化图标
+nprogress：基于nprogress实现页面加载进度条
+xlsx：基于xlsx实现订单数据导出
+vue-upload-component 或 element-upload：实现商品相册管理
+scss：基于css预处理器实现
+i18n：基于实现语言切换
+screenfull：实现后台页面全屏
+vue-print-nb：实现后台订单页面数据打印
+LocalStorage： 基于H5存储技术 实现页面数据持久存储 存储用户信息
+swiper：滑动插件实现导航tab选项卡滑动
+vue-particles：实现登录粒子图特效                 
+Vuex：实现数据共享
+vue-devtools：通过vue-devtools开发工具 进行项目调试
+git：通过git进行项目版本控制
+gitlab：通过阿里云gitlab创建项目仓库
+
+#服务端（MVC）
+jwt登录认证
+multer图片上传
+svg-captcha验证码
+nginx项目部署
+
+#优化
+路由懒加载
+按钮loading避免重复提交
+Keep-alive
+nginx配置（expires、gzip）
+等
+
+其他
+图片上传组件
+https://segmentfault.com/a/1190000016698171?utm_source=tag-newest
+敏捷式开发 &amp; 瀑布式开发
+https://www.jianshu.com/p/d87fae0e06de
+
+https://webopenfather.worktile.com/signin
+https://webopenfather.atlassian.net/secure/BrowseProjects.jspa
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br></div></div><h1 id="■-准备-初始化"><a href="#■-准备-初始化" class="header-anchor">#</a> ■ 准备：初始化</h1> <h2 id="开发框架"><a href="#开发框架" class="header-anchor">#</a> 开发框架</h2> <p>步骤1：选择开发框架并创建</p> <blockquote><p>步骤1：vue create fengtuanadmin   回车
+步骤2：选择自定义安装</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Vue CLI v4.5.11
+? Please pick a preset:
+only-vue3 ([Vue 3] babel, router, vuex)
+Default ([Vue 2] babel, eslint)
+Default (Vue 3 Preview) ([Vue 3] babel, eslint)
+&gt; Manually select features 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>步骤3：选择要安装的模块 个别模块没选后期也可以重新安装自己配置 例如router    回车</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Vue CLI v4.5.11
+? Please pick a preset: Manually select features
+? Check the features needed for your project:
+ (*) Choose Vue version			选择vue版本
+ (*) Babel					   转换JS代码 兼容		
+ ( ) TypeScript				   ts  js超集  主要是做数据类型限制  提升性能，保证项目严谨
+ ( ) Progressive Web App (PWA) Support	  提高webapp体验度
+ (*) Router					   路由显示不同的页面数据
+ (*) Vuex					   组件通信状态管理工具
+ (*) CSS Pre-processors			CSS预处理（sass、less、styuls  
+ (*) Linter / Formatter			代码验证 老大用来统一开发规范
+ ( ) Unit Testing			    测试代码
+ ( ) E2E Testing   			    测试代码
+
+
+发现：上述模块选择了，针对router、vuex框架作者默认帮你做三件事
+1 下载模块
+2 写模块代码
+3 在main.js导入注册 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p>步骤4：选择版本</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>? Choose a version of Vue.js that you want to start the project with (Use arrow keys)
+&gt; 2.x
+  3.x (Preview)    
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>步骤5：路由模式</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>? Use history mode for router? (Requires proper server setup for index fallback in production) (Y/n) y
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>步骤6：选择解析sass的模块</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>? Pick a CSS pre-processor (PostCSS, Autoprefixer and CSS Modules are supported by default):
+&gt; Sass/SCSS (with dart-sass)
+  Sass/SCSS (with node-sass)
+  Less
+  Stylus      
+  
+? Pick a linter / formatter config: 
+  ESLint with error prevention only 
+  ESLint + Airbnb config 
+  ESLint + Standard config 
+❯ ESLint + Prettier
+
+? Pick additional lint features: (Press &lt;space&gt; to select, &lt;a&gt; to toggle all, &lt;i&gt; to invert selection)
+❯◉ Lint on save
+ ◯ Lint and fix on commit
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>步骤7：配置文件都放到package.json还是多文件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>? Where do you prefer placing config for Babel, ESLint, etc.? (Use arrow keys)
+&gt; In dedicated config files
+  In package.json   
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>步骤8：保存本次配置吗</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>? Save this as a preset for future projects? No
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>步骤9：等待</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Vue CLI v4.5.11
+? Please pick a preset: Manually select features
+? Check the features needed for your project: Choose Vue version, Babel, Router, Vuex, CSS Pre-processors
+? Choose a version of Vue.js that you want to start the project with 2.x
+? Use history mode for router? (Requires proper server setup for index fallback in production) No
+? Pick a CSS pre-processor (PostCSS, Autoprefixer and CSS Modules are supported by default): Sass/SCSS (with node-sass)
+? Where do you prefer placing config for Babel, ESLint, etc.? In dedicated config files
+? Save this as a preset for future projects? No
+
+
+Vue CLI v4.5.11
+✨  Creating project in H:\\jxshopadmin.
+🗃  Initializing git repository...
+⚙️  Installing CLI plugins. This might take a while...
+......
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div></blockquote> <h2 id="ui框架-组件库"><a href="#ui框架-组件库" class="header-anchor">#</a> UI框架/组件库</h2> <p>步骤1：安装（时间漫长....</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>cd fengtuanadmin
+cnpm i element-ui@2.9.2  -S     或   yarn add element-ui@2.9.2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>步骤2：配置  main.js</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>步骤4：启动服务、然后复制UI框架的按钮组件查看是否配置UI框架成功</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>留心：UI框架可以完整导入、也可以按需加载
+区别：【按需加载】后期打包的文件体积小
+好处：加快访问速度
+备注：后期项目开发完毕上线之前优化！！！
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="清空无效代码"><a href="#清空无效代码" class="header-anchor">#</a> 清空无效代码</h2> <p>src</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>assets   清空 然后创建css/reset.scss
+components 清空
+router    修改 删除路由
+store 不管
+views 清空
+App.vue   保留空  导入初始化样式
+main.js  不用管
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="去掉警告"><a href="#去掉警告" class="header-anchor">#</a> 去掉警告</h2> <p>cnpm run lint</p> <blockquote><p>黄色警告是什么意思 后面还会大量出现再说</p></blockquote> <h1 id="■-准备-代码开发规范配置"><a href="#■-准备-代码开发规范配置" class="header-anchor">#</a> ■ 准备：代码开发规范配置</h1> <h2 id="vetur、eslint"><a href="#vetur、eslint" class="header-anchor">#</a> Vetur、ESLint</h2> <p>Vetur插件安装</p> <p>ESLint插件安装</p> <p>Prettier插件安装</p> <h2 id="prettier-2"><a href="#prettier-2" class="header-anchor">#</a> Prettier</h2> <p>Prettier插件安装</p> <p>vscode打开设置，找到settings.json，复制粘贴下面内容</p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;editor.mouseWheelZoom&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 是否开启编辑器字体缩放：按Ctrl键并滚动鼠标滚轮</span>
+    <span class="token comment">/* eslint配置 */</span>
+    <span class="token property">&quot;eslint.validate&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;vue&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;javascript&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 声明eslint检查的文件</span>
+    <span class="token property">&quot;editor.codeActionsOnSave&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;source.fixAll.eslint&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// 是否开启eslint自动修正</span>
+    <span class="token comment">/* prettier配置 */</span>
+    <span class="token property">&quot;editor.formatOnSave&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 是否开启保存自动代码格式化</span>
+    <span class="token property">&quot;[vue]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 声明.vue文件采用prettier-vscode插件进行代码格式化</span>
+        <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;[html]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 声明.js文件采用prettier-vscode插件进行代码格式化</span>
+        <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;[javascript]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 声明.js文件采用prettier-vscode插件进行代码格式化</span>
+        <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;[javascriptreact]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 声明.js文件采用prettier-vscode插件进行代码格式化</span>
+        <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;prettier.tabWidth&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">// 缩进字节数</span>
+    <span class="token property">&quot;prettier.useTabs&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 缩进不使用tab，使用空格</span>
+    <span class="token property">&quot;prettier.semi&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 句尾添加分号</span>
+    <span class="token property">&quot;prettier.singleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 使用单引号</span>
+    <span class="token property">&quot;prettier.proseWrap&quot;</span><span class="token operator">:</span> <span class="token string">&quot;preserve&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 默认值。因为使用了一些折行敏感型的渲染器（如GitHub comment）而按照markdown文本样式进行折行</span>
+    <span class="token property">&quot;prettier.arrowParens&quot;</span><span class="token operator">:</span> <span class="token string">&quot;always&quot;</span><span class="token punctuation">,</span> <span class="token comment">//  (x) =&gt; {} 箭头函数参数只有一个时是否要有小括号：avoid-省略括号、always-总是有括号</span>
+    <span class="token property">&quot;prettier.bracketSpacing&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 在对象，数组括号与文字之间加空格 &quot;{ foo: bar }&quot;</span>
+    <span class="token property">&quot;prettier.endOfLine&quot;</span><span class="token operator">:</span> <span class="token string">&quot;auto&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 结尾是 \n \r \n\r auto</span>
+    <span class="token property">&quot;prettier.htmlWhitespaceSensitivity&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ignore&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;prettier.trailingComma&quot;</span><span class="token operator">:</span> <span class="token string">&quot;es5&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;liveServer.settings.donotShowInfoMsg&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;liveServer.settings.donotVerifyTags&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;volar.codeLens.pugTools&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;volar.codeLens.scriptSetupTools&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;powermode.enabled&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;powermode.presets&quot;</span><span class="token operator">:</span> <span class="token string">&quot;flames&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;powermode.combo.timeout&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;powermode.shake.intensity&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;workbench.startupEditor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;none&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;bracket-pair-colorizer-2.depreciation-notice&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;px2rem.rootFontSize&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;editor.guides.bracketPairs&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;window.zoomLevel&quot;</span><span class="token operator">:</span> <span class="token number">1</span> <span class="token comment">// 在对象或数组最后一个元素后面是否加逗号（在ES5中加尾逗号）</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br></div></div><h2 id="commitlint模块安装-先不搞"><a href="#commitlint模块安装-先不搞" class="header-anchor">#</a> CommitLint模块安装（先不搞）</h2> <blockquote><p>步骤1：cnpm  i   @commitlint/config-conventional @commitlint/cli  -D</p> <p>步骤2：commitlint.config.js</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>module.exports = {
+  extends: [
+    &quot;@commitlint/config-conventional&quot;
+  ],
+  rules: {
+    'type-enum': [2, 'always', [
+      'upd', 'feat', 'fix', 'refactor', 'docs', 'chore', 'style', 'revert'
+     ]],
+    'type-case': [0],
+    'type-empty': [0],
+    'scope-empty': [0],
+    'scope-case': [0],
+    'subject-full-stop': [0, 'never'],
+    'subject-case': [0, 'never'],
+    'header-max-length': [0, 'always', 72]
+  }
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>步骤3：安装husky模块  cnpm i husky@4.3.8 -D</p> <p>步骤4：配置package.json</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&quot;husky&quot;: {
+  &quot;hooks&quot;: {
+  	&quot;pre-commit&quot;: &quot;npm run lint&quot;,
+    &quot;commit-msg&quot;: &quot;commitlint -E HUSKY_GIT_PARAMS&quot;
+  }
+},
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>步骤5：测试</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>git add .  
+git commit -m 'init'  
+git commit -m 'feat: first init'  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></blockquote> <h1 id="■-准备-版本控制"><a href="#■-准备-版本控制" class="header-anchor">#</a> ■ 准备：版本控制</h1> <h2 id="老大"><a href="#老大" class="header-anchor">#</a> 老大</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>2.1 创建fengtuanadmin空仓库
+2.2 给本地仓库绑定远程仓库 
+2.3 推送到码云
+	1.第一次需要绑定git账号
+        git config --global user.name &quot;神龙教主&quot;
+        git config --global user.email &quot;15021459079@163.com&quot;
+	2.本地绑定远程：  git remote add origin 仓库地址http协议
+	3.本地提交到远程  
+		git add . 
+        git commit -m '描述' 
+        git push 
+        
+2.4 基于master创建dev、master保护、dev默认
+2.5 添加开发人员（私有仓库 略）
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="员工"><a href="#员工" class="header-anchor">#</a> 员工</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>1、配置全局信息   用户名/邮箱 （目的：后期代码知道是谁push）
+  git config --global user.name &quot;神龙教主&quot;
+  git config --global user.email &quot;15021459079@163.com&quot;
+2、克隆&amp;&amp;进入仓库目录  
+	git clone 链接
+	cd 项目目录
+3、创建自己的开发分支  git checkout -b 自己的分支
+4、开发...
+5、git add . / git commit -m '' / git push 第一次长 / 点击码云pull request合并请求把你的分支和dev合并 dev就有代码
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h1 id="一、项目-后台首页"><a href="#一、项目-后台首页" class="header-anchor">#</a> 一、项目-后台首页</h1> <h2 id="不封装"><a href="#不封装" class="header-anchor">#</a> 不封装</h2> <p>1 hello     定义路由、创建组件显示hello</p> <p>2 美化     导航、导航切换、面包屑、用户信息21</p> <h2 id="封装"><a href="#封装" class="header-anchor">#</a> 封装？</h2> <p>参考： https://github.com/PanJiaChen/vue-element-admin/blob/master/src/layout/index.vue</p> <h1 id="二、项目-阿里图标"><a href="#二、项目-阿里图标" class="header-anchor">#</a> 二、项目-阿里图标</h1> <p>步骤1：引入、或下载导入</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>引入：直接复制cdn地址在public/index.html引入link即可
+导入：1下载放到src/assets/font中，2在main.js导入文件import '@/assets/font/iconfont.css';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>步骤3：正常使用</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;i class=&quot;iconfont icon-menu&quot;&gt;&lt;/i&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">2022-09-24: </span> <span class="time">12/8/2022, 9:12:08 PM</span></div></footer> <!----> <!----></main> <!----> <div class="comments-wrapper" data-v-4698c43e><!----></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div><!----><div></div><!----><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 Fade away
+    </div> <div class="operation" style="left:380px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="left:250px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><canvas id="vuepress-canvas-cursor"></canvas><div id="goTop" class="hide-cat" data-v-bf92849a></div><div class="Sakura" data-v-248d85d6><canvas id="canvas_sakura" style="z-index:-1;" data-v-248d85d6></canvas></div></div></div>
+    <script src="/assets/js/app.947b52f8.js" defer></script><script src="/assets/js/4.f3f18f69.js" defer></script><script src="/assets/js/1.17f7b324.js" defer></script><script src="/assets/js/99.ec5eb42d.js" defer></script><script src="/assets/js/10.bbd8e87d.js" defer></script>
+  </body>
+</html>

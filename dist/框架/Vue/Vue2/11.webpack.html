@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>十一、webpack | Fade away</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script type="text/javascript" src="/js/mouseClick.js"></script>
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <meta name="description" content="花有重开日，人无在少年">
+    <meta name="keywords" content="随便写写">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="robots" content="all">
+    <meta name="author" content="xiazhi">
+    
+    <link rel="preload" href="/assets/css/0.styles.51678963.css" as="style"><link rel="preload" href="/assets/js/app.947b52f8.js" as="script"><link rel="preload" href="/assets/js/4.f3f18f69.js" as="script"><link rel="preload" href="/assets/js/1.17f7b324.js" as="script"><link rel="preload" href="/assets/js/101.16ba3c31.js" as="script"><link rel="preload" href="/assets/js/10.bbd8e87d.js" as="script"><link rel="prefetch" href="/assets/js/100.56b8a2e3.js"><link rel="prefetch" href="/assets/js/102.d1d712f7.js"><link rel="prefetch" href="/assets/js/103.caf2b7b2.js"><link rel="prefetch" href="/assets/js/104.a66f2777.js"><link rel="prefetch" href="/assets/js/105.00db8b5d.js"><link rel="prefetch" href="/assets/js/106.04ddd74a.js"><link rel="prefetch" href="/assets/js/107.6d70fce1.js"><link rel="prefetch" href="/assets/js/108.ef578b41.js"><link rel="prefetch" href="/assets/js/109.5fcbe8a4.js"><link rel="prefetch" href="/assets/js/11.79ecafaf.js"><link rel="prefetch" href="/assets/js/110.8e64a744.js"><link rel="prefetch" href="/assets/js/111.5447bfcb.js"><link rel="prefetch" href="/assets/js/112.ec6a558a.js"><link rel="prefetch" href="/assets/js/12.a86563b8.js"><link rel="prefetch" href="/assets/js/13.1612c1d6.js"><link rel="prefetch" href="/assets/js/14.54b7b25a.js"><link rel="prefetch" href="/assets/js/15.404ce59b.js"><link rel="prefetch" href="/assets/js/16.1fffce5f.js"><link rel="prefetch" href="/assets/js/17.b295769c.js"><link rel="prefetch" href="/assets/js/18.2669f498.js"><link rel="prefetch" href="/assets/js/19.e40793d0.js"><link rel="prefetch" href="/assets/js/20.a71dadf7.js"><link rel="prefetch" href="/assets/js/21.7bfdae89.js"><link rel="prefetch" href="/assets/js/22.a594e5a6.js"><link rel="prefetch" href="/assets/js/23.3b821b35.js"><link rel="prefetch" href="/assets/js/24.137dfb89.js"><link rel="prefetch" href="/assets/js/25.1d54a910.js"><link rel="prefetch" href="/assets/js/26.827b0d08.js"><link rel="prefetch" href="/assets/js/27.61f95baa.js"><link rel="prefetch" href="/assets/js/28.e0756330.js"><link rel="prefetch" href="/assets/js/29.8467d751.js"><link rel="prefetch" href="/assets/js/30.be6b7404.js"><link rel="prefetch" href="/assets/js/31.4199c7b0.js"><link rel="prefetch" href="/assets/js/32.b8e323e5.js"><link rel="prefetch" href="/assets/js/33.149471e7.js"><link rel="prefetch" href="/assets/js/34.2c1b4866.js"><link rel="prefetch" href="/assets/js/35.2fb7d147.js"><link rel="prefetch" href="/assets/js/36.ed604657.js"><link rel="prefetch" href="/assets/js/37.20eedfaa.js"><link rel="prefetch" href="/assets/js/38.30609674.js"><link rel="prefetch" href="/assets/js/39.cc40fd1d.js"><link rel="prefetch" href="/assets/js/40.b26b74f5.js"><link rel="prefetch" href="/assets/js/41.49607e3b.js"><link rel="prefetch" href="/assets/js/42.aa83ee12.js"><link rel="prefetch" href="/assets/js/43.f7fd6346.js"><link rel="prefetch" href="/assets/js/44.797fd337.js"><link rel="prefetch" href="/assets/js/45.51ac58c8.js"><link rel="prefetch" href="/assets/js/46.e6ff1346.js"><link rel="prefetch" href="/assets/js/47.aa9bcd53.js"><link rel="prefetch" href="/assets/js/48.b3d0d4e9.js"><link rel="prefetch" href="/assets/js/49.422d59a0.js"><link rel="prefetch" href="/assets/js/5.fed30aef.js"><link rel="prefetch" href="/assets/js/50.490d2b39.js"><link rel="prefetch" href="/assets/js/51.ed845385.js"><link rel="prefetch" href="/assets/js/52.8ffcc81f.js"><link rel="prefetch" href="/assets/js/53.460bf3ad.js"><link rel="prefetch" href="/assets/js/54.d329f29f.js"><link rel="prefetch" href="/assets/js/55.f79d983b.js"><link rel="prefetch" href="/assets/js/56.47f6c703.js"><link rel="prefetch" href="/assets/js/57.dff25fee.js"><link rel="prefetch" href="/assets/js/58.5bd57e5c.js"><link rel="prefetch" href="/assets/js/59.2ca2bfb6.js"><link rel="prefetch" href="/assets/js/6.92600697.js"><link rel="prefetch" href="/assets/js/60.0ee93707.js"><link rel="prefetch" href="/assets/js/61.c497af8a.js"><link rel="prefetch" href="/assets/js/62.b6d61ead.js"><link rel="prefetch" href="/assets/js/63.bb36fdc7.js"><link rel="prefetch" href="/assets/js/64.d00c4f98.js"><link rel="prefetch" href="/assets/js/65.09eaf145.js"><link rel="prefetch" href="/assets/js/66.6e8afaf0.js"><link rel="prefetch" href="/assets/js/67.99f8e162.js"><link rel="prefetch" href="/assets/js/68.79e57d7d.js"><link rel="prefetch" href="/assets/js/69.f2463712.js"><link rel="prefetch" href="/assets/js/7.19930ea2.js"><link rel="prefetch" href="/assets/js/70.10da55a8.js"><link rel="prefetch" href="/assets/js/71.fdf23300.js"><link rel="prefetch" href="/assets/js/72.2aa880d2.js"><link rel="prefetch" href="/assets/js/73.f003d34d.js"><link rel="prefetch" href="/assets/js/74.4010a9d5.js"><link rel="prefetch" href="/assets/js/75.352754ed.js"><link rel="prefetch" href="/assets/js/76.3579f40f.js"><link rel="prefetch" href="/assets/js/77.fe7a6144.js"><link rel="prefetch" href="/assets/js/78.c1614aed.js"><link rel="prefetch" href="/assets/js/79.bde3f765.js"><link rel="prefetch" href="/assets/js/8.90380888.js"><link rel="prefetch" href="/assets/js/80.990a1c18.js"><link rel="prefetch" href="/assets/js/81.6baaa341.js"><link rel="prefetch" href="/assets/js/82.f5ae3b43.js"><link rel="prefetch" href="/assets/js/83.d708ebb3.js"><link rel="prefetch" href="/assets/js/84.b92486c8.js"><link rel="prefetch" href="/assets/js/85.b75354a1.js"><link rel="prefetch" href="/assets/js/86.412a4ec5.js"><link rel="prefetch" href="/assets/js/87.2e7618b3.js"><link rel="prefetch" href="/assets/js/88.937f08fa.js"><link rel="prefetch" href="/assets/js/89.a7e87c14.js"><link rel="prefetch" href="/assets/js/9.b6e162b4.js"><link rel="prefetch" href="/assets/js/90.988451fd.js"><link rel="prefetch" href="/assets/js/91.449d8a4f.js"><link rel="prefetch" href="/assets/js/92.00719c01.js"><link rel="prefetch" href="/assets/js/93.b78075d0.js"><link rel="prefetch" href="/assets/js/94.00444007.js"><link rel="prefetch" href="/assets/js/95.5926e3bf.js"><link rel="prefetch" href="/assets/js/96.c635166a.js"><link rel="prefetch" href="/assets/js/97.44054ca4.js"><link rel="prefetch" href="/assets/js/98.e44eac78.js"><link rel="prefetch" href="/assets/js/99.ec5eb42d.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.714eeafe.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.51678963.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-4698c43e><div data-v-4698c43e><div id="loader-wrapper" class="loading-wrapper" data-v-1c4f0192 data-v-4698c43e data-v-4698c43e><div class="loader-main" data-v-1c4f0192><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-6cbeab0a data-v-4698c43e data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>Fade away</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>夏至</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-4698c43e><header class="navbar" data-v-4698c43e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Fade away</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      前端三剑客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Html</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/Html/1.Html初识.html" class="nav-link"><i class="iconfont undefined"></i>
+  Html
+</a></li></ul></li><li class="dropdown-item"><h4>CSS</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS基础/1.引入css样式表.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS基础
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS3新增/1.新增选择器.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS3新增
+</a></li></ul></li><li class="dropdown-item"><h4>JavaScript</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js基础/01.js基础语法.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js基础
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js高级/01.this关键字.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js高级
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Vue</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/Vue/Vue2/01.Vue基础.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue2
+</a></li><li class="dropdown-subitem"><a href="/框架/Vue/Vue3/1.创建Vue3项目.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue3
+</a></li></ul></li><li class="dropdown-item"><h4>React</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/React/01.React入门.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Node.js/01.初识Node.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></div><div class="nav-item"><a href="/学习git/git学习.html" class="nav-link"><i class="iconfont undefined"></i>
+  学习git
+</a></div><div class="nav-item"><a href="/面试题/01.一阶段面试题.html" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4698c43e></div> <aside class="sidebar" data-v-4698c43e><div class="personal-info-wrapper" data-v-6c8ffc9c><!----> <h3 class="name" data-v-6c8ffc9c>
+    夏至
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>0</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>0</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      前端三剑客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Html</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/Html/1.Html初识.html" class="nav-link"><i class="iconfont undefined"></i>
+  Html
+</a></li></ul></li><li class="dropdown-item"><h4>CSS</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS基础/1.引入css样式表.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS基础
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS3新增/1.新增选择器.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS3新增
+</a></li></ul></li><li class="dropdown-item"><h4>JavaScript</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js基础/01.js基础语法.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js基础
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js高级/01.this关键字.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js高级
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Vue</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/Vue/Vue2/01.Vue基础.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue2
+</a></li><li class="dropdown-subitem"><a href="/框架/Vue/Vue3/1.创建Vue3项目.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue3
+</a></li></ul></li><li class="dropdown-item"><h4>React</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/React/01.React入门.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Node.js/01.初识Node.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></div><div class="nav-item"><a href="/学习git/git学习.html" class="nav-link"><i class="iconfont undefined"></i>
+  学习git
+</a></div><div class="nav-item"><a href="/面试题/01.一阶段面试题.html" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue2</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/框架/Vue/Vue2/01.Vue基础.html" class="sidebar-link">一、Vue核心</a></li><li><a href="/框架/Vue/Vue2/02.组件化编程.html" class="sidebar-link">二、Vue组件化编程</a></li><li><a href="/框架/Vue/Vue2/03.组件通信.html" class="sidebar-link">三、组件通信</a></li><li><a href="/框架/Vue/Vue2/04.过渡与动画.html" class="sidebar-link">四、过渡与动画</a></li><li><a href="/框架/Vue/Vue2/05.配置代理.html" class="sidebar-link">五、配置代理</a></li><li><a href="/框架/Vue/Vue2/06.插槽.html" class="sidebar-link">六、slot 插槽</a></li><li><a href="/框架/Vue/Vue2/07.Vuex.html" class="sidebar-link">七、Vuex</a></li><li><a href="/框架/Vue/Vue2/08.路由Router.html" class="sidebar-link">八、路由Router</a></li><li><a href="/框架/Vue/Vue2/09.项目规范化.html" class="sidebar-link">九、前端规范化工程</a></li><li><a href="/框架/Vue/Vue2/10.fetch axios.html" class="sidebar-link">十、fetch axios</a></li><li><a href="/框架/Vue/Vue2/11.webpack.html" class="active sidebar-link">十一、webpack</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#铺垫" class="sidebar-link">铺垫</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#_1、gzip" class="sidebar-link">1、GZIP</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#_3、expires" class="sidebar-link">3、expires</a></li></ul></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#一、webpack简介" class="sidebar-link">一、webpack简介</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#_1-什么是webpack" class="sidebar-link">1.什么是webpack</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#_2-为啥学" class="sidebar-link">2.为啥学</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#_3-能干吗" class="sidebar-link">3.能干吗</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#_4-下载webpack" class="sidebar-link">4.下载webpack</a></li></ul></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#二、webpack-plugin配置" class="sidebar-link">二、webpack：plugin配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#练习" class="sidebar-link">练习</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#mini-css-extract-plugin插件" class="sidebar-link">mini-css-extract-plugin插件</a></li></ul></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#三、webpack-loaders-配置" class="sidebar-link">三、webpack：loaders 配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#_1-css-loader" class="sidebar-link">1.css-loader</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#_2-sass-loader" class="sidebar-link">2.sass-loader</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#_3-file-loader" class="sidebar-link">3.file-loader</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#_4-url-loader" class="sidebar-link">4.url-loader</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#_5-babel-loader" class="sidebar-link">5.babel-loader</a></li></ul></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#五、创建自己的脚手架" class="sidebar-link">五、创建自己的脚手架</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#public-index-html" class="sidebar-link">public/index.html</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#src-assets-css-reset-scss" class="sidebar-link">src/assets/css/reset.scss</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#src-assets-imgs" class="sidebar-link">src/assets/imgs</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#src-assets-js-qf-js" class="sidebar-link">src/assets/js/qf.js</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#src-router-index-js" class="sidebar-link">src/router/index.js</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#src-utils-request-js" class="sidebar-link">src/utils/request.js</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#src-views-qf-vue" class="sidebar-link">src/views/Qf.vue</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#src-app-vue" class="sidebar-link">src/App.vue</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#src-main-js" class="sidebar-link">src/main.js</a></li></ul></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/11.webpack.html#发布" class="sidebar-link">发布</a></li></ul></li><li><a href="/框架/Vue/Vue2/13.vue2移动端.html" class="sidebar-link">1.自适应解决方案</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6cbeab0a data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a></h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>夏至</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2023
+        </a></span></div></div> <div data-v-4698c43e><main class="page"><!----> <div class="page-title" style="display:none;"><h1>十一、webpack</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>夏至</span></i> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default" style="display:none;"><h1 id="十一、webpack"><a href="#十一、webpack" class="header-anchor">#</a> 十一、webpack</h1> <h2 id="铺垫"><a href="#铺垫" class="header-anchor">#</a> 铺垫</h2> <h3 id="_1、gzip"><a href="#_1、gzip" class="header-anchor">#</a> 1、GZIP</h3> <p>压缩响应数据，加快传输速度</p> <p>配置：打开nginx的配置文件，在server中增加上述代码并重启即可</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>server
+{
+    listen 9999;
+    server_name 180.76.176.125;
+    index index.html;
+    root /www/test1;
+    # location /api/ {
+    #     proxy_pass http://kg.zhaodashen.cn/mt/admin/;
+    # }
+    # location / {
+    #     try_files $uri $uri/ /index.html;
+    # }
+    
+    gzip on;			     #开启Gzip压缩
+    gzip_min_length 1k;	 #不压缩临界值，大于1K的才压缩
+    gzip_comp_level 6;   #压缩级别（1-9）越大越慢，同时也最消耗CPU
+    #声明压缩文件（MIME类型）
+    gzip_types text/plain application/x-javascript text/css application/xml text/javascript image/jpeg;
+    gzip_disable &quot;MSIE [1-6]\.&quot;; #禁用IE1-6
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="_3、expires"><a href="#_3、expires" class="header-anchor">#</a> 3、expires</h3> <p>作用：设置expires减少不必要的http请求</p> <p>场景：将静态资源（css、js、图片）等缓存到客户端，减轻服务区压力</p> <p><img src="C:%5CUsers%5Cdell%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20221028210152803.png" alt="image-20221028210152803"></p> <p>首先：f12  查看修改js文件实时生效</p> <p>接着：配置服务器</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>location ~ \.(gif|jpg|jpeg|png|bmp|ico|js|css)$ {
+    expires 1d;  #1d （天）  1h（时）  1m（分）  1s（秒）
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="一、webpack简介"><a href="#一、webpack简介" class="header-anchor">#</a> 一、webpack简介</h2> <h3 id="_1-什么是webpack"><a href="#_1-什么是webpack" class="header-anchor">#</a> 1.什么是webpack</h3> <p>前端静态<strong>模块</strong>打包工具</p> <blockquote><p>前端：就是你</p> <p>静态：就是css、js、img等等</p> <p>模块：就是支持导入导出   （注：gulp并没有强调这一点  gulp强调的是定义一个个任务去处理  没有模块化思想</p> <p>打包工具：压缩代码合并代码的软件</p></blockquote> <h3 id="_2-为啥学"><a href="#_2-为啥学" class="header-anchor">#</a> 2.为啥学</h3> <p>1、减少开发者工作量</p> <blockquote><p>之前通过 前端自动化构建工具  就可以压缩代码体积</p></blockquote> <p>2、加快网站访问速度</p> <blockquote><p>可以变向解决首屏加载过慢的问题</p></blockquote> <p>3、避免缓存BUG</p> <blockquote><p>xxx.js?v=1.0    xxx.js?v=2.0       xxx.随机.js</p></blockquote> <h3 id="_3-能干吗"><a href="#_3-能干吗" class="header-anchor">#</a> 3.能干吗</h3> <p>打包：将多个JS文件打包成一个文件（1-减少HTTP请求、2-压缩去空格去注释减轻服务器压力</p> <p>转换：把扩展语法转换为普通的JS  让浏览器能够正常运行</p> <p>优化：1-复杂的开发流程 模块化、2-性能问题 去空格 去注释 减少HTTP请求  等等</p> <h3 id="_4-下载webpack"><a href="#_4-下载webpack" class="header-anchor">#</a> 4.下载webpack</h3> <p>cnpm i webpack@5.70.0 webpack-cli@4.9.2  -D</p> <h2 id="二、webpack-plugin配置"><a href="#二、webpack-plugin配置" class="header-anchor">#</a> 二、webpack：plugin配置</h2> <p>loader概念：<strong>处理非js代码</strong></p> <p>plugin概念：<strong>让webpack变的更强</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>运行在整个项目的编译时期
+plugin插件：赋予了webpack各种灵活的功能，如打包优化，资源管理，环境变量，注入等，目的是为了解决loader无法实现的功能。
+
+运行在项目打包之前
+loader：是文件加载器，能够加载资源文件，并对文件进行一些处理，如编译，压缩 等，最终一起打包到指定的文件中。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="练习"><a href="#练习" class="header-anchor">#</a> 练习</h3> <p>步骤1：安装</p> <blockquote><div class="language- line-numbers-mode"><pre class="language-text"><code>cnpm i html-webpack-plugin -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></blockquote> <p>步骤2：创建public目录\index.html文件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+ &lt;meta charset=&quot;UTF-8&quot;&gt;
+ &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+ &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+ &lt;!-- &lt;title&gt;仿写vue脚手架学习&lt;/title&gt; --&gt;
+ &lt;title&gt;&lt;%= htmlWebpackPlugin.options.title %&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>步骤3：根据手册修改vue.config.js文件</p> <blockquote><div class="language- line-numbers-mode"><pre class="language-text"><code>// 导入模块
+const path = require(&quot;path&quot;);
+const { VueLoaderPlugin } = require(&quot;vue-loader&quot;);
+const HtmlWebpackPlugin = require(&quot;html-webpack-plugin&quot;);
+
+// 导出配置
+module.exports = {
+// 入口
+entry: &quot;./src/main.js&quot;,
+// 出口
+output: {
+ path: path.resolve(__dirname, &quot;dist&quot;),
+ filename: &quot;js/[name].[chunkhash:7].js&quot;,
+},
+// 运行在整个项目的编译时期
+// plugin插件：赋予了webpack各种灵活的功能，如打包优化，资源管理，环境变量，注入等，目的是为了解决loader无法实现的功能。
+plugins: [
+ new VueLoaderPlugin(),
+ //说明：功能让webpack变得更强
+ //作用：给public/index.html自动引入打包后的js等文件
+ //new HtmlWebpackPlugin()
+ new HtmlWebpackPlugin({
+   // 自定义变量
+   title: &quot;仿写vue脚手架学习 - 神龙教&quot;,
+   desc: &quot;神龙教主、洪福齐天、寿与天齐&quot;,
+   // 输出到dist下面的名称、默认index.html
+   filename: &quot;index.html&quot;,
+   // 模板文件
+   template: &quot;public/index.html&quot;,
+ }),
+ // ...
+],
+// 运行在项目打包之前
+// loader：是文件加载器，能够加载资源文件，并对文件进行一些处理，如编译，压缩 等，最终一起打包到指定的文件中。
+module: {
+ rules: [
+   {
+     test: /\.vue$/,
+     loader: &quot;vue-loader&quot;,
+   },
+   // ...
+ ],
+},
+};
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br></div></div></blockquote> <p>步骤4：测试 重新build</p> <h3 id="mini-css-extract-plugin插件"><a href="#mini-css-extract-plugin插件" class="header-anchor">#</a> mini-css-extract-plugin插件</h3> <p>步骤1：安装模块</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>cnpm i mini-css-extract-plugin -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>步骤2：修改vue.config.js</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>...
+const MiniCssExtractPlugin = require(&quot;mini-css-extract-plugin&quot;);
+
+...
+  module: {
+    rules: [
+      // 处理vue文件
+      {
+        test: /\.vue$/,
+        loader: &quot;vue-loader&quot;,
+      },
+      // 处理css文件：单独打包存放css文件
+      {
+        test: /\.css$/i,
+        // use: [&quot;style-loader&quot;, &quot;css-loader&quot;],
+        use: [MiniCssExtractPlugin.loader, &quot;css-loader&quot;],
+      },
+			// ...
+    ],
+  },
+...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h2 id="三、webpack-loaders-配置"><a href="#三、webpack-loaders-配置" class="header-anchor">#</a> 三、webpack：loaders 配置</h2> <h3 id="_1-css-loader"><a href="#_1-css-loader" class="header-anchor">#</a> 1.css-loader</h3> <p>安装</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>cnpm i style-loader@2.0.0 css-loader@5.2.4 -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>配置vue.config.js</p> <p>在<code>module</code>中<code>rules</code>添加相应配置</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>  module: {
+    rules: [
+      // 处理vue文件
+      {
+        test: /\.vue$/,
+        loader: &quot;vue-loader&quot;,
+      },
+      // 处理css文件
+      {
+        test: /\.css$/i,
+        use: [&quot;style-loader&quot;, &quot;css-loader&quot;],
+      },
+			// ...
+    ],
+  },
+};
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="_2-sass-loader"><a href="#_2-sass-loader" class="header-anchor">#</a> 2.sass-loader</h3> <p>1.安装</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>cnpm i sass sass-loader dart-sass -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>2.配置</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>module: {
+rules: [
+     	 // ....
+       // 处理scss文件
+       {
+         test: /\.s[ac]ss$/i,
+         // use: ['style-loader', 'css-loader', 'sass-loader',],
+         use: [MiniCssExtractPlugin.loader, &quot;css-loader&quot;, &quot;sass-loader&quot;],
+       },
+     // ....
+],
+},
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="_3-file-loader"><a href="#_3-file-loader" class="header-anchor">#</a> 3.file-loader</h3> <p>安装模块</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>cnpm i file-loader -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>修改webapck.config.js配置文件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 处理图片文件
+{
+  test: /\.(png|jpe?g|gif)$/i,
+  loader: 'file-loader',
+  options: {
+    name: 'imgs/[name].[ext]',
+    publicPath: '/',
+  },
+},
+// ...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="_4-url-loader"><a href="#_4-url-loader" class="header-anchor">#</a> 4.url-loader</h3> <ul><li>步骤1：安装模块 -&gt; 配置</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>cnpm i url-loader -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>步骤2：修改webpack.config.js配置文件</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 处理图片文件
+// {
+//   test: /\.(png|jpe?g|gif)$/i,
+//   loader: &quot;file-loader&quot;,
+//   options: {
+//     name: &quot;imgs/[name].[ext]&quot;,
+//     publicPath: &quot;/&quot;,
+//   },
+// },
+{
+  test: /\.(png|jpg|gif)$/i,
+  use: [
+    {
+      loader: &quot;url-loader&quot;,
+      options: {
+        limit: 1024 * 1024 * 1, // 1M   图片超过指定字节不编码
+        name: &quot;imgs/[name].[ext]&quot;,
+        publicPath: &quot;/&quot;,
+      },
+    },
+  ],
+},
+// ...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><blockquote><p>多学一招：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>问：什么是字节
+答：计算机计量单位，类似生活中的克、千克等
+----------------------------------------
+问：还是不理解
+答：你的硬盘用了多少   1G  10G
+----------------------------------------
+问：这个多少G跟我们的字节有什么关系呢
+公式
+
+// 字节是计算机中的一种计量单位，表示数据量的多少 
+// 1字节（Byte）= 8位（bit）
+// 1KB = 1024Byte（字节）    
+// 1M  = 1024KB
+// 1G  = 1024M
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div></blockquote> <h3 id="_5-babel-loader"><a href="#_5-babel-loader" class="header-anchor">#</a> 5.babel-loader</h3> <p>安装babel-loader</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>cnpm i babel-loader @babel/core @babel/preset-env @babel/plugin-transform-runtime -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>配置</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 处理逻辑文件
+{
+  test: /\.m?js$/,
+  exclude: /(node_modules|bower_components)/,
+  use: {
+    loader: &quot;babel-loader&quot;,
+    options: {
+      presets: [&quot;@babel/preset-env&quot;],
+      plugins: [&quot;@babel/plugin-transform-runtime&quot;]
+    },
+  },
+},
+// ...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="五、创建自己的脚手架"><a href="#五、创建自己的脚手架" class="header-anchor">#</a> 五、创建自己的脚手架</h2> <p>步骤1：创建【04-快速复习】目录</p> <p>步骤2：初始化目录结构</p> <blockquote><h3 id="public-index-html"><a href="#public-index-html" class="header-anchor">#</a> public/index.html</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+ &lt;meta charset=&quot;UTF-8&quot;&gt;
+ &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+ &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+ &lt;!-- &lt;title&gt;仿写vue脚手架学习&lt;/title&gt; --&gt;
+ &lt;title&gt;
+     &lt;%= htmlWebpackPlugin.options.title %&gt;
+ &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="src-assets-css-reset-scss"><a href="#src-assets-css-reset-scss" class="header-anchor">#</a> src/assets/css/reset.scss</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>* {padding:0;margin:0}
+
+h1 {font-size:30px;color:green;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="src-assets-imgs"><a href="#src-assets-imgs" class="header-anchor">#</a> src/assets/imgs</h3> <h3 id="src-assets-js-qf-js"><a href="#src-assets-js-qf-js" class="header-anchor">#</a> src/assets/js/qf.js</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>console.log(&quot;src/assets/js/qf.js&quot;);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="src-router-index-js"><a href="#src-router-index-js" class="header-anchor">#</a> src/router/index.js</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>import Vue from &quot;vue&quot;;
+import VueRouter from &quot;vue-router&quot;;
+
+Vue.use(VueRouter);
+
+const routes = [
+  {
+    path: &quot;/qf&quot;,
+    component: () =&gt; import(&quot;@/views/Qf.vue&quot;),
+  },
+];
+
+export default new VueRouter({
+  mode: &quot;hash&quot;,
+  routes,
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h3 id="src-utils-request-js"><a href="#src-utils-request-js" class="header-anchor">#</a> src/utils/request.js</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 后期：axios代码
+// 现在
+
+async function sayBy() {
+  //   const result = await fetch(&quot;https://www.baidu.com/sugrec?prod=pc&amp;wd=html&quot;);
+  const result = await fetch(&quot;/sugrec?prod=pc&amp;wd=html&quot;);
+  console.log(result.json());
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="src-views-qf-vue"><a href="#src-views-qf-vue" class="header-anchor">#</a> src/views/Qf.vue</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+  &lt;h1&gt;欢迎来到千锋教育 - 学前端还得认准扛把子！！！&lt;/h1&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import &quot;@/utils/request.js&quot;;
+
+export default {};
+&lt;/script&gt;
+
+&lt;style&gt;&lt;/style&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="src-app-vue"><a href="#src-app-vue" class="header-anchor">#</a> src/App.vue</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;h1&gt;h5@qf hello&lt;/h1&gt;
+    &lt;router-view /&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {};
+&lt;/script&gt;
+
+&lt;style&gt;&lt;/style&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="src-main-js"><a href="#src-main-js" class="header-anchor">#</a> src/main.js</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>// console.log(666)
+
+// 导入vue模块
+import Vue from &quot;vue&quot;;
+import router from &quot;./router&quot;;
+
+// 导入单文件组件
+import App from &quot;./App.vue&quot;;
+
+// 导入全局配置
+import &quot;./assets/css/reset.scss&quot;;
+
+// 创建实例
+new Vue({
+  // el: '#root',
+  router,
+  render: (h) =&gt; h(App),
+}).$mount(&quot;#root&quot;);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div></blockquote> <p>步骤3：下载项目所需依赖</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>cnpm init -y
+
+cnpm i vue@2.6.14 vue-router@3.5.1 -S
+
+cnpm i @babel/core@7.17.7 @babel/plugin-transform-runtime@7.17.0 @babel/preset-env@7.16.11 babel-loader@8.2.3 css-loader@5.2.4 dart-sass@1.25.0 file-loader@6.2.0 html-webpack-plugin@5.5.0 mini-css-extract-plugin@2.6.0 sass@1.49.9 sass-loader@12.6.0 style-loader@2.0.0 url-loader@4.1.1 vue-loader@15.9.2 vue-template-compiler@2.6.14 webpack@5.70.0 webpack-cli@3.3.12 webpack-dev-server@3.11.2 -D
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>步骤4： 创建配置文件 vue.config.js</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 导入模块
+const path = require(&quot;path&quot;);
+const resolve = (dir) =&gt; path.resolve(__dirname, dir);
+const { VueLoaderPlugin } = require(&quot;vue-loader&quot;);
+const HtmlWebpackPlugin = require(&quot;html-webpack-plugin&quot;);
+const MiniCssExtractPlugin = require(&quot;mini-css-extract-plugin&quot;);
+
+// 导出配置
+module.exports = {
+  resolve: {
+    // 设置别名
+    alias: {
+      &quot;@&quot;: resolve(&quot;src&quot;), // 这样配置后 @ 可以指向 src 目录
+    },
+  },
+  // 开发服务器配置
+  devServer: {
+    open: true, // cnpm run dev 之后自动打开浏览器
+    port: 8081, // 默认端口
+    proxy: {
+      // 任意名称: {
+      //   target: &quot;真实请求网址&quot;,
+      //   changeOrigin: true, // 是否允许跨域
+      //   secure: false, // 关闭SSL证书验证https协议接口需要改成true
+      //   pathRewrite: {
+      //     // 重写路径请求
+      //     &quot;^/任意名称&quot;: &quot;&quot;, //路径重写
+      //   },
+      // },
+      &quot;/api&quot;: {
+        target: &quot;https://www.baidu.com&quot;,
+        changeOrigin: true, // 是否允许跨域
+        secure: false, // 关闭SSL证书验证https协议接口需要改成true
+        pathRewrite: {
+          // 重写路径请求
+          &quot;^/api&quot;: &quot;&quot;, //路径重写
+        },
+      },
+      // ....
+    },
+  },
+  // 入口
+  entry: &quot;./src/main.js&quot;,
+  // 出口
+  output: {
+    path: path.resolve(__dirname, &quot;dist&quot;),
+    filename: &quot;js/[name].[chunkhash:7].js&quot;,
+  },
+  // 运行在整个项目的编译时期
+  // plugin插件：赋予了webpack各种灵活的功能，如打包优化，资源管理，环境变量，注入等，目的是为了解决loader无法实现的功能。
+  plugins: [
+    new VueLoaderPlugin(),
+    //说明：功能让webpack变得更强
+    //作用：给public/index.js自动引入打包后的js等文件
+    //new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({
+      // 自定义变量
+      title: &quot;仿写vue脚手架学习 - 神龙教&quot;,
+      desc: &quot;神龙教主、洪福齐天、寿与天齐&quot;,
+      // 输出到dist下面的名称、默认index.html
+      filename: &quot;index.html&quot;,
+      // 模板文件
+      template: &quot;public/index.html&quot;,
+    }),
+    //说明：功能让webpack变得更强
+    //作用：CSS单独文件存放
+    new MiniCssExtractPlugin({
+      filename: &quot;css/[name].css&quot;,
+    }),
+    // ...
+  ],
+  // 运行在项目打包之前
+  // loader：是文件加载器，能够加载资源文件，并对文件进行一些处理，如编译，压缩 等，最终一起打包到指定的文件中。
+  module: {
+    rules: [
+      // 处理vue文件
+      {
+        test: /\.vue$/,
+        loader: &quot;vue-loader&quot;,
+      },
+      // 处理css文件：单独打包存放css文件
+      {
+        test: /\.css$/i,
+        // use: [&quot;style-loader&quot;, &quot;css-loader&quot;],
+        use: [MiniCssExtractPlugin.loader, &quot;css-loader&quot;],
+      },
+      // 处理scss文件
+      {
+        test: /\.s[ac]ss$/i,
+        // use: ['style-loader', 'css-loader', 'sass-loader',],
+        use: [MiniCssExtractPlugin.loader, &quot;css-loader&quot;, &quot;sass-loader&quot;],
+      },
+      // 处理图片文件
+      // {
+      //   test: /\.(png|jpe?g|gif)$/i,
+      //   loader: &quot;file-loader&quot;,
+      //   options: {
+      //     name: &quot;imgs/[name].[ext]&quot;,
+      //     publicPath: &quot;/&quot;,
+      //   },
+      // },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: &quot;url-loader&quot;,
+            options: {
+              limit: 1024 * 1024 * 1, // 1M   图片超过指定字节不编码
+              name: &quot;imgs/[name].[ext]&quot;,
+              publicPath: &quot;/&quot;,
+            },
+          },
+        ],
+      },
+      // 处理逻辑文件
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: &quot;babel-loader&quot;,
+          options: {
+            presets: [&quot;@babel/preset-env&quot;],
+            plugins: [&quot;@babel/plugin-transform-runtime&quot;],
+          },
+        },
+      },
+      // ...
+    ],
+  },
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br></div></div><p>步骤5：修改package.json</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&quot;build&quot;: &quot;webpack --mode=production --config ./vue.config.js&quot;,
+&quot;serve&quot;: &quot;webpack-dev-server --mode=development --config ./vue.config.js&quot;,
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>步骤6：启动测试</p> <h2 id="发布"><a href="#发布" class="header-anchor">#</a> 发布</h2> <ul><li>步骤1：创建temp目录</li> <li>步骤2：将【04-快速复习】删掉【node_modules】目录，然后【复制】到【temp】目录，改成【example】</li> <li>步骤3：进入目录，生成package.json文件（改模块名、版本、删掉main改成bin如下</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;name&quot;: &quot;webopenfather-myvue-cli&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;webopenfather my vue generator&quot;,
+  &quot;bin&quot;: {
+    &quot;myvue-cli&quot;: &quot;./bin/myvue-cli.js&quot;
+  },
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
+  },
+  &quot;keywords&quot;: [&quot;myvue&quot;, &quot;vue&quot;, &quot;vue-cli&quot;],
+  &quot;author&quot;: &quot;webopenfather&quot;,
+  &quot;license&quot;: &quot;ISC&quot;
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><ul><li>步骤4：创建temp\bin\myvue-cli.js</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>#!/usr/bin/env node
+&quot;use strict&quot;;
+
+// 字体颜色 https://bj.96weixin.com/emoji/
+const styles = {
+  bold: &quot;\x1B[1m%s\x1B[22m&quot;,
+  italic: &quot;\x1B[3m%s\x1B[23m&quot;,
+  underline: &quot;\x1B[4m%s\x1B[24m&quot;,
+  inverse: &quot;\x1B[7m%s\x1B[27m&quot;,
+  strikethrough: &quot;\x1B[9m%s\x1B[29m&quot;,
+  white: &quot;\x1B[37m%s\x1B[39m&quot;,
+  grey: &quot;\x1B[90m%s\x1B[39m&quot;,
+  black: &quot;\x1B[30m%s\x1B[39m&quot;,
+  blue: &quot;\x1B[34m%s\x1B[39m&quot;,
+  cyan: &quot;\x1B[36m%s\x1B[39m&quot;,
+  green: &quot;\x1B[32m%s\x1B[39m&quot;,
+  magenta: &quot;\x1B[35m%s\x1B[39m&quot;,
+  red: &quot;\x1B[31m%s\x1B[39m&quot;,
+  yellow: &quot;\x1B[33m%s\x1B[39m&quot;,
+  whiteBG: &quot;\x1B[47m%s\x1B[49m&quot;,
+  greyBG: &quot;\x1B[49;5;8m%s\x1B[49m&quot;,
+  blackBG: &quot;\x1B[40m%s\x1B[49m&quot;,
+  blueBG: &quot;\x1B[44m%s\x1B[49m&quot;,
+  cyanBG: &quot;\x1B[46m%s\x1B[49m&quot;,
+  greenBG: &quot;\x1B[42m%s\x1B[49m&quot;,
+  magentaBG: &quot;\x1B[45m%s\x1B[49m&quot;,
+  redBG: &quot;\x1B[41m%s\x1B[49m&quot;,
+  yellowBG: &quot;\x1B[43m%s\x1B[49m&quot;,
+};
+
+// 导入模块
+const fs = require(&quot;fs&quot;);
+const path = require(&quot;path&quot;);
+
+// 获取控制台参数
+let argv = process.argv;
+let dirname = argv[2];
+
+// 拷贝文件
+if (dirname) {
+  copyFile(path.dirname(__dirname) + `/example`, `${process.cwd()}/${dirname}`);
+  console.log(styles[&quot;green&quot;], `\n😎😎😎 $ cd ${dirname}`);
+  console.log(styles[&quot;green&quot;], `😎😎😎 $ cnpm i`);
+  console.log(styles[&quot;green&quot;], `😎😎😎 $ cnpm run serve \n`);
+} else {
+  console.log(styles[&quot;red&quot;], &quot;\n❌语法错误，请输入项目名 👀👀👀 \n&quot;);
+}
+
+/**
+ * 检查文件是否存在
+ * @param {string} path 路径
+ */
+function isExist(path) {
+  if (!fs.existsSync(path)) {
+    fs.mkdirSync(path);
+  }
+}
+
+/**
+ * 拷贝文件
+ * @param {string} sourcePath 路径
+ * @param {string} targetPath 路径
+ */
+function copyFile(sourcePath, targetPath) {
+  isExist(targetPath);
+
+  const sourceFile = fs.readdirSync(sourcePath, { withFileTypes: true });
+
+  sourceFile.forEach((file) =&gt; {
+    const newSourcePath = path.resolve(sourcePath, file.name);
+    const newTargetPath = path.resolve(targetPath, file.name);
+    if (file.isDirectory()) {
+      isExist(newTargetPath);
+      copyFile(newSourcePath, newTargetPath);
+    } else {
+      fs.copyFileSync(newSourcePath, newTargetPath);
+    }
+  });
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br></div></div><p>步骤5：README.md</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># webopenfather-myvue-cli
+
+[![Build Status][travis-url]][travis-url]
+[![MIT License][license-url]][license-url]
+[![NPM downloads][npm-downloads-image]][npm-downloads-url]
+
+# ⬇️ Install
+
+&gt; cnpm i webopenfather-myvue-cli -g
+
+# 🎨 Usage
+
+&gt; 步骤 1： myvue-cli 项目名
+
+&gt; 步骤 2：根据提示进入目录下载模块启动测试
+
+[travis-url]: https://img.shields.io/badge/build-passing-brightgreen
+[license-url]: https://img.shields.io/badge/license-MIT-informational
+[npm-downloads-image]: https://img.shields.io/badge/downloads-67M%2Fmonth-brightgreen
+[npm-downloads-url]: https://npmcharts.com/compare/webopenfather-date?minimal=true
+
+# 🔒 License
+
+See the LICENSE file for license rights and limitations (ISC).
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><p>步骤6：通过npm发布</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm config set registry https://registry.npmjs.org/
+npm login
+npm publish
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">2022-09-24: </span> <span class="time">11/12/2022, 8:57:16 AM</span></div></footer> <!----> <!----></main> <!----> <div class="comments-wrapper" data-v-4698c43e><!----></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div><!----><div></div><!----><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 Fade away
+    </div> <div class="operation" style="left:380px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="left:250px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><canvas id="vuepress-canvas-cursor"></canvas><div id="goTop" class="hide-cat" data-v-bf92849a></div><div class="Sakura" data-v-248d85d6><canvas id="canvas_sakura" style="z-index:-1;" data-v-248d85d6></canvas></div></div></div>
+    <script src="/assets/js/app.947b52f8.js" defer></script><script src="/assets/js/4.f3f18f69.js" defer></script><script src="/assets/js/1.17f7b324.js" defer></script><script src="/assets/js/101.16ba3c31.js" defer></script><script src="/assets/js/10.bbd8e87d.js" defer></script>
+  </body>
+</html>
