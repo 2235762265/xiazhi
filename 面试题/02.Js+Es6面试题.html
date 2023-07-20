@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Js+Es6面试题 | Fade away</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script type="text/javascript" src="/js/mouseClick.js"></script>
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="花有重开日，人无在少年">
+    <meta name="keywords" content="随便写写">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="robots" content="all">
+    <meta name="author" content="xiazhi">
+    
+    <link rel="preload" href="/assets/css/0.styles.91dd29b7.css" as="style"><link rel="preload" href="/assets/js/app.99624b8a.js" as="script"><link rel="preload" href="/assets/js/3.a9f58784.js" as="script"><link rel="preload" href="/assets/js/1.a344c94a.js" as="script"><link rel="preload" href="/assets/js/145.17e7e39c.js" as="script"><link rel="preload" href="/assets/js/30.7d28a2d6.js" as="script"><link rel="prefetch" href="/assets/js/10.513c5d67.js"><link rel="prefetch" href="/assets/js/100.331ca440.js"><link rel="prefetch" href="/assets/js/101.f600eae1.js"><link rel="prefetch" href="/assets/js/102.701a3771.js"><link rel="prefetch" href="/assets/js/103.1a52eead.js"><link rel="prefetch" href="/assets/js/104.47329018.js"><link rel="prefetch" href="/assets/js/105.57317b7d.js"><link rel="prefetch" href="/assets/js/106.7c24c08f.js"><link rel="prefetch" href="/assets/js/107.9fdd48da.js"><link rel="prefetch" href="/assets/js/108.73ecc853.js"><link rel="prefetch" href="/assets/js/109.7abf6317.js"><link rel="prefetch" href="/assets/js/11.5ef240f5.js"><link rel="prefetch" href="/assets/js/110.7027a417.js"><link rel="prefetch" href="/assets/js/111.ebaca92a.js"><link rel="prefetch" href="/assets/js/112.f1b3db2d.js"><link rel="prefetch" href="/assets/js/113.1ddfd958.js"><link rel="prefetch" href="/assets/js/114.48e05a14.js"><link rel="prefetch" href="/assets/js/115.5b1f83cc.js"><link rel="prefetch" href="/assets/js/116.5f0c8321.js"><link rel="prefetch" href="/assets/js/117.1a418555.js"><link rel="prefetch" href="/assets/js/118.ff87b9d2.js"><link rel="prefetch" href="/assets/js/119.037a1943.js"><link rel="prefetch" href="/assets/js/12.4a7003f3.js"><link rel="prefetch" href="/assets/js/120.cee1015b.js"><link rel="prefetch" href="/assets/js/121.52ac3e89.js"><link rel="prefetch" href="/assets/js/122.a3560045.js"><link rel="prefetch" href="/assets/js/123.721257bf.js"><link rel="prefetch" href="/assets/js/124.e2045af2.js"><link rel="prefetch" href="/assets/js/125.495ee0cb.js"><link rel="prefetch" href="/assets/js/126.fac66553.js"><link rel="prefetch" href="/assets/js/127.f59af0ba.js"><link rel="prefetch" href="/assets/js/128.f40cdaa1.js"><link rel="prefetch" href="/assets/js/129.67b3d27d.js"><link rel="prefetch" href="/assets/js/13.d4371f04.js"><link rel="prefetch" href="/assets/js/130.aa06024b.js"><link rel="prefetch" href="/assets/js/131.dee3e4e5.js"><link rel="prefetch" href="/assets/js/132.d6776d37.js"><link rel="prefetch" href="/assets/js/133.48b0028d.js"><link rel="prefetch" href="/assets/js/134.615b85e9.js"><link rel="prefetch" href="/assets/js/135.1ecf85e0.js"><link rel="prefetch" href="/assets/js/136.6fe1b198.js"><link rel="prefetch" href="/assets/js/137.5b56922f.js"><link rel="prefetch" href="/assets/js/138.4ad4e9d9.js"><link rel="prefetch" href="/assets/js/139.9a979a18.js"><link rel="prefetch" href="/assets/js/14.e51087d8.js"><link rel="prefetch" href="/assets/js/140.70982156.js"><link rel="prefetch" href="/assets/js/141.6006a4c5.js"><link rel="prefetch" href="/assets/js/142.09d04a53.js"><link rel="prefetch" href="/assets/js/143.00574315.js"><link rel="prefetch" href="/assets/js/144.56c8a90a.js"><link rel="prefetch" href="/assets/js/146.55527375.js"><link rel="prefetch" href="/assets/js/147.ba67a557.js"><link rel="prefetch" href="/assets/js/15.f139a61b.js"><link rel="prefetch" href="/assets/js/16.98e04b9a.js"><link rel="prefetch" href="/assets/js/17.28b86c6e.js"><link rel="prefetch" href="/assets/js/18.0855c83f.js"><link rel="prefetch" href="/assets/js/19.1ddb5980.js"><link rel="prefetch" href="/assets/js/20.e0af366f.js"><link rel="prefetch" href="/assets/js/21.a6d28092.js"><link rel="prefetch" href="/assets/js/22.41b481ae.js"><link rel="prefetch" href="/assets/js/23.5ded2918.js"><link rel="prefetch" href="/assets/js/24.9f77e0f8.js"><link rel="prefetch" href="/assets/js/25.15cc72ab.js"><link rel="prefetch" href="/assets/js/26.fe75f118.js"><link rel="prefetch" href="/assets/js/27.2e89380e.js"><link rel="prefetch" href="/assets/js/28.f9766ddb.js"><link rel="prefetch" href="/assets/js/29.df3bae1e.js"><link rel="prefetch" href="/assets/js/31.773fff91.js"><link rel="prefetch" href="/assets/js/32.a519b5bb.js"><link rel="prefetch" href="/assets/js/33.c54ccdbf.js"><link rel="prefetch" href="/assets/js/34.bcc19a82.js"><link rel="prefetch" href="/assets/js/35.72d1b42a.js"><link rel="prefetch" href="/assets/js/36.ac818ff6.js"><link rel="prefetch" href="/assets/js/37.4c919707.js"><link rel="prefetch" href="/assets/js/38.e2cb4341.js"><link rel="prefetch" href="/assets/js/39.ad223721.js"><link rel="prefetch" href="/assets/js/4.03f95861.js"><link rel="prefetch" href="/assets/js/40.ded09630.js"><link rel="prefetch" href="/assets/js/41.61954733.js"><link rel="prefetch" href="/assets/js/42.19fab9ef.js"><link rel="prefetch" href="/assets/js/43.8c4fd22e.js"><link rel="prefetch" href="/assets/js/44.6b6add1a.js"><link rel="prefetch" href="/assets/js/45.5adaa0dd.js"><link rel="prefetch" href="/assets/js/46.274bbf17.js"><link rel="prefetch" href="/assets/js/47.b0ce2c47.js"><link rel="prefetch" href="/assets/js/48.69800b3e.js"><link rel="prefetch" href="/assets/js/49.c567847f.js"><link rel="prefetch" href="/assets/js/5.76fa7a68.js"><link rel="prefetch" href="/assets/js/50.6abd0bf4.js"><link rel="prefetch" href="/assets/js/51.1d7ed678.js"><link rel="prefetch" href="/assets/js/52.b0664139.js"><link rel="prefetch" href="/assets/js/53.4cb0e403.js"><link rel="prefetch" href="/assets/js/54.6c84bf77.js"><link rel="prefetch" href="/assets/js/55.9d68b9fb.js"><link rel="prefetch" href="/assets/js/56.520092f0.js"><link rel="prefetch" href="/assets/js/57.9dc9d2d0.js"><link rel="prefetch" href="/assets/js/58.5fa2435a.js"><link rel="prefetch" href="/assets/js/59.7f3705fd.js"><link rel="prefetch" href="/assets/js/6.54231d4c.js"><link rel="prefetch" href="/assets/js/60.9c9bd024.js"><link rel="prefetch" href="/assets/js/61.6eb0c0bb.js"><link rel="prefetch" href="/assets/js/62.149eb308.js"><link rel="prefetch" href="/assets/js/63.be303c2d.js"><link rel="prefetch" href="/assets/js/64.27592e06.js"><link rel="prefetch" href="/assets/js/65.e8f30ad3.js"><link rel="prefetch" href="/assets/js/66.67a34028.js"><link rel="prefetch" href="/assets/js/67.c395f7ed.js"><link rel="prefetch" href="/assets/js/68.d9142a8a.js"><link rel="prefetch" href="/assets/js/69.4f7f28f1.js"><link rel="prefetch" href="/assets/js/7.db62a644.js"><link rel="prefetch" href="/assets/js/70.20b76f9a.js"><link rel="prefetch" href="/assets/js/71.7ad2ee77.js"><link rel="prefetch" href="/assets/js/72.36864641.js"><link rel="prefetch" href="/assets/js/73.9c9e473d.js"><link rel="prefetch" href="/assets/js/74.469ada63.js"><link rel="prefetch" href="/assets/js/75.503f5154.js"><link rel="prefetch" href="/assets/js/76.d34c55f7.js"><link rel="prefetch" href="/assets/js/77.cdd50449.js"><link rel="prefetch" href="/assets/js/78.324b5df5.js"><link rel="prefetch" href="/assets/js/79.31e8cb64.js"><link rel="prefetch" href="/assets/js/8.7b245108.js"><link rel="prefetch" href="/assets/js/80.31dca687.js"><link rel="prefetch" href="/assets/js/81.3dd21cf7.js"><link rel="prefetch" href="/assets/js/82.eeeee6cf.js"><link rel="prefetch" href="/assets/js/83.5d03d2d9.js"><link rel="prefetch" href="/assets/js/84.7e956720.js"><link rel="prefetch" href="/assets/js/85.a3b6227a.js"><link rel="prefetch" href="/assets/js/86.b2f71436.js"><link rel="prefetch" href="/assets/js/87.f9f3b65a.js"><link rel="prefetch" href="/assets/js/88.4c9d4599.js"><link rel="prefetch" href="/assets/js/89.cca52254.js"><link rel="prefetch" href="/assets/js/9.63b5e451.js"><link rel="prefetch" href="/assets/js/90.dad44872.js"><link rel="prefetch" href="/assets/js/91.3995bce6.js"><link rel="prefetch" href="/assets/js/92.f311f03c.js"><link rel="prefetch" href="/assets/js/93.911f57cc.js"><link rel="prefetch" href="/assets/js/94.3392f97b.js"><link rel="prefetch" href="/assets/js/95.1787563a.js"><link rel="prefetch" href="/assets/js/96.2a256f43.js"><link rel="prefetch" href="/assets/js/97.cdcd9405.js"><link rel="prefetch" href="/assets/js/98.4eae5b0f.js"><link rel="prefetch" href="/assets/js/99.0b6820bb.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.91dd29b7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-4698c43e><div data-v-4698c43e><div id="loader-wrapper" class="loading-wrapper" data-v-1c4f0192 data-v-4698c43e data-v-4698c43e><div class="loader-main" data-v-1c4f0192><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-6cbeab0a data-v-4698c43e data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>Fade away</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>夏至</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-4698c43e><header class="navbar" data-v-4698c43e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Fade away</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      前端三剑客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Html</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/Html/01.Html初识.html" class="nav-link"><i class="iconfont undefined"></i>
+  Html
+</a></li></ul></li><li class="dropdown-item"><h4>CSS</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS/01.引入css样式表.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS3/01.新增选择器.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS3
+</a></li></ul></li><li class="dropdown-item"><h4>JavaScript</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js基础/01.js基础语法.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js基础
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js高级/01.this关键字.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js高级
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Vue</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/Vue/Vue2/01.Vue基础.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue2
+</a></li><li class="dropdown-subitem"><a href="/框架/Vue/Vue3/1.创建Vue3项目.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue3
+</a></li></ul></li><li class="dropdown-item"><h4>React</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/React/01.React入门.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>小程序</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/小程序/01.mina.html" class="nav-link"><i class="iconfont undefined"></i>
+  mina
+</a></li><li class="dropdown-subitem"><a href="/框架/小程序/02.uni-app.html" class="nav-link"><i class="iconfont undefined"></i>
+  uni-app
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Node.js/01.初识Node.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></div><div class="nav-item"><a href="/学习git/git学习.html" class="nav-link"><i class="iconfont undefined"></i>
+  学习git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      可视化
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/可视化/Canvas/01.认识Canvas.html" class="nav-link"><i class="iconfont undefined"></i>
+  Canvas
+</a></li><li class="dropdown-item"><!----> <a href="/可视化/Three.js/01.认识Three.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Three.js
+</a></li></ul></div></div><div class="nav-item"><a href="/收藏的网站/收藏的网站.html" class="nav-link"><i class="iconfont undefined"></i>
+  收藏网址
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4698c43e></div> <aside class="sidebar" data-v-4698c43e><div class="personal-info-wrapper" data-v-6c8ffc9c><!----> <h3 class="name" data-v-6c8ffc9c>
+    夏至
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>0</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>0</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      前端三剑客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Html</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/Html/01.Html初识.html" class="nav-link"><i class="iconfont undefined"></i>
+  Html
+</a></li></ul></li><li class="dropdown-item"><h4>CSS</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS/01.引入css样式表.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS3/01.新增选择器.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS3
+</a></li></ul></li><li class="dropdown-item"><h4>JavaScript</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js基础/01.js基础语法.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js基础
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js高级/01.this关键字.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js高级
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Vue</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/Vue/Vue2/01.Vue基础.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue2
+</a></li><li class="dropdown-subitem"><a href="/框架/Vue/Vue3/1.创建Vue3项目.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue3
+</a></li></ul></li><li class="dropdown-item"><h4>React</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/React/01.React入门.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>小程序</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/小程序/01.mina.html" class="nav-link"><i class="iconfont undefined"></i>
+  mina
+</a></li><li class="dropdown-subitem"><a href="/框架/小程序/02.uni-app.html" class="nav-link"><i class="iconfont undefined"></i>
+  uni-app
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Node.js/01.初识Node.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></div><div class="nav-item"><a href="/学习git/git学习.html" class="nav-link"><i class="iconfont undefined"></i>
+  学习git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      可视化
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/可视化/Canvas/01.认识Canvas.html" class="nav-link"><i class="iconfont undefined"></i>
+  Canvas
+</a></li><li class="dropdown-item"><!----> <a href="/可视化/Three.js/01.认识Three.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Three.js
+</a></li></ul></div></div><div class="nav-item"><a href="/收藏的网站/收藏的网站.html" class="nav-link"><i class="iconfont undefined"></i>
+  收藏网址
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>面试题</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/面试题/01.Html+Css面试题.html" class="sidebar-link">Html+Css面试题</a></li><li><a href="/面试题/02.Js+Es6面试题.html" class="active sidebar-link">Js+Es6面试题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-说出js数据类型有哪些" class="sidebar-link">🌟 说出JS数据类型有哪些</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-js引用类型object、array还有哪些" class="sidebar-link">🌟 JS引用类型object、array还有哪些</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-如何把数据强制转换为数值型" class="sidebar-link">🌟 如何把数据强制转换为数值型</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-说出数据转换为布尔型的结果" class="sidebar-link">🌛  说出数据转换为布尔型的结果</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-说出数据转换为字符串型的结果" class="sidebar-link">🌛  说出数据转换为字符串型的结果</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-说出数据转换为数值型的结果" class="sidebar-link">🌛  说出数据转换为数值型的结果</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-说出下述隐式转换的结果" class="sidebar-link">🌛  说出下述隐式转换的结果</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-null-和-undefined-有什么区别" class="sidebar-link">🌛 null 和 undefined 有什么区别？</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-为什么-0-1-0-2-0-3-你如何解决这个问题" class="sidebar-link">🌛 为什么 0.1 + 0.2 !== 0.3? 你如何解决这个问题？</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-实战购物车小数计算精度丢失如何解决" class="sidebar-link">🌟 实战购物车小数计算精度丢失如何解决？</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#day1" class="sidebar-link">- day1</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-说出变量在内存中的分配" class="sidebar-link">🌟 说出变量在内存中的分配</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-说出变量赋值内存分配" class="sidebar-link">🌟 说出变量赋值内存分配</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#day2" class="sidebar-link">- day2</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-判断是否是数组" class="sidebar-link">🌟 判断是否是数组</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-如何交换两个变量的值" class="sidebar-link">🌛 如何交换两个变量的值</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-说出数组有哪些方法" class="sidebar-link">🌟 说出数组有哪些方法</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-说出数组哪些方法会改变原数据" class="sidebar-link">🌟 说出数组哪些方法会改变原数据</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-如何实现数组去重" class="sidebar-link">🌟 如何实现数组去重</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#day3" class="sidebar-link">- day3</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-说出字符串常用方法" class="sidebar-link">🌟 说出字符串常用方法</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-js如何去空格" class="sidebar-link">🌛 JS如何去空格</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#day4-5" class="sidebar-link">- day4&amp;5</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-伪数组" class="sidebar-link">🌛 伪数组</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-谈谈你对this指向的理解" class="sidebar-link">🌟 谈谈你对this指向的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-图片懒加载原理" class="sidebar-link">🌟 图片懒加载原理</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-性能优化-网站首屏加载过慢如何解决" class="sidebar-link">🌟 性能优化：网站首屏加载过慢如何解决</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-谈谈你对事件流机制的理解" class="sidebar-link">🌛 谈谈你对事件流机制的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-谈谈你对事件委托的理解" class="sidebar-link">🌛 谈谈你对事件委托的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-正则" class="sidebar-link">🌛 正则</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-es6新增语法" class="sidebar-link">🌟 es6新增语法</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-es6常见问题汇总" class="sidebar-link">🌟 es6常见问题汇总</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-let、const" class="sidebar-link">🌟 let、const</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-bind-和-call-apply-的区别" class="sidebar-link">🌟 bind 和 call/apply 的区别</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-手写bind-call-apply-原理" class="sidebar-link">🌛 手写bind/call/apply 原理</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-原型、原型链概念" class="sidebar-link">🌟 原型、原型链概念</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-构造函数new干了啥" class="sidebar-link">🌟 构造函数new干了啥</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-箭头函数与普通函数区别-能不能作为构造函数" class="sidebar-link">🌛 箭头函数与普通函数区别？能不能作为构造函数</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-更精确判断数据类型" class="sidebar-link">🌛 更精确判断数据类型</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-object构造函数上有哪些语法" class="sidebar-link">🌛 Object构造函数上有哪些语法</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#day1-2" class="sidebar-link">- day1</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-输入网址浏览器干哈了-简单版" class="sidebar-link">🌟 输入网址浏览器干哈了（简单版）</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-谈谈你对http理解" class="sidebar-link">🌟 谈谈你对HTTP理解</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-http周边-http动词" class="sidebar-link">🌟 HTTP周边：HTTP动词</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-http周边-状态码" class="sidebar-link">🌟 HTTP周边：状态码</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-http周边-请求头参数" class="sidebar-link">🌟 HTTP周边：请求头参数</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-http周边-强制缓存、协商缓存" class="sidebar-link">🌟 HTTP周边：强制缓存、协商缓存</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-get和post有什么区别" class="sidebar-link">🌟 get和post有什么区别</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-谈谈你对http、https的理解-有什么区别" class="sidebar-link">🌟 谈谈你对http、https的理解，有什么区别</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#day2-2" class="sidebar-link">-day2</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-谈谈你对骨架屏的理解" class="sidebar-link">🌟 谈谈你对骨架屏的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-谈谈你对节流防抖的理解" class="sidebar-link">🌟 谈谈你对节流防抖的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-谈谈你对高阶函数的理解" class="sidebar-link">🌟 谈谈你对高阶函数的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-function-ajax-callback" class="sidebar-link">🌟 function+ajax+callback</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#day3-2" class="sidebar-link">-day3</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-谈谈你对promise的理解" class="sidebar-link">🌟 谈谈你对promise的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-说一下promise原理" class="sidebar-link">🌟 说一下promise原理</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-说一下promise几个状态" class="sidebar-link">🌟 说一下promise几个状态</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-promise-all、promise-allsettled区别" class="sidebar-link">🌟 Promise.all、Promise.allSettled区别</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-promise-race、promise-any区别" class="sidebar-link">🌟 Promise.race、Promise.any区别</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#day4" class="sidebar-link">- day4</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-跨域相关" class="sidebar-link">🌟 跨域相关</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-谈谈你对同步异步的理解" class="sidebar-link">🌛 谈谈你对同步异步的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟谈谈你对async-await的理解" class="sidebar-link">🌟谈谈你对async，await的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-谈谈你generator的理解" class="sidebar-link">🌛 谈谈你generator的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-说出浏览器运行机制" class="sidebar-link">🌟 说出浏览器运行机制</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-说出浏览器输入网址干了啥" class="sidebar-link">🌟 说出浏览器输入网址干了啥</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-说出js为什么是单线程" class="sidebar-link">🌛 说出JS为什么是单线程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#先看一个比喻" class="sidebar-link">先看一个比喻</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#什么是进程" class="sidebar-link">什么是进程？</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#什么是线程" class="sidebar-link">什么是线程？</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#大家都在说js是单线程的-但是为什么要设计成单线程" class="sidebar-link">大家都在说js是单线程的，但是为什么要设计成单线程？</a></li></ul></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-说出js是单线程-为什么不存在执行效率问题" class="sidebar-link">🌛 说出JS是单线程 为什么不存在执行效率问题</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-谈谈你对event-loop的理解" class="sidebar-link">🌟 谈谈你对Event Loop的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-谈谈你对浏览器的event-loop理解" class="sidebar-link">🌟 谈谈你对浏览器的Event Loop理解</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-说出宏任务、微任务各有哪些" class="sidebar-link">🌟 说出宏任务、微任务各有哪些</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-说出先执行宏任务还是微任务" class="sidebar-link">🌟 说出先执行宏任务还是微任务</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#day5" class="sidebar-link">- day5</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-前端存储有几种" class="sidebar-link">🌛 前端存储有几种</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟cookie和h5的区别" class="sidebar-link">🌟cookie和h5的区别</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟如何实现localstorage7天过期" class="sidebar-link">🌟如何实现localStorage7天过期</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟如何实现七天免登录" class="sidebar-link">🌟如何实现七天免登录</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟登录是如何实现的" class="sidebar-link">🌟登录是如何实现的</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#" class="sidebar-link">...</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-xhr、-get、-ajax区别" class="sidebar-link">🌛 xhr、$.get、\$.ajax区别</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌛-jq你会吗-比如操作样式用什么属性" class="sidebar-link">🌛 jq你会吗，比如操作样式用什么属性...</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-说出几个常用的git命令" class="sidebar-link">🌟 说出几个常用的git命令</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-说出git工作流-说一下你们日常开发工作流" class="sidebar-link">🌟 说出git工作流，说一下你们日常开发工作流</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-说下git如何解决代码冲突" class="sidebar-link">🌟 说下git如何解决代码冲突</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-说一下你在开发登陆时-线上出现bug了如何维护" class="sidebar-link">🌟 说一下你在开发登陆时，线上出现bug了如何维护</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-克隆获取的是默认分支代码-如何获取其他分支代码" class="sidebar-link">🌟 克隆获取的是默认分支代码，如何获取其他分支代码</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-用过哪些git图形化可是软件" class="sidebar-link">🌟 用过哪些git图形化可是软件</a></li><li class="sidebar-sub-header"><a href="/面试题/02.Js+Es6面试题.html#🌟-说下git和svn区别" class="sidebar-link">🌟 说下git和svn区别</a></li></ul></li><li><a href="/面试题/03.vue面试题.html" class="sidebar-link">vue面试题</a></li><li><a href="/面试题/04.react面试题.html" class="sidebar-link">react面试题</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6cbeab0a data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a></h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>夏至</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2023
+        </a></span></div></div> <div data-v-4698c43e><main class="page"><!----> <div class="page-title" style="display:none;"><h1>Js+Es6面试题</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>夏至</span></i> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default" style="display:none;"><h1 id="js-es6面试题"><a href="#js-es6面试题" class="header-anchor">#</a> Js+Es6面试题</h1> <p>💘 课题</p> <p>🌟 常见重要</p> <p>🌛 需要有印象的</p> <h1 id="💘-week1"><a href="#💘-week1" class="header-anchor">#</a> 💘 Week1</h1> <h2 id="🌟-说出js数据类型有哪些"><a href="#🌟-说出js数据类型有哪些" class="header-anchor">#</a> 🌟 说出JS数据类型有哪些</h2> <p>原始类型/基本类型：null、undefined、boolean、number、string、symbol、bigint
+对象类型/引用类型/复杂/复合类型：</p> <div class="language- extra-class"><pre class="language-text"><code>可调用/执行对象「函数」：function
+标准普通对象：object
+标准特殊对象：Array、Date、Math、RegExp、Error……
+非标准特殊对象：Number、String、Boolean……
+</code></pre></div><h2 id="🌟-js引用类型object、array还有哪些"><a href="#🌟-js引用类型object、array还有哪些" class="header-anchor">#</a> 🌟 JS引用类型object、array还有哪些</h2> <div class="language- extra-class"><pre class="language-text"><code>可调用/执行对象「函数」：function
+标准特殊对象：Array、Date、Math、RegExp、Error……
+非标准特殊对象：Number、String、Boolean……
+</code></pre></div><h2 id="🌟-如何把数据强制转换为数值型"><a href="#🌟-如何把数据强制转换为数值型" class="header-anchor">#</a> 🌟 如何把数据强制转换为数值型</h2> <p>说明：面试概率低、工作概率高</p> <p>语法：parseInt、parseFloat、Number</p> <h2 id="🌛-说出数据转换为布尔型的结果"><a href="#🌛-说出数据转换为布尔型的结果" class="header-anchor">#</a> 🌛  说出数据转换为布尔型的结果</h2> <p>null、undefined、0、NaN、空字符串结果是false、其他都是true</p> <h2 id="🌛-说出数据转换为字符串型的结果"><a href="#🌛-说出数据转换为字符串型的结果" class="header-anchor">#</a> 🌛  说出数据转换为字符串型的结果</h2> <p>都字符串</p> <p>String(内容)、内容.toString()</p> <p>​</p> <h2 id="🌛-说出数据转换为数值型的结果"><a href="#🌛-说出数据转换为数值型的结果" class="header-anchor">#</a> 🌛  说出数据转换为数值型的结果</h2> <p>Number（数据）</p> <table><thead><tr><th>数据</th> <th>结果</th></tr></thead> <tbody><tr><td>null</td> <td>0</td></tr> <tr><td>undefined</td> <td>NaN</td></tr> <tr><td>true/false</td> <td>1/0</td></tr> <tr><td>123/NaN</td> <td>123/NaN</td></tr> <tr><td>''/'123'/'123a'</td> <td>0/123/NaN</td></tr></tbody></table> <h2 id="🌛-说出下述隐式转换的结果"><a href="#🌛-说出下述隐式转换的结果" class="header-anchor">#</a> 🌛  说出下述隐式转换的结果</h2> <p>var result = 100 + true + 21.2 + null + undefined + &quot;Tencent&quot; + [] + null + 9 + false;</p> <p>[] + [] // &quot;&quot;</p> <p>[] + {} // &quot;[object object]&quot;</p> <p>{} + [] // 0 对于编译器而言，代码块不会返回任何的值， 接着+[]就变成了一个强制转number的过程</p> <p>true+true+true===3 // true</p> <p>true-true // 0</p> <p>true==1	// true</p> <p>true===1 // false</p> <p>9+&quot;1&quot; // 91</p> <p>91-&quot;1&quot;	// 90</p> <p>[]==0 // true    Number([])      0</p> <h2 id="🌛-null-和-undefined-有什么区别"><a href="#🌛-null-和-undefined-有什么区别" class="header-anchor">#</a> 🌛 null 和 undefined 有什么区别？</h2> <p>undefined 表示未定义，新定义的变量没有赋值就是undefined</p> <p>null表示清空，当一个变量不用的时候，除了等待网页关闭销毁，也可以把它赋值为null。此时游览器会进行一个回收也就是清空内存。</p> <blockquote><p>了解1</p> <div class="language- extra-class"><pre class="language-text"><code>typeof(null)会是一个object。最初这么设计的原因为：通常用作一个空引用一个空对象的预期,就像一个占位符。typeof的这种行为已经被确认为一个错误，虽然提出了修正，出于后兼容的目的，这一点已经保持不变。
+</code></pre></div><p>了解2</p> <div class="language- extra-class"><pre class="language-text"><code>null == undefined    true
+null === undefined   false
+</code></pre></div></blockquote> <h2 id="🌛-为什么-0-1-0-2-0-3-你如何解决这个问题"><a href="#🌛-为什么-0-1-0-2-0-3-你如何解决这个问题" class="header-anchor">#</a> 🌛 为什么 0.1 + 0.2 !== 0.3? 你如何解决这个问题？</h2> <p>因为 <code>0.1</code> 这样的数值用二进制表示你就会发现无法整除，</p> <p>最后算下来会是<code>0.0001100110011001...</code>由于存储空间有限，位数是无限的，只能取近似。</p> <p>代码：0.1 + 0.2 == 0.3 // false</p> <p>代码：0.625 + 0.625 == 1.25  // true</p> <blockquote><p>进制转换规则：https://www.runoob.com/w3cnote/decimal-decimals-are-converted-to-binary-fractions.html</p> <p>十进制整数 -&gt; 转二进制</p> <div class="language- extra-class"><pre class="language-text"><code>举例：(5).toString(2) // 结果 101
+转换：除2反向取余
+2| 5    --- 余1
+ ------
+2| 2    --- 余0
+ ------
+   1    
+   
+举例：(13).toString(2) // 结果 1101
+转换：除2反向取余
+2| 13    --- 余1
+ ------
+2| 6     --- 余0
+ ------
+2| 3     --- 余1
+ ------
+   1    
+   
+核对：https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.pianshen.com%2Fimages%2F732%2Faf802c5be33b4934e6a6fec52a208734.png&amp;refer=http%3A%2F%2Fwww.pianshen.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1642634303&amp;t=293eccde3cc561a3ed2d38f8cf57eea9
+</code></pre></div><p>十进制小数 -&gt; 转二进制</p> <div class="language- extra-class"><pre class="language-text"><code>举例：(0.625).toString(2) // 结果 0.101
+转换：乘2正向取整
+0.625*2=1.25======取出整数部分1 
+0.25*2=0.5========取出整数部分0 
+0.5*2=1==========取出整数部分1 
+
+举例：(0.7).toString(2)  // 结果 0.101100110011001100110011 0011 ...
+0.7*2=1.4========取出整数部分1 
+0.4*2=0.8========取出整数部分0 
+0.8*2=1.6========取出整数部分1 
+0.6*2=1.2========取出整数部分1 
+0.2*2=0.4========取出整数部分0　 
+0.4*2=0.8========取出整数部分0 
+0.8*2=1.6========取出整数部分1 
+0.6*2=1.2========取出整数部分1 
+0.2*2=0.4========取出整数部分0
+...
+</code></pre></div></blockquote> <h2 id="🌟-实战购物车小数计算精度丢失如何解决"><a href="#🌟-实战购物车小数计算精度丢失如何解决" class="header-anchor">#</a> 🌟 实战购物车小数计算精度丢失如何解决？</h2> <p>推荐解决： 浮点数转化成整数</p> <p>实战使用：购物车结算时，商品价格(33.01)-优惠券价格(5)，本应该是28.01，但是实际的结果是28.009999999999998</p> <div class="language- extra-class"><pre class="language-text"><code>33.01 - 5 = 28.009999999999998
+
+(33.01*100 - 5*100) / 100 = 28.01
+</code></pre></div><blockquote><h4 id="es6-解决办法"><a href="#es6-解决办法" class="header-anchor">#</a> es6 解决办法</h4> <div class="language- extra-class"><pre class="language-text"><code>es6 提供了 Number.EPSILON，这个值等于 2^-52 ，这个值非常非常小，在底层计算机已经帮我们运算好，并且无限接近 0，但不等于 0，这个时候我们只要判断误差值在这个范围内就可以说明是相等的。
+
+function numbersequal(a,b){
+    return Math.abs(a-b)&lt;Number.EPSILON
+}
+var a = 0.1 + 0.2;
+var b = 0.3;
+console.log(numbersequal(a, b))
+// true
+</code></pre></div><h4 id="四舍五入"><a href="#四舍五入" class="header-anchor">#</a> 四舍五入</h4> <p>采用四舍五入方法，取了一个 10 位小数</p> <div class="language- extra-class"><pre class="language-text"><code>function numTofixed(num) {
+    if (typeof num == 'number') {
+        num = parseFloat(num.toFixed(10))
+    }
+    return num;
+}
+
+numTofixed(0.1 + 0.2);
+// 0.3
+</code></pre></div><h4 id="使用第三方库"><a href="#使用第三方库" class="header-anchor">#</a> 使用第三方库</h4> <div class="language- extra-class"><pre class="language-text"><code>math.js
+bignumber.js
+....
+</code></pre></div></blockquote> <h1 id="💘-week2"><a href="#💘-week2" class="header-anchor">#</a> 💘 Week2</h1> <h2 id="day1"><a href="#day1" class="header-anchor">#</a> - day1</h2> <h2 id="🌟-说出变量在内存中的分配"><a href="#🌟-说出变量在内存中的分配" class="header-anchor">#</a> 🌟 说出变量在内存中的分配</h2> <p>栈：存 原始类型【名字】&amp;【数据】、对象类型的【名字】&amp;【堆地址】</p> <p>堆：对象类型数据</p> <h2 id="🌟-说出变量赋值内存分配"><a href="#🌟-说出变量赋值内存分配" class="header-anchor">#</a> 🌟 说出变量赋值内存分配</h2> <p>原始类型：变量赋值，栈开辟内存直接存数据   -&gt;  数据互补影响
+对象类型：变量赋值，栈开辟内存，存放堆地址  -&gt; 数据相互影响</p> <p>切记切记切记：上课讲的形参也会出现传值、传地址问题</p> <div class="language- extra-class"><pre class="language-text"><code>var num = 100      
+function fn(n) {  
+  // var 形参 = 实参
+  // var n = num也就是100   原始类型 传值 不影响
+  n = 200		 
+  console.log(n)   // 打印： 200
+}
+fn(num)             
+console.log(num)   // 打印： 100
+
+// --------------------------
+
+var obj = { name: 'Jack' }    
+
+function fn(o) {	 	  
+  // var 形参 = 实参
+  // var o  = obj    对象类型赋值 传地址  相互影响
+  o.name = 'Rose'	  	//    
+  console.log(o.name) //  打印：Rose
+}
+fn(obj)				  
+console.log(obj.name) //  打印：Rose
+
+栈   		   						  								  	 堆
+obj：地址1	  																  地址1：{ name: 'Jack改成Rose' }  
+fn函数里面的o变量：地址1 函数调用完毕o变量就销毁了 
+</code></pre></div><h2 id="day2"><a href="#day2" class="header-anchor">#</a> - day2</h2> <h2 id="🌟-判断是否是数组"><a href="#🌟-判断是否是数组" class="header-anchor">#</a> 🌟 判断是否是数组</h2> <p>方法1：通过语法 Array.isArray()</p> <p>方法2：instanceof</p> <p>方法3：原型链（constructor）</p> <p>.....</p> <div class="language- extra-class"><pre class="language-text"><code>Array.isArray([1, 2 ,3])     	 // true
+[1, 2 ,3] instanceof Array 	   // true
+[1, 2 ,3].constructor === Array // true
+
+Array.isArray('aa')     	 // false
+'aa' instanceof Array 	   // false
+'aa'.constructor === Array // false
+</code></pre></div><h2 id="🌛-如何交换两个变量的值"><a href="#🌛-如何交换两个变量的值" class="header-anchor">#</a> 🌛 如何交换两个变量的值</h2> <ul><li>临时变量法</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var a = 1
+var b = 2;
+var temp = a
+a = b
+b = temp
+</code></pre></div><ul><li>加减法</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var a = 1
+var b = 2;
+a = a+b  // a = 1+2 = 3
+b = a-b  // b = 3-2 = 1
+a = a-b  // a = 3-1 = 2
+</code></pre></div><ul><li>解构赋值法   week3</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var a = 1
+var b = 2;
+
+[a, b] = [b, a]
+</code></pre></div><ul><li>数组法</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var a = 1
+var b = 2
+a = [a, b]
+b = a[0]
+a = a[1]
+</code></pre></div><ul><li>对象法</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var a = 1
+var b = 2
+a = { a: b, b: a }
+b = a.b
+a = a.a
+</code></pre></div><ul><li>等等太多了</li></ul> <h2 id="🌟-说出数组有哪些方法"><a href="#🌟-说出数组有哪些方法" class="header-anchor">#</a> 🌟 说出数组有哪些方法</h2> <p>·数据操作：shift/unshift/pop/push</p> <p>遍历数据：  forEach/map/filter/find/findIndex</p> <p>工作常用：concat/join/indexOf/includes</p> <p>学习常用：reverse/splice</p> <p>了解：sort</p> <h2 id="🌟-说出数组哪些方法会改变原数据"><a href="#🌟-说出数组哪些方法会改变原数据" class="header-anchor">#</a> 🌟 说出数组哪些方法会改变原数据</h2> <p>数据操作：shift/unshift/pop/push</p> <p>学习常用：reverse/splice</p> <p>了解：sort</p> <h2 id="🌟-如何实现数组去重"><a href="#🌟-如何实现数组去重" class="header-anchor">#</a> 🌟 如何实现数组去重</h2> <p>方法1：通过es6新增的Set数据结构、和解构赋值去重     [...new Set(重复数组)]    week3</p> <p>方法2：通过filter配合indexOf实现数组去重</p> <p>方法3：定义空数组，通过forEach遍历重复的数组，通过indexOf判断当前值是否在数组中，不在就push</p> <p>方法4：定义空数组，通过forEach遍历重复的数组，通过includes判断当前值是否在数组中，不在就push</p> <p>方法5：利用对象的属性去重</p> <p>方法6：....</p> <div class="language- extra-class"><pre class="language-text"><code>// 方法1：通过es6新增的Set数据结构结果     [...new Set(重复数组)]
+var arr = [1,2,3,2,3]
+console.log([...new Set(arr)])
+
+
+// 方法2：通过filter配合indexOf实现数组去重
+var arr = [1,2,3,2,3]
+var newarr = arr.filter(function(item, i) {
+    // i=0  item值是1  arr.indexOf(item)  返回0  真
+    // i=1  item值是2  arr.indexOf(item)  返回1  真 
+    // i=2  item值是3  arr.indexOf(item)  返回2  真
+    // i=3  item值是2  arr.indexOf(item)  返回1  假
+    // i=4  item值是3  arr.indexOf(item)  返回2  假
+    return i === arr.indexOf(item);
+}) 
+console.log(newarr)
+
+
+// 方法3：定义空数组，通过forEach遍历重复的数组，通过indexOf判断当前值是否在数组中，不在就push
+var newarr = []
+var arr = [1,2,3,2,3]
+arr.forEach(function(item, i) {
+    if (newarr.indexOf(item) === -1)
+    {
+        newarr.push(item)
+    }
+})
+console.log(newarr)
+
+
+// 方法4：定义空数组，通过forEach遍历重复的数组，通过includes判断当前值是否在数组中，不在就push
+var newarr = []
+var arr = [1,2,3,2,3]
+arr.forEach(function(item, i) {
+    if (!newarr.includes(item))
+    {
+        newarr.push(item)
+    }
+})
+console.log(newarr)
+
+// 方法5：利用对象的属性去重
+var arr = [1,2,3,2,3]
+var newarr = []
+var obj = {}
+arr.forEach(function(item) {
+	if (!obj[item]) {
+		obj[item] = item // 出现记录
+    newarr.push(item)
+	}
+})
+</code></pre></div><h2 id="day3"><a href="#day3" class="header-anchor">#</a> - day3</h2> <h2 id="🌟-说出字符串常用方法"><a href="#🌟-说出字符串常用方法" class="header-anchor">#</a> 🌟 说出字符串常用方法</h2> <p>工作常用：数组、查找、替换、截取、大小、空格</p> <blockquote><p>split、find、replace、substr、toUpperCase/toLowerCase、trim</p></blockquote> <p>学习：.length、lastIndexOf、repeat</p> <h2 id="🌛-js如何去空格"><a href="#🌛-js如何去空格" class="header-anchor">#</a> 🌛 JS如何去空格</h2> <p>说明： 通过 trim 去左右空格</p> <p>留心：中间不能去</p> <p>追问：JS如何去所有空格</p> <p>解决：通过2021年 ES12新增语法replaceAll来解决</p> <blockquote><p>' a b c '.replaceAll(' ', '')</p></blockquote> <p>解决：通过正则</p> <blockquote><p>' a b c '.replace(/\s/g, '')</p></blockquote> <h2 id="day4-5"><a href="#day4-5" class="header-anchor">#</a> - day4&amp;5</h2> <h2 id="🌛-伪数组"><a href="#🌛-伪数组" class="header-anchor">#</a> 🌛 伪数组</h2> <p>长得像数组，能用少部分的属性 例如length  但是所有方法都不可以使用，在js中常见的伪数组有</p> <p>document.qsa、arguments等等</p> <h2 id="🌟-谈谈你对this指向的理解"><a href="#🌟-谈谈你对this指向的理解" class="header-anchor">#</a> 🌟 谈谈你对this指向的理解</h2> <p>面试： 调用当前方法的对象  也就是谁调用的打印的就是谁</p> <p>举例：</p> <div class="language- extra-class"><pre class="language-text"><code>function fn1() {} 
+fn1() // 最大全局变量window调用的
+
+标签对象.事件类型 = 处理函数  // 标签对象触发后调用的
+</code></pre></div><p>学习</p> <div class="language- extra-class"><pre class="language-text"><code>普通函数   window
+对象函数   对象本身
+事件函数   事件源
+定时器函数  window
+箭头函数   父function中的this  父没有function就是window
+自定义     call/apply/bind
+构造函数   this === 实例化对象 === 公共空间/原型对象上方法中的this 
+
+
+其他：事件、构造函数、公共空间/原型对象上方法-优先使用普通函数写法，当需要明确改变this指向的时候再换箭头函数，
+其他全不优先使用箭头函数。
+</code></pre></div><h2 id="🌟-图片懒加载原理"><a href="#🌟-图片懒加载原理" class="header-anchor">#</a> 🌟 图片懒加载原理</h2> <p>好处：减少HTTP请求</p> <p>原理：</p> <div class="language- extra-class"><pre class="language-text"><code>1、监控滚动条滚动
+2、获取总可视内容高度（可见视口高度+滚动条滚动高度）
+3、获取所有图片
+4、遍历步骤3（或这说：遍历伪数组）
+5、在步骤4中判断，图片.offsetTop &lt;= 步骤2    成立-修改src属性为data-src、失败-不管
+6、节流防抖优化
+</code></pre></div><p>留心：有时候图片高度获取怎么不到？</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- 195x265 --&gt;
+&lt;br /&gt;
+&lt;img src=&quot;./imgs/1.jpg&quot; alt=&quot;&quot;&gt;
+
+&lt;script&gt;
+var imgObj = document.querySelector('img')
+console.log(imgObj.offsetWidth); // 0  部分属性必须再图片加载完毕后才能获取到其值
+console.log(imgObj.offsetLeft);  // 8
+
+imgObj.onload = function() {
+    console.log(imgObj.offsetWidth); // 195
+    console.log(imgObj.offsetLeft);  // 8
+}
+&lt;/script&gt;
+</code></pre></div><h2 id="🌟-性能优化-网站首屏加载过慢如何解决"><a href="#🌟-性能优化-网站首屏加载过慢如何解决" class="header-anchor">#</a> 🌟 性能优化：网站首屏加载过慢如何解决</h2> <div class="language- extra-class"><pre class="language-text"><code>function lazyload() 
+{
+    // 1 每次获取最新的 可见视口 + 滚动的高度
+    // 2 获取所有图片
+    // 3 遍历
+    // 4 判断：当前图片的.offsetTop &lt; 步骤1（可见视口 + 滚动的高度）
+    // 不成立-不管
+    // 成立-修改图片的src地址 改成真是的  
+
+
+    // 1 每次获取最新的 可见视口 + 滚动的高度
+    var temp1 = window.innerHeight || document.documentElement.clientHeight  // 兼容ie
+    var temp2 = document.body.scrollTop || document.documentElement.scrollTop // 兼容doctype
+    var maxShowHeight = temp1 + temp2
+    // 2 获取所有图片
+    var imgs = document.querySelectorAll('img')
+    // 3 遍历
+    imgs.forEach(function(item, index) { // item就是每一个图片标签对象
+        // 4 判断：当前图片的.offsetTop &lt; 步骤1（可见视口 + 滚动的高度）
+        // 不成立-不管
+        // 成立-修改图片的src地址 改成真是的  
+        // console.log(item, item.offsetTop , maxShowHeight)
+        if (item.offsetTop &lt; maxShowHeight)
+        {
+            // item.src = item.src-real  切记非标签默认属性 不能直接点
+            item.src = item.getAttribute('src-real')
+        }
+    })
+}
+
+// TODO: 待后续进一步优化
+// 首次
+lazyload() 
+// 后续
+// window.onscroll = lazyload()  错误 undefined
+window.onscroll = lazyload
+</code></pre></div><h1 id="💘-week3"><a href="#💘-week3" class="header-anchor">#</a> 💘 Week3</h1> <h2 id="🌛-谈谈你对事件流机制的理解"><a href="#🌛-谈谈你对事件流机制的理解" class="header-anchor">#</a> 🌛 谈谈你对事件流机制的理解</h2> <p>术语：事件发生时会在元素节点之间按照特定的顺序传播，这个传播过程即DOM事件流</p> <p>学习：多个标签嵌套，事件触发-先检查当前标签，然后继续向上挨个检查祖先标签有没有事件 有就触发的现象就是事件流</p> <p>DOM事件流分为三个阶段，分别为：</p> <p>捕获阶段：事件从Document节点自上而下向目标节点传播的阶段；</p> <p>目标阶段：真正的目标节点正在处理事件的阶段；</p> <p>冒泡阶段：事件从目标节点自下而上向Document节点传播的阶段。</p> <p><img src="https://img2018.cnblogs.com/common/1642186/201911/1642186-20191115181135676-64079695.png" alt=""></p> <h2 id="🌛-谈谈你对事件委托的理解"><a href="#🌛-谈谈你对事件委托的理解" class="header-anchor">#</a> 🌛 谈谈你对事件委托的理解</h2> <p>概念：利用事件冒泡机制处理指定一个事件处理程序，来管理某一类型的所有事件。</p> <p>事件委托的好处：</p> <ul><li>利用冒泡的原理，将事件加到父级身上，这样只在内存中开辟一块空间，既节省资源又减少DOM操作，提高性能</li> <li>可以为动态添加的元素绑定事件</li></ul> <h2 id="🌛-正则"><a href="#🌛-正则" class="header-anchor">#</a> 🌛 正则</h2> <p>匹配手机号：/^1\d{10}$/.test(数据)</p> <p>匹配邮箱：/^\w{2,20}@\w{2, 20}.(com|org|cn|edu)$/.test(数据)</p> <p>匹配中文：/^[\u4e00-\u9fa5]+$/.test(数据)</p> <p>去所有空格：str.replaceAll(' ', '')  或 str.replace(/\s/g, '')</p> <p>购物车去非数字：str.replace(/\D/g, '')</p> <h2 id="🌟-es6新增语法"><a href="#🌟-es6新增语法" class="header-anchor">#</a> 🌟 es6新增语法</h2> <p>https://github.com/tc39/proposals/blob/main/finished-proposals.md</p> <div class="language- extra-class"><pre class="language-text"><code># 2015年 ES6
+
+    修饰符：let、const
+    解构赋值：let {键:变量名=默认值,...,键:变量名=默认值} = {键:值,....,键:值} !!!
+    字符串相关扩展：模板字符串
+    函数相关扩展：箭头函数!!!、函数形参默认值、rest参数 arguments
+    对象相关扩展：对象简写!!!、链判断操作符 ?.  空判断操作符??
+    数组相关扩展：find/findIndex/indexOf/includes
+    新增原始类型：symbol、bigint  
+    -----------
+    //       重要      中等        中等       重要          重要
+    其他新增：展开运算符、新增数据结构、循环forof、module模块化、class类等等
+    
+# 2016年 ES7：Array.prototype.includes
+# 2017年 ES8：Async functions
+# 2018年 ES9：Promise.prototype.finally
+# 2019年 ES10
+# 2020年 ES11：String.prototype.matchAll、import()、BigInt、Promise.allSettled、
+# 2021年 ES12：String.prototype.replaceAll、Promise.any、
+# 2022年 ES13：
+</code></pre></div><h2 id="🌟-es6常见问题汇总"><a href="#🌟-es6常见问题汇总" class="header-anchor">#</a> 🌟 es6常见问题汇总</h2> <ul><li><p>新增了哪些数据类型：symbol、bigInt</p></li> <li><p>新增的数据类型属于哪一类：原始类型</p></li> <li><p>数组如何去重：Set、filter+indexOf、forEach+indexOf、forEach+includes、对象</p></li> <li><p>新增数据类型有哪些分别有什么用</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>Set数组去重
+Map对象的键不限于字符串
+</code></pre></div><h2 id="🌟-let、const"><a href="#🌟-let、const" class="header-anchor">#</a> 🌟 let、const</h2> <p>面试题1：let和const区别</p> <div class="language- extra-class"><pre class="language-text"><code>相同点-都是块级作用域/不能重复定义
+不同点-let修改/const不能修改
+</code></pre></div><p>面试题2：const真的不能修改吗</p> <div class="language- extra-class"><pre class="language-text"><code>原始类型：不可以
+对象类型：可以
+
+原理：const不可以修改栈里面的地址，但是可以修改堆里面的数据
+</code></pre></div><p>面试题3：暂时性死区</p> <div class="language- extra-class"><pre class="language-text"><code>let前面的区域就是暂时性死区，必须先定义再使用
+</code></pre></div><p>面试题4：let和const如何选</p> <div class="language- extra-class"><pre class="language-text"><code>普遍用let、明确后期不改用const 例如Date、xhr、promise对象等
+
+const d = new Date() 
+</code></pre></div><p>面试题5：var和let区别</p> <div class="language- extra-class"><pre class="language-text"><code>var 函数作用域   可以重复定义 可以修改
+let 块级作用域  不能重复定义 可以修改
+</code></pre></div><h2 id="🌟-bind-和-call-apply-的区别"><a href="#🌟-bind-和-call-apply-的区别" class="header-anchor">#</a> 🌟 bind 和 call/apply 的区别</h2> <div class="language- extra-class"><pre class="language-text"><code>fun.call(thisArg, param1, param2, ...)
+fun.apply(thisArg, [param1,param2,...])
+
+fun.bind(thisArg, param1, param2, ...)
+</code></pre></div><p><strong>是否立刻执行</strong></p> <ul><li><code>call/apply</code> 改变了函数的 <code>this</code> 上下文后 <strong>马上</strong> 执行该函数。</li> <li><code>bind</code> 则是返回改变了上下文后的函数, <strong>不执行该函数</strong> 。</li></ul> <p><strong>返回值的区别</strong></p> <ul><li><code>call/apply</code> 返回 <code>fun</code> 的执行结果。</li> <li><code>bind</code> 返回 <code>fun</code> 的拷贝，并指定了 <code>fun</code> 的 <code>this</code> 指向，保存了 <code>fun</code> 的参数。</li></ul> <h2 id="🌛-手写bind-call-apply-原理"><a href="#🌛-手写bind-call-apply-原理" class="header-anchor">#</a> 🌛 手写bind/call/apply 原理</h2> <ul><li>call</li></ul> <div class="language- extra-class"><pre class="language-text"><code>
+</code></pre></div><p>apply</p> <div class="language- extra-class"><pre class="language-text"><code>
+</code></pre></div><p>bind</p> <div class="language- extra-class"><pre class="language-text"><code>
+</code></pre></div><h1 id="💘-week4"><a href="#💘-week4" class="header-anchor">#</a> 💘 Week4</h1> <h2 id="🌟-原型、原型链概念"><a href="#🌟-原型、原型链概念" class="header-anchor">#</a> 🌟 原型、原型链概念</h2> <p>原型：js给每个函数分配的公共空间，减少内存占用</p> <p>原型链：多个原型的集合，当调用对象的属性或方法时，先自身找，找不到去原型链上找，一直找到Object构造函数得原型链</p> <h2 id="🌟-构造函数new干了啥"><a href="#🌟-构造函数new干了啥" class="header-anchor">#</a> 🌟 构造函数new干了啥</h2> <p>1 搞obj空对象</p> <p>2 给obj增加__proto__属性 并且指向 构造函数的.prototype</p> <p>3 将 构造函数this中的数据 全部放到obj上</p> <p>4 返回obj对象</p> <div class="language- extra-class"><pre class="language-text"><code>// let Sym = fn
+function Sym() {
+  this.a = 1;
+  this.b = 2;
+  this.c = 3;
+}
+// 第一种使用方式：当变量赋值用
+let data1 = Sym;
+console.log(data1); // 打印：函数本身
+// 第二种使用方法：当函数用
+let data2 = Sym();
+console.log(data2); // 打印：undefined  但是window多了a、b、c三个属性
+// 第三种使用方法：new关键词
+let data3 = new Sym();
+console.log(&quot;new关键词：&quot;, data3); // 打印：对象
+
+/*
+栈                  堆
+data1: 地址1        地址1：function Sym() {  this.a = 1; this.b = 2;  this.c = 3; }
+data2：undefined    地址2：{a:1,b:2,c:3, __proto__：}
+data3：地址2
+ */
+
+function _new(当前new的构造函数) {
+  // let obj = {};
+  // obj.__proto__ = 当前new的构造函数.prototype;
+  
+  let obj = Object.create(当前new的构造函数.prototype); // !!!!
+  //   obj.a = 1;
+  //   obj.b = 2;
+  //   obj.c = 3;
+  当前new的构造函数.call(obj);
+  return obj;
+}
+let data4 = _new(Sym);
+// 需求：封装_new普通函数仿写new关键词效果
+// 分析：_new普通函数里面做哪些时
+// - 必须返回一个对象
+console.log(&quot;通过_new仿写new：&quot;, data4);
+</code></pre></div><h2 id="🌛-箭头函数与普通函数区别-能不能作为构造函数"><a href="#🌛-箭头函数与普通函数区别-能不能作为构造函数" class="header-anchor">#</a> 🌛 箭头函数与普通函数区别？能不能作为构造函数</h2> <ol><li>语法更加简洁、清晰</li> <li>箭头函数不会创建自己的this</li> <li>箭头函数继承而来的this指向永远不变</li> <li>.call()/.apply()/.bind()无法改变箭头函数中this的指向</li> <li>箭头函数不能作为构造函数使用</li> <li>箭头函数没有自己的arguments</li> <li>箭头函数没有原型prototype</li> <li>箭头函数不能用作Generator函数，不能使用yeild关键字</li></ol> <p>https://juejin.cn/post/6844903805960585224##heading-2</p> <h2 id="🌛-更精确判断数据类型"><a href="#🌛-更精确判断数据类型" class="header-anchor">#</a> 🌛 更精确判断数据类型</h2> <div class="language- extra-class"><pre class="language-text"><code>// typeof 原始类型：除了null是object其他都是自身
+
+// console.log(typeof null); // object
+// console.log(typeof undefined);
+// console.log(typeof true);
+// console.log(typeof 123);
+// console.log(typeof &quot;sdafadsf&quot;);
+// console.log(typeof Symbol());
+// console.log(typeof 1111n);
+
+// typeof 对象类型：除了function是function其他都是object
+
+// 问题：你就无法根据不同类型做不同逻辑处理
+// 比如：判断是数组  判断是null
+// 解决：Array.isArray()  等等单独处理
+// 然后：也可以统一处理
+
+// 语法：Object.prototype.toString.call(数据)
+
+// console.log(Object.prototype.toString.call(null));
+// console.log(Object.prototype.toString.call(undefined));
+// console.log(Object.prototype.toString.call(true));
+// console.log(Object.prototype.toString.call(123));
+// console.log(Object.prototype.toString.call(&quot;sdfdsf&quot;));
+// console.log(Object.prototype.toString.call(Symbol()));
+// console.log(Object.prototype.toString.call(1111n));
+// console.log(Object.prototype.toString.call(function () {}));
+// console.log(Object.prototype.toString.call({}));
+// console.log(Object.prototype.toString.call([]));
+
+function getType(data) {
+  let result = Object.prototype.toString.call(data);
+  //   console.log(result.substr(8, result.length - 1 - 8));
+  console.log(result.slice(8, -1));
+}
+
+getType(null);
+getType(undefined);
+getType(true);
+getType(123);
+getType(&quot;sdfdsf&quot;);
+getType(Symbol());
+getType(1111n);
+getType(function () {});
+getType({});
+getType([]);
+</code></pre></div><h2 id="🌛-object构造函数上有哪些语法"><a href="#🌛-object构造函数上有哪些语法" class="header-anchor">#</a> 🌛 Object构造函数上有哪些语法</h2> <p>重要</p> <p>Object.defineProperty()     三阶段才详细讲  现在【禁止】百度这个</p> <p>Object.keys()     获取对象的所有键 返回数组</p> <p>Object.values()    获取对象的所有值 返回数据</p> <p>Object.create()    创建对象（特色 基于指定原型造对象     场景1：new原理优化，场景2：三阶段vue ）</p> <p>好记忆</p> <p>Object.assign()   合并对象</p> <p>Object.prototype.constructor    所属构造函数</p> <p>Object.prototype.toString()    转字符串</p> <h1 id="💘-week5-高频周"><a href="#💘-week5-高频周" class="header-anchor">#</a> 💘 Week5  高频周</h1> <h2 id="day1-2"><a href="#day1-2" class="header-anchor">#</a> - day1</h2> <h2 id="🌟-输入网址浏览器干哈了-简单版"><a href="#🌟-输入网址浏览器干哈了-简单版" class="header-anchor">#</a> 🌟 输入网址浏览器干哈了（简单版）</h2> <div class="language- extra-class"><pre class="language-text"><code>打开浏览器输入网址回车 -&gt;  去DNS服务器找网址对应的IP地址 -&gt; 找不到【无法访问此网站】 找到了【根据ip地址去请求服务器】 -&gt; 服务器返回数据 -&gt; 【浏览器解析】
+
+脚下留心：浏览器其实返回的是index.html的数据，然后在解析的过程中，遇到link、script、img等 再次发送请求拿数据然后解析
+</code></pre></div><h2 id="🌟-谈谈你对http理解"><a href="#🌟-谈谈你对http理解" class="header-anchor">#</a> 🌟 谈谈你对HTTP理解</h2> <div class="language- extra-class"><pre class="language-text"><code>面试：HTTP是超文本传输协议，规定了客户端和服务端如何通信，然后由两个部分组成分别是请求、响应
+
+学习：就是一个规则，你必须按照这个规则才可以和后端交互拿数据
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>概念：超文本传输协议
+作用：规定客户端和服务端通信技术
+场景：网页、APP等
+请求组成：请求行（地址/状态吗/请求方式）、请求头（ua、content-type、token、cookie）、请求体（接口参数）
+响应组成：响应行（同上）、响应头（暂略）、响应体（接口数据调试错误）
+</code></pre></div><h2 id="🌟-http周边-http动词"><a href="#🌟-http周边-http动词" class="header-anchor">#</a> 🌟 HTTP周边：HTTP动词</h2> <h2 id="🌟-http周边-状态码"><a href="#🌟-http周边-状态码" class="header-anchor">#</a> 🌟 HTTP周边：状态码</h2> <h2 id="🌟-http周边-请求头参数"><a href="#🌟-http周边-请求头参数" class="header-anchor">#</a> 🌟 HTTP周边：请求头参数</h2> <ul><li>HTTP动词（请求方式 method)</li></ul> <div class="language- extra-class"><pre class="language-text"><code>明确：form标签也就是w3c就是遵循http规则设计的  但是它的请求方式仅仅只有两种get、post 其他不支持
+但是：我们目前也用get、post 等到三阶段就用n多
+然后：面试就问你有哪些
+种类：常用的get查询、post增加数据、put修改数据、delete删除数据
+实际：java攻城狮就用get查询 增删改都用post
+</code></pre></div><ul><li>状态码</li></ul> <div class="language- extra-class"><pre class="language-text"><code>2xx  200 成功  201 成功并且服务器创建了新数据
+3xx  301 站内跳转   302 站外跳转   304  浏览器缓存
+4xx  400 你传递给后端的参数   401 密码错误  403 没有权限  404文件不存在  405 请求方式有误
+5xx  500 服务器有误
+</code></pre></div><ul><li>请求头参数</li></ul> <div class="language- extra-class"><pre class="language-text"><code>ua、content-type、token、cookie
+</code></pre></div><h2 id="🌟-http周边-强制缓存、协商缓存"><a href="#🌟-http周边-强制缓存、协商缓存" class="header-anchor">#</a> 🌟 HTTP周边：强制缓存、协商缓存</h2> <p>强制缓存：就是文件直接从本地缓存中获取，不需要发送请求。</p> <blockquote><p>响应头  Cache-Control : 86400</p> <p>expires</p></blockquote> <p>协商缓存/对比缓存</p> <blockquote><p>在响应头部 <code>Response Headers</code> 中，<strong>有两种资源标识：</strong></p> <ul><li><code>Last-Modified</code> 资源的最后修改时间，对应请求头为 <code>If-Modified-Since</code> ；</li> <li><code>Etag</code> 资源的唯一标识，所谓唯一，可以想象成时人类的指纹，具有唯一性；但 <code>Etag</code> 的本质是一个字符串；对应请求头为 <code>If-None-Match</code> 。</li></ul> <p><strong>Last-Modified 和 Etag</strong></p> <ul><li>当响应头部 <code>Response Headers</code> 同时存在 <code>Last-Modified</code> 和 <code>Etag</code> 的值时，会优先使用 <code>Etag</code> ；</li> <li><code>Last-Modified</code> 只能精确到秒级；</li> <li>如果资源被重复生成，而内容不变，则 <code>Etag</code> 更精确。</li></ul> <p>https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fupload-images.jianshu.io%2Fupload_images%2F5727550-fd8811d7defb8956.png&amp;refer=http%3A%2F%2Fupload-images.jianshu.io&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1650391279&amp;t=0419cce2bf932f3c0e83594c4d177742</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>请求行/响应行：method、url、status
+
+请求头headers、cookie、content-type、ua、if-none-match、if-modified-since 
+请求体：请求参数
+
+响应头：content-type 告诉浏览器如何解析数 、etag、last-modified、 Cache-Control...
+响应体：响应的数据
+</code></pre></div><h2 id="🌟-get和post有什么区别"><a href="#🌟-get和post有什么区别" class="header-anchor">#</a> 🌟 get和post有什么区别</h2> <div class="language- extra-class"><pre class="language-text"><code>安全角度：post相对比get安全    原因get会在地址栏 因为在地址栏就有访问历史记录  post请求体不会存在来留痕
+数据角度：post相对传输的数据比get多      get会受到不同浏览器地址栏长度限制，post服务器配置
+
+
+上传图片：2M 一般只能上传png、jpg  gif不允许
+</code></pre></div><h2 id="🌟-谈谈你对http、https的理解-有什么区别"><a href="#🌟-谈谈你对http、https的理解-有什么区别" class="header-anchor">#</a> 🌟 谈谈你对http、https的理解，有什么区别</h2> <div class="language- extra-class"><pre class="language-text"><code>http超文本通讯协议	80
+https也是超文本通讯协议  相对http更加安全  443
+</code></pre></div><h2 id="day2-2"><a href="#day2-2" class="header-anchor">#</a> -day2</h2> <h2 id="🌟-谈谈你对骨架屏的理解"><a href="#🌟-谈谈你对骨架屏的理解" class="header-anchor">#</a> 🌟 谈谈你对骨架屏的理解</h2> <p>骨架屏就是<strong>在页面数据尚未加载前先给用户展示出页面的大致结构，直到请求数据返回后再渲染页面</strong>，补充进需要显示的数据内容。常用于文章列表、动态列表页等相对比较规则的列表页面。 很多项目中都有应用:ex:饿了么h5版本,知乎,facebook等网站中都有应用。</p> <p>参考</p> <p>https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/10/15/16676db12e4232bb~tplv-t2oaga2asx-watermark.awebp</p> <h2 id="🌟-谈谈你对节流防抖的理解"><a href="#🌟-谈谈你对节流防抖的理解" class="header-anchor">#</a> 🌟 谈谈你对节流防抖的理解</h2> <p>回答：节流防抖都是用来进行项目优化，减少代码触发的频率，同时又不影响实际效果
+节流：一段时间内只执行一次
+防抖：一段时间内可重复执行，但是要把之前的取消掉</p> <div class="language- extra-class"><pre class="language-text"><code>思路：事件中代码用定时器包起来，然后再前面加判断
+
+问题：输入教主会执行 jiaozhu教主 这么多次
+标签对象.oninput = function() {
+    console.log(1)
+}
+
+节流：一段时间内 1次
+let t
+标签对象.oninput = function() {
+    if (t) return
+    t = setTimeout(() =&gt; {
+        console.log(1)
+        t = null
+    }, 3000)
+} 
+
+防抖：一段时间内可重复执行，但是要把之前的取消掉
+let t
+标签对象.oninput = function() {
+    if (t) clearTimeout(t)
+    t = setTimeout(() =&gt; {
+        console.log(1)
+        t = null
+    }, 3000)
+}
+</code></pre></div><h2 id="🌟-谈谈你对高阶函数的理解"><a href="#🌟-谈谈你对高阶函数的理解" class="header-anchor">#</a> 🌟 谈谈你对高阶函数的理解</h2> <p>简而言之，高阶函数是那些将其他函数作为参数或返回其他函数的函数。在高阶函数中作为参数传递的函数被称为回调。</p> <p>高阶函数的优势：</p> <ul><li>它们可以帮助我们写出简洁的代码。</li> <li>由于是简洁的代码，调试工作会更加容易。</li></ul> <p>现在 JavaScript 有一些内置的高阶函数，你可能已经在不知不觉中就使用它们了，例如 <code>filter()</code>、<code>reduce()</code>、<code>sort()</code> 和 <code>forEach()</code>。</p> <h2 id="🌟-function-ajax-callback"><a href="#🌟-function-ajax-callback" class="header-anchor">#</a> 🌟 function+ajax+callback</h2> <div class="language- extra-class"><pre class="language-text"><code>/**
+ * 发送GET请求
+ * 技术栈：function + ajax + callback
+ * @param {String} url 请求地址 
+ * @param {String} params 请求参数   格式：参数名=值&amp;....&amp;参数名=值
+ * @param {Function} callback  回调函数
+ * @param {Function} headersFn 自定义请求头
+ * @return undefined
+ */
+function get(url, params, callback, headersFn = null)
+{
+    // 一、 创建xhr对象
+    const xhr = new XMLHttpRequest
+    // 二、 监听请求状态
+    xhr.onreadystatechange = function() 
+    {
+        // 判断后端返回数据后再处理
+        if (xhr.readyState === 4)
+        {
+            // 判断返回的状态200成功在处理
+            if (xhr.status === 200)
+            {
+                // 获取数据
+                let res = JSON.parse(xhr.responseText)
+                // 不同逻辑处理
+                callback(res)
+            } else {
+                console.log('请求失败：', xhr.status);
+            }
+        }
+    }
+    // 三、 设置请求方式，请求地址
+    // xhr.open('get', `请求地址?请求参数`)
+    xhr.open('get', `${url}?${params}`)
+
+    if (headersFn) headersFn(xhr)
+    
+    // 四、 发送
+    xhr.send(null)
+}
+</code></pre></div><h2 id="day3-2"><a href="#day3-2" class="header-anchor">#</a> -day3</h2> <h2 id="🌟-谈谈你对promise的理解"><a href="#🌟-谈谈你对promise的理解" class="header-anchor">#</a> 🌟 谈谈你对promise的理解</h2> <p>概念：ES6异步编程解决方案</p> <p>作用：常用于封装ajax异步请求</p> <h2 id="🌟-说一下promise原理"><a href="#🌟-说一下promise原理" class="header-anchor">#</a> 🌟 说一下promise原理</h2> <p>底层创建了Promise构造函数，并且给该构造函数绑定了then、catch、finally等原型方法，和reject、resolve、all、race等静态方法。</p> <h2 id="🌟-说一下promise几个状态"><a href="#🌟-说一下promise几个状态" class="header-anchor">#</a> 🌟 说一下promise几个状态</h2> <p>进行中、成功了、失败了</p> <div class="language- extra-class"><pre class="language-text"><code>const p = new Promise((resolve, reject) =&gt; {
+	// 发送异步请求
+	// 默认触发的  所以是进行中状态
+})
+</code></pre></div><p>追问：为什么状态不可逆</p> <p>回答：底层Promise构造函数中会判断当前是否是pending进行中状态，不是就会终止代码执行  所以不可逆</p> <div class="language- extra-class"><pre class="language-text"><code>// 明确：底层Promise源码大概是这么写的
+function Promise(callback) {
+
+    this.PromiseState = 'pending'
+    this.PromiseResult = undefined
+    
+    const resolve = data =&gt; {
+        if (this.PromiseState != 'pending') return
+        this.PromiseState = 'fulfilled'
+        this.PromiseResult = data
+    }
+    const reject = error =&gt; {
+        if (this.PromiseState != 'pending') return
+        this.PromiseState = 'rejected'
+        this.PromiseResult = error
+    }
+
+    try {
+        // callback(参数1, 参数2)
+        // callback(() =&gt; {}, () =&gt; {})
+        callback(resolve, reject)
+    } catch(error) {
+        reject(error.toString())
+    }
+}
+
+// 然后：你写
+const p = new Promise((resolve, reject) =&gt; {
+	resolve(数据1)
+	reject(数据2)
+})
+</code></pre></div><p>追问：状态之间怎么转换？</p> <p>回答：通过promise的then机制，来实现状态切换</p> <div class="language- extra-class"><pre class="language-text"><code>const p = new Promise((resolve, reject) =&gt; {
+	resolve(数据1)
+})
+
+p
+.then(res =&gt; {
+	return Promise.resolve('失败的')
+})
+</code></pre></div><h2 id="🌟-promise-all、promise-allsettled区别"><a href="#🌟-promise-all、promise-allsettled区别" class="header-anchor">#</a> 🌟 Promise.all、Promise.allSettled区别</h2> <p>Promise.all( 数组里面是一个个Promise对象 )     有一个失败就走失败</p> <p>Promise.allSettled( 数组里面是一个个Promise对象 )      没有失败</p> <h2 id="🌟-promise-race、promise-any区别"><a href="#🌟-promise-race、promise-any区别" class="header-anchor">#</a> 🌟 Promise.race、Promise.any区别</h2> <p>Promise.race( 数组里面是一个个Promise对象 )    根据第一个最快返回的决定状态</p> <p>Promise.any( 数组里面是一个个Promise对象 )     有一个成功就是then 都失败 才是catch</p> <h2 id="day4"><a href="#day4" class="header-anchor">#</a> - day4</h2> <h2 id="🌟-跨域相关"><a href="#🌟-跨域相关" class="header-anchor">#</a> 🌟 跨域相关</h2> <ul><li>跨域导致原因</li></ul> <div class="language- extra-class"><pre class="language-text"><code>概念：当请求一个url的协议、域名、端口三者之间任意一个与当前页面url不同即为跨域
+原因：浏览器安全策略/同源策略
+后果：不能跨网站操作发送ajax请求、WEB存储等
+</code></pre></div><ul><li>跨域解决方案</li></ul> <div class="language- extra-class"><pre class="language-text"><code>前端  
+前端代理  http-proxy-middleware 
+谷歌插件 
+谷歌命令
+
+jsonp
+
+websocket
+postMessage 
+
+
+留心：上述不管哪种方式仅自己可以使用
+最终：开发就选上面其中一种，最终后端：cors法  原理响应头告诉浏览器任何人都可以使用；nginx 反向代理 
+</code></pre></div><h2 id="🌛-谈谈你对同步异步的理解"><a href="#🌛-谈谈你对同步异步的理解" class="header-anchor">#</a> 🌛 谈谈你对同步异步的理解</h2> <p>会被加入到浏览器队列的代码称之为异步代码，例如  ajax、setTimeout/setInterval、Promise.then 等等，他们不按书写✍🏻顺序执行打印结果的代码</p> <p>按照书写顺序执行打印的代码称之为同步代码</p> <h2 id="🌟谈谈你对async-await的理解"><a href="#🌟谈谈你对async-await的理解" class="header-anchor">#</a> 🌟谈谈你对async，await的理解</h2> <p>async、await是generator的语法糖，通过async修饰function、await修饰promise，</p> <p>底层将await后面的表达式会先执行一遍，再将await下一行代码加入到微任务中。</p> <h2 id="🌛-谈谈你generator的理解"><a href="#🌛-谈谈你generator的理解" class="header-anchor">#</a> 🌛 谈谈你generator的理解</h2> <p>es6新增的语法，通过*号修饰函数，当调用函数的时候返回一个generator对象，通过next函数迭代获取函数内部的数据，当遇到yield就会暂停，再次写next才会继续</p> <h2 id="🌟-说出浏览器运行机制"><a href="#🌟-说出浏览器运行机制" class="header-anchor">#</a> 🌟 说出浏览器运行机制</h2> <p>浏览器主进程，负责创建和销毁tab进程、负责交互前进后退、负责网页文件下载等
+渲染进程：每个tab对应一个渲染进程，下面有GUI渲染线程、JS引擎线程、事件线程、定时器线程、异步请求线程
+GPU进程：负责3D图绘制
+第三方插件进程：负责第三方插件处理，例如跨域、广告拦截插件等</p> <h2 id="🌟-说出浏览器输入网址干了啥"><a href="#🌟-说出浏览器输入网址干了啥" class="header-anchor">#</a> 🌟 说出浏览器输入网址干了啥</h2> <div class="language- extra-class"><pre class="language-text"><code>浏览器输入网址回车
+去DNS服务器找网址对应的IP地址 
+根据IP地址加端口访问服务器软件 
+服务器返回数据
+浏览器通过renderer是渲染进程处理，
+其中GUI线程负责页面渲染、JS引擎线程负责解析JS代码
+</code></pre></div><h2 id="🌛-说出js为什么是单线程"><a href="#🌛-说出js为什么是单线程" class="header-anchor">#</a> 🌛 说出JS为什么是单线程</h2> <blockquote><h3 id="先看一个比喻"><a href="#先看一个比喻" class="header-anchor">#</a> 先看一个比喻</h3> <p>进程就是一个公司，每个公司都有自己的资源可以调度；公司之间是相互独立的；而线程就是公司中的每个员工(你，我，他)，多个员工一起合作，完成任务，公司可以有一名员工或多个，员工之间共享公司的空间</p> <h3 id="什么是进程"><a href="#什么是进程" class="header-anchor">#</a> 什么是进程？</h3> <p>进程：是cpu分配资源的最小单位；（是能拥有资源和独立运行的最小单位）</p> <h3 id="什么是线程"><a href="#什么是线程" class="header-anchor">#</a> 什么是线程？</h3> <p>线程：是cpu调度的最小单位；（线程是建立在进程的基础上的一次程序运行单位，一个进程中可以有多个线程）</p> <h4 id="浏览器是多进程的"><a href="#浏览器是多进程的" class="header-anchor">#</a> 浏览器是多进程的</h4> <p>放在浏览器中，每打开一个tab页面，其实就是新开了一个进程，在这个进程中，还有ui渲染线程，js引擎线程，http请求线程等。 所以，浏览器是一个多进程的。</p> <h3 id="大家都在说js是单线程的-但是为什么要设计成单线程"><a href="#大家都在说js是单线程的-但是为什么要设计成单线程" class="header-anchor">#</a> 大家都在说js是单线程的，但是为什么要设计成单线程？</h3> <p>这主要和js的用途有关，js是作为浏览器的脚本语言，主要是实现用户与浏览器的交互，以及操作dom；这决定了它只能是单线程，否则会带来很复杂的同步问题。</p> <p>.举个例子：如果js被设计了多线程，如果有一个线程要修改一个dom元素，另一个线程要删除这个dom元素，此时浏览器就会一脸茫然，不知所措。所以，为了避免复杂性，从一诞生，JavaScript就是单线程，这已经成了这门语言的核心特征，将来也不会改变.</p> <h4 id="为了利用多核cpu的计算能力-html5提出web-worker标准-允许javascript脚本创建多个线程-但是子线程完全受主线程控制-且不得操作dom。所以-这个新标准并没有改变javascript单线程的本质。"><a href="#为了利用多核cpu的计算能力-html5提出web-worker标准-允许javascript脚本创建多个线程-但是子线程完全受主线程控制-且不得操作dom。所以-这个新标准并没有改变javascript单线程的本质。" class="header-anchor">#</a> 为了利用多核CPU的计算能力，HTML5提出Web Worker标准，允许JavaScript脚本创建多个线程，但是子线程完全受主线程控制，且不得操作DOM。所以，这个新标准并没有改变JavaScript单线程的本质。</h4></blockquote> <h2 id="🌛-说出js是单线程-为什么不存在执行效率问题"><a href="#🌛-说出js是单线程-为什么不存在执行效率问题" class="header-anchor">#</a> 🌛 说出JS是单线程 为什么不存在执行效率问题</h2> <p>JS是单线程执行程序代码，形成一个执行栈，挨个处理；</p> <p>但是遇到特别耗费时间的代码 ，例如异步请求，事件等，</p> <p>不会堵塞等待执行，而是交给浏览器其他线程处理后，再丢到执行栈中处理，从而保证还行效率</p> <h2 id="🌟-谈谈你对event-loop的理解"><a href="#🌟-谈谈你对event-loop的理解" class="header-anchor">#</a> 🌟 谈谈你对Event Loop的理解</h2> <p><code>Event Loop</code>即事件循环，</p> <p>是指浏览器或<code>Node</code>的一种确保javaScript单线程运行时不会阻塞的一种机制，</p> <p>也就是我们经常使用<strong>异步</strong>的原理。</p> <p>种类：浏览器的Event Loop、Node.js中的Event Loop</p> <h2 id="🌟-谈谈你对浏览器的event-loop理解"><a href="#🌟-谈谈你对浏览器的event-loop理解" class="header-anchor">#</a> 🌟 谈谈你对浏览器的Event Loop理解</h2> <p>浏览器输入网址服务器响应数据后，</p> <p>浏览器会通过render进程开始解析工作</p> <p>GUI线程负责页面渲染</p> <p>JS引擎线程负责执行JS代码</p> <p>遇到异步代码会交给其他线程处理，然后放到队列中，</p> <p>事件循环主要是从队列中取出代码放到执行栈中交给js引擎线程处理</p> <h2 id="🌟-说出宏任务、微任务各有哪些"><a href="#🌟-说出宏任务、微任务各有哪些" class="header-anchor">#</a> 🌟 说出宏任务、微任务各有哪些</h2> <blockquote><p>单词含义：I input 输入、 O output 输出</p> <p>用户角度IO操作：鼠标键盘-是计算机输入信息，显示器-是输出设备</p> <p>电脑角度IO操作：CPU、内存与其他设备之间数据转移过程就是IO操作，例如数据从磁盘读到内存，或者内存写到磁盘</p> <p>编程角度IO操作：进程读取数据操作</p></blockquote> <ul><li>宏任务：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>整体代码（script）
+定时器（setTimeout、setInterval）
+I/O操作（DOM事件、AJAX异步请求）
+
+setImmediate（node环境）
+requestAnimationFrame（浏览器环境）
+</code></pre></div><ul><li>微任务</li></ul> <div class="language- extra-class"><pre class="language-text"><code>Promise.then catch finally
+async/await（底层还是promise）
+process.nextTick（node环境） 
+MutationObserver（浏览器环境）
+</code></pre></div><h2 id="🌟-说出先执行宏任务还是微任务"><a href="#🌟-说出先执行宏任务还是微任务" class="header-anchor">#</a> 🌟 说出先执行宏任务还是微任务</h2> <p>算整体代码script：1宏n微</p> <p>不算整体代码script：先n微，再1宏 -&gt;  n微，再1宏 -&gt;  n微</p> <h2 id="day5"><a href="#day5" class="header-anchor">#</a> - day5</h2> <h2 id="🌛-前端存储有几种"><a href="#🌛-前端存储有几种" class="header-anchor">#</a> 🌛 前端存储有几种</h2> <p>回答1：常用的2种，主要是cookie、h5存储；浏览器其实还有web sql、indexdb</p> <div class="language- extra-class"><pre class="language-text"><code>H5
+cookie
+web sql
+indexdb
+</code></pre></div><h2 id="🌟cookie和h5的区别"><a href="#🌟cookie和h5的区别" class="header-anchor">#</a> 🌟cookie和h5的区别</h2> <p>回答2：答案在下面</p> <blockquote><p>性能角度：相对而言H5存储性能比COOKIE高</p> <p>存储空间：H5单条数据5M左右、COOKIE单条数据4KB</p> <p>生命周期：</p> <div class="language- extra-class"><pre class="language-text"><code>cookie 			       自己设置，如果不设置浏览器关闭销毁
+h5 localStorage    永久
+h5 sessionStorage  窗口 
+</code></pre></div></blockquote> <h2 id="🌟如何实现localstorage7天过期"><a href="#🌟如何实现localstorage7天过期" class="header-anchor">#</a> 🌟如何实现localStorage7天过期</h2> <p>回答3：</p> <div class="language- extra-class"><pre class="language-text"><code>cookie.  1*1000*60*60*24*7
+
+
+login.html
+
+步骤1：存数据的时候 也额外存一个键叫 expires  记录时间
+	localStorage.setItem('uname', 'value')
+	localStorage.setItem('expires', (new Date).getTime() + 1*1000*60*60*24*7 )
+member.html
+步骤2：使用的时候增加判断
+	// 公式：当前使用时间 &gt; 存储时间 （过期了）
+	// 举例：比如你是2月1号存 
+	// 然后：你加了7天  2月8号过期
+	// 最后： 2月5号 &gt; 2月8号   不成立 没过期
+	// 最后： 2月11号 &gt; 2月8号  成立  过期
+</code></pre></div><h2 id="🌟如何实现七天免登录"><a href="#🌟如何实现七天免登录" class="header-anchor">#</a> 🌟如何实现七天免登录</h2> <h2 id="🌟登录是如何实现的"><a href="#🌟登录是如何实现的" class="header-anchor">#</a> 🌟登录是如何实现的</h2> <h2 id=""><a href="#" class="header-anchor">#</a> ...</h2> <h1 id="💘-week6-较为低频"><a href="#💘-week6-较为低频" class="header-anchor">#</a> 💘 Week6  较为低频</h1> <h2 id="🌛-xhr、-get、-ajax区别"><a href="#🌛-xhr、-get、-ajax区别" class="header-anchor">#</a> 🌛 xhr、$.get、$.ajax区别</h2> <div class="language- extra-class"><pre class="language-text"><code>问题1：XMLHttprequest和JQ代码的区别
+回答1：
+相同点：都可以发送异步请求
+不同点：JQ是基于XMLHttprequest封装了  1 更简单、 2 解决兼容问题等
+
+问题2：$.get、$.ajax区别
+回答2：一样，唯一区别$.ajax比$.get语法上更强
+</code></pre></div><h2 id="🌛-jq你会吗-比如操作样式用什么属性"><a href="#🌛-jq你会吗-比如操作样式用什么属性" class="header-anchor">#</a> 🌛 jq你会吗，比如操作样式用什么属性...</h2> <div class="language- extra-class"><pre class="language-text"><code>获取标签：CSS选择器、筛选选择器、过滤选择器等
+操作标签：样式css方法、类addClass、属性attr/prop、内容val/html、节点append/remove
+事件：$().事件类型()     $().on(事件类型，子，处理函数)
+异步请求：$.get、$.post、$.ajax
+动画：$.animate() 
+网页加载完毕：$(function(){})    （留心：和window.onload区别 
+对象相互转换：$()[索引]   或者  $(JS标签对象
+</code></pre></div><h1 id="💘-week7-高频"><a href="#💘-week7-高频" class="header-anchor">#</a> 💘 Week7  高频</h1> <h2 id="🌟-说出几个常用的git命令"><a href="#🌟-说出几个常用的git命令" class="header-anchor">#</a> 🌟 说出几个常用的git命令</h2> <div class="language- extra-class"><pre class="language-text"><code>配置SSH  ssh-keygen
+用户配置  git config global user.name/email ''
+获取代码 
+git clone 仓库地址
+git init 
+git remote add origin 仓库地址
+git remote remove origin 仓库地址
+增删改：git add . / commit  / push
+
+周边（忽略文件） .gitignore
+周边（代码冲突） git pull git status 
+周边（日志回滚   git log 、 git reset 
+周边（分支）    git branch / git checkout ...
+周边（其他）    git stash、git tag、git pull、git fetc、git merge
+</code></pre></div><h2 id="🌟-说出git工作流-说一下你们日常开发工作流"><a href="#🌟-说出git工作流-说一下你们日常开发工作流" class="header-anchor">#</a> 🌟 说出git工作流，说一下你们日常开发工作流</h2> <div class="language- extra-class"><pre class="language-text"><code>git flow
+
+功能分支 -&gt; 合并到dev分支
+dev分支 -&gt; 合并到release分支
+release分支 -&gt; 合并到master分支
+</code></pre></div><h2 id="🌟-说下git如何解决代码冲突"><a href="#🌟-说下git如何解决代码冲突" class="header-anchor">#</a> 🌟 说下git如何解决代码冲突</h2> <div class="language- extra-class"><pre class="language-text"><code>1 pull
+2 status、手动解决
+3 重新add/commit/push
+</code></pre></div><h2 id="🌟-说一下你在开发登陆时-线上出现bug了如何维护"><a href="#🌟-说一下你在开发登陆时-线上出现bug了如何维护" class="header-anchor">#</a> 🌟 说一下你在开发登陆时，线上出现bug了如何维护</h2> <div class="language- extra-class"><pre class="language-text"><code>基于master创建hotfix分支，
+解决了再 push 并 merge 到 master、dev 上
+</code></pre></div><h2 id="🌟-克隆获取的是默认分支代码-如何获取其他分支代码"><a href="#🌟-克隆获取的是默认分支代码-如何获取其他分支代码" class="header-anchor">#</a> 🌟 克隆获取的是默认分支代码，如何获取其他分支代码</h2> <div class="language- extra-class"><pre class="language-text"><code>git checkout -b 分支名 分支名
+</code></pre></div><h2 id="🌟-用过哪些git图形化可是软件"><a href="#🌟-用过哪些git图形化可是软件" class="header-anchor">#</a> 🌟 用过哪些git图形化可是软件</h2> <div class="language- extra-class"><pre class="language-text"><code>编辑器
+sourcetruee  
+等等
+</code></pre></div><h2 id="🌟-说下git和svn区别"><a href="#🌟-说下git和svn区别" class="header-anchor">#</a> 🌟 说下git和svn区别</h2> <div class="language- extra-class"><pre class="language-text"><code>git是分布式、svn是集中式
+svn相对容易冲突
+等
+</code></pre></div></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----></main> <!----> <div class="comments-wrapper" data-v-4698c43e><!----></div></div></div></div></div></div><div class="global-ui"><!----><div></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 Fade away
+    </div> <div class="operation" style="left:380px;bottom:20px;display:none;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="left:250px;bottom:0px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><div class="Sakura" data-v-248d85d6><canvas id="canvas_sakura" style="z-index:-1;" data-v-248d85d6></canvas></div><!----><div id="goTop" class="hide-cat" data-v-bf92849a></div></div></div>
+    <script src="/assets/js/app.99624b8a.js" defer></script><script src="/assets/js/3.a9f58784.js" defer></script><script src="/assets/js/1.a344c94a.js" defer></script><script src="/assets/js/145.17e7e39c.js" defer></script><script src="/assets/js/30.7d28a2d6.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue面试题 | Fade away</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script type="text/javascript" src="/js/mouseClick.js"></script>
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="花有重开日，人无在少年">
+    <meta name="keywords" content="随便写写">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="robots" content="all">
+    <meta name="author" content="xiazhi">
+    
+    <link rel="preload" href="/assets/css/0.styles.91dd29b7.css" as="style"><link rel="preload" href="/assets/js/app.99624b8a.js" as="script"><link rel="preload" href="/assets/js/3.a9f58784.js" as="script"><link rel="preload" href="/assets/js/1.a344c94a.js" as="script"><link rel="preload" href="/assets/js/146.55527375.js" as="script"><link rel="preload" href="/assets/js/30.7d28a2d6.js" as="script"><link rel="prefetch" href="/assets/js/10.513c5d67.js"><link rel="prefetch" href="/assets/js/100.331ca440.js"><link rel="prefetch" href="/assets/js/101.f600eae1.js"><link rel="prefetch" href="/assets/js/102.701a3771.js"><link rel="prefetch" href="/assets/js/103.1a52eead.js"><link rel="prefetch" href="/assets/js/104.47329018.js"><link rel="prefetch" href="/assets/js/105.57317b7d.js"><link rel="prefetch" href="/assets/js/106.7c24c08f.js"><link rel="prefetch" href="/assets/js/107.9fdd48da.js"><link rel="prefetch" href="/assets/js/108.73ecc853.js"><link rel="prefetch" href="/assets/js/109.7abf6317.js"><link rel="prefetch" href="/assets/js/11.5ef240f5.js"><link rel="prefetch" href="/assets/js/110.7027a417.js"><link rel="prefetch" href="/assets/js/111.ebaca92a.js"><link rel="prefetch" href="/assets/js/112.f1b3db2d.js"><link rel="prefetch" href="/assets/js/113.1ddfd958.js"><link rel="prefetch" href="/assets/js/114.48e05a14.js"><link rel="prefetch" href="/assets/js/115.5b1f83cc.js"><link rel="prefetch" href="/assets/js/116.5f0c8321.js"><link rel="prefetch" href="/assets/js/117.1a418555.js"><link rel="prefetch" href="/assets/js/118.ff87b9d2.js"><link rel="prefetch" href="/assets/js/119.037a1943.js"><link rel="prefetch" href="/assets/js/12.4a7003f3.js"><link rel="prefetch" href="/assets/js/120.cee1015b.js"><link rel="prefetch" href="/assets/js/121.52ac3e89.js"><link rel="prefetch" href="/assets/js/122.a3560045.js"><link rel="prefetch" href="/assets/js/123.721257bf.js"><link rel="prefetch" href="/assets/js/124.e2045af2.js"><link rel="prefetch" href="/assets/js/125.495ee0cb.js"><link rel="prefetch" href="/assets/js/126.fac66553.js"><link rel="prefetch" href="/assets/js/127.f59af0ba.js"><link rel="prefetch" href="/assets/js/128.f40cdaa1.js"><link rel="prefetch" href="/assets/js/129.67b3d27d.js"><link rel="prefetch" href="/assets/js/13.d4371f04.js"><link rel="prefetch" href="/assets/js/130.aa06024b.js"><link rel="prefetch" href="/assets/js/131.dee3e4e5.js"><link rel="prefetch" href="/assets/js/132.d6776d37.js"><link rel="prefetch" href="/assets/js/133.48b0028d.js"><link rel="prefetch" href="/assets/js/134.615b85e9.js"><link rel="prefetch" href="/assets/js/135.1ecf85e0.js"><link rel="prefetch" href="/assets/js/136.6fe1b198.js"><link rel="prefetch" href="/assets/js/137.5b56922f.js"><link rel="prefetch" href="/assets/js/138.4ad4e9d9.js"><link rel="prefetch" href="/assets/js/139.9a979a18.js"><link rel="prefetch" href="/assets/js/14.e51087d8.js"><link rel="prefetch" href="/assets/js/140.70982156.js"><link rel="prefetch" href="/assets/js/141.6006a4c5.js"><link rel="prefetch" href="/assets/js/142.09d04a53.js"><link rel="prefetch" href="/assets/js/143.00574315.js"><link rel="prefetch" href="/assets/js/144.56c8a90a.js"><link rel="prefetch" href="/assets/js/145.17e7e39c.js"><link rel="prefetch" href="/assets/js/147.ba67a557.js"><link rel="prefetch" href="/assets/js/15.f139a61b.js"><link rel="prefetch" href="/assets/js/16.98e04b9a.js"><link rel="prefetch" href="/assets/js/17.28b86c6e.js"><link rel="prefetch" href="/assets/js/18.0855c83f.js"><link rel="prefetch" href="/assets/js/19.1ddb5980.js"><link rel="prefetch" href="/assets/js/20.e0af366f.js"><link rel="prefetch" href="/assets/js/21.a6d28092.js"><link rel="prefetch" href="/assets/js/22.41b481ae.js"><link rel="prefetch" href="/assets/js/23.5ded2918.js"><link rel="prefetch" href="/assets/js/24.9f77e0f8.js"><link rel="prefetch" href="/assets/js/25.15cc72ab.js"><link rel="prefetch" href="/assets/js/26.fe75f118.js"><link rel="prefetch" href="/assets/js/27.2e89380e.js"><link rel="prefetch" href="/assets/js/28.f9766ddb.js"><link rel="prefetch" href="/assets/js/29.df3bae1e.js"><link rel="prefetch" href="/assets/js/31.773fff91.js"><link rel="prefetch" href="/assets/js/32.a519b5bb.js"><link rel="prefetch" href="/assets/js/33.c54ccdbf.js"><link rel="prefetch" href="/assets/js/34.bcc19a82.js"><link rel="prefetch" href="/assets/js/35.72d1b42a.js"><link rel="prefetch" href="/assets/js/36.ac818ff6.js"><link rel="prefetch" href="/assets/js/37.4c919707.js"><link rel="prefetch" href="/assets/js/38.e2cb4341.js"><link rel="prefetch" href="/assets/js/39.ad223721.js"><link rel="prefetch" href="/assets/js/4.03f95861.js"><link rel="prefetch" href="/assets/js/40.ded09630.js"><link rel="prefetch" href="/assets/js/41.61954733.js"><link rel="prefetch" href="/assets/js/42.19fab9ef.js"><link rel="prefetch" href="/assets/js/43.8c4fd22e.js"><link rel="prefetch" href="/assets/js/44.6b6add1a.js"><link rel="prefetch" href="/assets/js/45.5adaa0dd.js"><link rel="prefetch" href="/assets/js/46.274bbf17.js"><link rel="prefetch" href="/assets/js/47.b0ce2c47.js"><link rel="prefetch" href="/assets/js/48.69800b3e.js"><link rel="prefetch" href="/assets/js/49.c567847f.js"><link rel="prefetch" href="/assets/js/5.76fa7a68.js"><link rel="prefetch" href="/assets/js/50.6abd0bf4.js"><link rel="prefetch" href="/assets/js/51.1d7ed678.js"><link rel="prefetch" href="/assets/js/52.b0664139.js"><link rel="prefetch" href="/assets/js/53.4cb0e403.js"><link rel="prefetch" href="/assets/js/54.6c84bf77.js"><link rel="prefetch" href="/assets/js/55.9d68b9fb.js"><link rel="prefetch" href="/assets/js/56.520092f0.js"><link rel="prefetch" href="/assets/js/57.9dc9d2d0.js"><link rel="prefetch" href="/assets/js/58.5fa2435a.js"><link rel="prefetch" href="/assets/js/59.7f3705fd.js"><link rel="prefetch" href="/assets/js/6.54231d4c.js"><link rel="prefetch" href="/assets/js/60.9c9bd024.js"><link rel="prefetch" href="/assets/js/61.6eb0c0bb.js"><link rel="prefetch" href="/assets/js/62.149eb308.js"><link rel="prefetch" href="/assets/js/63.be303c2d.js"><link rel="prefetch" href="/assets/js/64.27592e06.js"><link rel="prefetch" href="/assets/js/65.e8f30ad3.js"><link rel="prefetch" href="/assets/js/66.67a34028.js"><link rel="prefetch" href="/assets/js/67.c395f7ed.js"><link rel="prefetch" href="/assets/js/68.d9142a8a.js"><link rel="prefetch" href="/assets/js/69.4f7f28f1.js"><link rel="prefetch" href="/assets/js/7.db62a644.js"><link rel="prefetch" href="/assets/js/70.20b76f9a.js"><link rel="prefetch" href="/assets/js/71.7ad2ee77.js"><link rel="prefetch" href="/assets/js/72.36864641.js"><link rel="prefetch" href="/assets/js/73.9c9e473d.js"><link rel="prefetch" href="/assets/js/74.469ada63.js"><link rel="prefetch" href="/assets/js/75.503f5154.js"><link rel="prefetch" href="/assets/js/76.d34c55f7.js"><link rel="prefetch" href="/assets/js/77.cdd50449.js"><link rel="prefetch" href="/assets/js/78.324b5df5.js"><link rel="prefetch" href="/assets/js/79.31e8cb64.js"><link rel="prefetch" href="/assets/js/8.7b245108.js"><link rel="prefetch" href="/assets/js/80.31dca687.js"><link rel="prefetch" href="/assets/js/81.3dd21cf7.js"><link rel="prefetch" href="/assets/js/82.eeeee6cf.js"><link rel="prefetch" href="/assets/js/83.5d03d2d9.js"><link rel="prefetch" href="/assets/js/84.7e956720.js"><link rel="prefetch" href="/assets/js/85.a3b6227a.js"><link rel="prefetch" href="/assets/js/86.b2f71436.js"><link rel="prefetch" href="/assets/js/87.f9f3b65a.js"><link rel="prefetch" href="/assets/js/88.4c9d4599.js"><link rel="prefetch" href="/assets/js/89.cca52254.js"><link rel="prefetch" href="/assets/js/9.63b5e451.js"><link rel="prefetch" href="/assets/js/90.dad44872.js"><link rel="prefetch" href="/assets/js/91.3995bce6.js"><link rel="prefetch" href="/assets/js/92.f311f03c.js"><link rel="prefetch" href="/assets/js/93.911f57cc.js"><link rel="prefetch" href="/assets/js/94.3392f97b.js"><link rel="prefetch" href="/assets/js/95.1787563a.js"><link rel="prefetch" href="/assets/js/96.2a256f43.js"><link rel="prefetch" href="/assets/js/97.cdcd9405.js"><link rel="prefetch" href="/assets/js/98.4eae5b0f.js"><link rel="prefetch" href="/assets/js/99.0b6820bb.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.91dd29b7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-4698c43e><div data-v-4698c43e><div id="loader-wrapper" class="loading-wrapper" data-v-1c4f0192 data-v-4698c43e data-v-4698c43e><div class="loader-main" data-v-1c4f0192><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-6cbeab0a data-v-4698c43e data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>Fade away</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>夏至</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-4698c43e><header class="navbar" data-v-4698c43e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Fade away</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      前端三剑客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Html</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/Html/01.Html初识.html" class="nav-link"><i class="iconfont undefined"></i>
+  Html
+</a></li></ul></li><li class="dropdown-item"><h4>CSS</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS/01.引入css样式表.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS3/01.新增选择器.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS3
+</a></li></ul></li><li class="dropdown-item"><h4>JavaScript</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js基础/01.js基础语法.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js基础
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js高级/01.this关键字.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js高级
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Vue</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/Vue/Vue2/01.Vue基础.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue2
+</a></li><li class="dropdown-subitem"><a href="/框架/Vue/Vue3/1.创建Vue3项目.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue3
+</a></li></ul></li><li class="dropdown-item"><h4>React</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/React/01.React入门.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>小程序</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/小程序/01.mina.html" class="nav-link"><i class="iconfont undefined"></i>
+  mina
+</a></li><li class="dropdown-subitem"><a href="/框架/小程序/02.uni-app.html" class="nav-link"><i class="iconfont undefined"></i>
+  uni-app
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Node.js/01.初识Node.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></div><div class="nav-item"><a href="/学习git/git学习.html" class="nav-link"><i class="iconfont undefined"></i>
+  学习git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      可视化
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/可视化/Canvas/01.认识Canvas.html" class="nav-link"><i class="iconfont undefined"></i>
+  Canvas
+</a></li><li class="dropdown-item"><!----> <a href="/可视化/Three.js/01.认识Three.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Three.js
+</a></li></ul></div></div><div class="nav-item"><a href="/收藏的网站/收藏的网站.html" class="nav-link"><i class="iconfont undefined"></i>
+  收藏网址
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4698c43e></div> <aside class="sidebar" data-v-4698c43e><div class="personal-info-wrapper" data-v-6c8ffc9c><!----> <h3 class="name" data-v-6c8ffc9c>
+    夏至
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>0</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>0</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      前端三剑客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Html</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/Html/01.Html初识.html" class="nav-link"><i class="iconfont undefined"></i>
+  Html
+</a></li></ul></li><li class="dropdown-item"><h4>CSS</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS/01.引入css样式表.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS3/01.新增选择器.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS3
+</a></li></ul></li><li class="dropdown-item"><h4>JavaScript</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js基础/01.js基础语法.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js基础
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js高级/01.this关键字.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js高级
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Vue</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/Vue/Vue2/01.Vue基础.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue2
+</a></li><li class="dropdown-subitem"><a href="/框架/Vue/Vue3/1.创建Vue3项目.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue3
+</a></li></ul></li><li class="dropdown-item"><h4>React</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/React/01.React入门.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>小程序</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/小程序/01.mina.html" class="nav-link"><i class="iconfont undefined"></i>
+  mina
+</a></li><li class="dropdown-subitem"><a href="/框架/小程序/02.uni-app.html" class="nav-link"><i class="iconfont undefined"></i>
+  uni-app
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Node.js/01.初识Node.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></div><div class="nav-item"><a href="/学习git/git学习.html" class="nav-link"><i class="iconfont undefined"></i>
+  学习git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      可视化
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/可视化/Canvas/01.认识Canvas.html" class="nav-link"><i class="iconfont undefined"></i>
+  Canvas
+</a></li><li class="dropdown-item"><!----> <a href="/可视化/Three.js/01.认识Three.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Three.js
+</a></li></ul></div></div><div class="nav-item"><a href="/收藏的网站/收藏的网站.html" class="nav-link"><i class="iconfont undefined"></i>
+  收藏网址
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>面试题</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/面试题/01.Html+Css面试题.html" class="sidebar-link">Html+Css面试题</a></li><li><a href="/面试题/02.Js+Es6面试题.html" class="sidebar-link">Js+Es6面试题</a></li><li><a href="/面试题/03.vue面试题.html" class="active sidebar-link">vue面试题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#💘-课题" class="sidebar-link">💘 课题</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🆕-先学vue3基本语法" class="sidebar-link">🆕 先学vue3基本语法</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-说出vue常用的指令" class="sidebar-link">🌟 说出vue常用的指令</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-mvvm、mvc面试题" class="sidebar-link">🌟  MVVM、MVC面试题</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-说一下v-show、v-if的区别" class="sidebar-link">🌟  说一下v-show、v-if的区别</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🆕-判断循环v-if、v-for优先级" class="sidebar-link">🆕 判断循环v-if、v-for优先级</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#💘-课题-2" class="sidebar-link">💘 课题</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#💘-课件" class="sidebar-link">💘 课件</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌛-class与style绑定工作有用过吗" class="sidebar-link">🌛 Class与Style绑定工作有用过吗</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-计算属性和-侦听器区别、使用场景" class="sidebar-link">🌟 计算属性和=侦听器区别、使用场景</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-watch监控失效场景-解决方案" class="sidebar-link">🌟 watch监控失效场景&amp;解决方案</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-watch两大属性应用场景" class="sidebar-link">🌟 watch两大属性应用场景</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-谈谈你对过滤器的理解有没有用过" class="sidebar-link">🌟 谈谈你对过滤器的理解有没有用过</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-谈谈你对混入的理解有没有用过" class="sidebar-link">🌟  谈谈你对混入的理解有没有用过</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌛-自定义指令有没有用过" class="sidebar-link">🌛 自定义指令有没有用过</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#💘-课件-2" class="sidebar-link">💘 课件</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-为啥data要写函数里面返回对象" class="sidebar-link">🌟 为啥data要写函数里面返回对象</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌛谈谈你对单向数据流的理解" class="sidebar-link">🌛谈谈你对单向数据流的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-如何实现组件通信" class="sidebar-link">🌟 如何实现组件通信？</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-事件-native作用" class="sidebar-link">🌟 事件.native作用</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-在组件上写原生事件失效解决方案" class="sidebar-link">🌟 在组件上写原生事件失效解决方案</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-在组件上使用v-model原理" class="sidebar-link">🌟 在组件上使用v-model原理</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌛-修饰符-sync原理" class="sidebar-link">🌛 修饰符.sync原理</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#💘-课件-3" class="sidebar-link">💘 课件</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-说出浏览器运行机制" class="sidebar-link">🌟 说出浏览器运行机制</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-说出浏览器输入网址干了啥" class="sidebar-link">🌟 说出浏览器输入网址干了啥</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌛-说出js为什么是单线程" class="sidebar-link">🌛 说出JS为什么是单线程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#先看一个比喻" class="sidebar-link">先看一个比喻</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#什么是进程" class="sidebar-link">什么是进程？</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#什么是线程" class="sidebar-link">什么是线程？</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#大家都在说js是单线程的-但是为什么要设计成单线程" class="sidebar-link">大家都在说js是单线程的，但是为什么要设计成单线程？</a></li></ul></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌛-说出js是单线程-为什么不存在执行效率问题" class="sidebar-link">🌛 说出JS是单线程 为什么不存在执行效率问题</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-谈谈你对回流重绘的理解" class="sidebar-link">🌟 谈谈你对回流重绘的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-哪些属性导致回流、哪些属性导致重绘" class="sidebar-link">🌟 哪些属性导致回流、哪些属性导致重绘</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-如何避免或减少回流重绘" class="sidebar-link">🌟 如何避免或减少回流重绘</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-谈谈你对虚拟dom的理解" class="sidebar-link">🌟 谈谈你对虚拟DOM的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-说出vue有哪些生命周期并说出应用场景" class="sidebar-link">🌟 说出VUE有哪些生命周期并说出应用场景</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-created里面可以操作dom吗" class="sidebar-link">🌟 created里面可以操作DOM吗</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌛-watch与created-哪个先执行" class="sidebar-link">🌛 watch与created() 哪个先执行？</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌛数据可视化-echarts" class="sidebar-link">🌛数据可视化 echarts</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-谈谈你对keep-alive的理解-并说出应用场景" class="sidebar-link">🌟 谈谈你对keep-alive的理解，并说出应用场景</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-谈谈你对-nexttick的理解-并说出应用场景" class="sidebar-link">🌟 谈谈你对$nextTick的理解，并说出应用场景</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-说出-nexttick原理" class="sidebar-link">🌟 说出$nextTick原理</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#💘-课题-3" class="sidebar-link">💘 课题</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-说一下v-model原理" class="sidebar-link">🌟 说一下v-model原理</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-vue2响应式原理-中级" class="sidebar-link">🌟 VUE2响应式原理（中级）</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-vue2响应式原理-高级" class="sidebar-link">🌟 VUE2响应式原理（高级）</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-vue2响应式数据无法劫持原因、和解决方案" class="sidebar-link">🌟 VUE2响应式数据无法劫持原因、和解决方案</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-forceupdate-原理" class="sidebar-link">🌟 $forceUpdate 原理</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-set-原理" class="sidebar-link">🌟 $set 原理</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌛-delete-原理" class="sidebar-link">🌛 $delete 原理</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-vue-set-delete-原理" class="sidebar-link">🌟 Vue.set/delete 原理</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🆕-响应式原理" class="sidebar-link">🆕 响应式原理</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#💘-课件-4" class="sidebar-link">💘 课件</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌛-路由-对象里面的键" class="sidebar-link">🌛 路由-对象里面的键</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-路由-你说下vue路由模式有几种" class="sidebar-link">🌟 路由-你说下vue路由模式有几种？</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-路由-你说下vue路由原理" class="sidebar-link">🌟 路由-你说下vue路由原理？</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-路由-history有什么问题-如何解决" class="sidebar-link">🌟 路由-history有什么问题，如何解决？</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-路由-什么是单页面应用spa优缺点-如何选择" class="sidebar-link">🌟 路由-什么是单页面应用SPA优缺点，如何选择</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-路由-参数周边种类、方式" class="sidebar-link">🌟 路由-参数周边种类、方式</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-路由-谈谈你对编程式导航的理解" class="sidebar-link">🌟 路由-谈谈你对编程式导航的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-路由-说出嵌套路由-命名视图的场景" class="sidebar-link">🌟 路由-说出嵌套路由&amp;命名视图的场景</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-路由-全局导航守卫登陆鉴权" class="sidebar-link">🌟 路由-全局导航守卫登陆鉴权</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-路由-导航守卫种类-作用" class="sidebar-link">🌟 路由-导航守卫种类&amp;作用</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌛-路由-导航守卫执行顺序" class="sidebar-link">🌛 路由-导航守卫执行顺序</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-路由-动态路由如何实现" class="sidebar-link">🌟 路由-动态路由如何实现</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-路由-元信息有啥用" class="sidebar-link">🌟 路由-元信息有啥用</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌛-路由-过渡特效场景" class="sidebar-link">🌛 路由-过渡特效场景</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#💘-课件-5" class="sidebar-link">💘 课件</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-说出框架中做了哪些配置vue-config-js" class="sidebar-link">🌟 说出框架中做了哪些配置vue.config.js</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-说出跨域的解决方案" class="sidebar-link">🌟 说出跨域的解决方案</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-说出vue-use原理" class="sidebar-link">🌟 说出Vue.use原理</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#💘-课件-6" class="sidebar-link">💘 课件</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌛-说出ui组件库-ui框架原理" class="sidebar-link">🌛 说出UI组件库/UI框架原理</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-项目开发中有没有封装过组件" class="sidebar-link">🌟 项目开发中有没有封装过组件</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-项目中封装了哪些组件" class="sidebar-link">🌟 项目中封装了哪些组件</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-组件如何封装的" class="sidebar-link">🌟 组件如何封装的</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-样式相关" class="sidebar-link">🌟 样式相关</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-用户角色权限三者是如何关联的" class="sidebar-link">🌟 用户角色权限三者是如何关联的</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#💘-课件-7" class="sidebar-link">💘 课件</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-谈谈你对http理解" class="sidebar-link">🌟 谈谈你对HTTP理解</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-谈谈你对状态码的理解" class="sidebar-link">🌟 谈谈你对状态码的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-post、get区别" class="sidebar-link">🌟 post、get区别</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-xhr、fetch区别" class="sidebar-link">🌟 xhr、fetch区别</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-fetch、axios区别" class="sidebar-link">🌟 fetch、axios区别</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-axios之前有没有封装过" class="sidebar-link">🌟 axios之前有没有封装过</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-axios原理" class="sidebar-link">🌟  axios原理</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-跨域如何解决" class="sidebar-link">🌟 跨域如何解决</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#💘-课件-8" class="sidebar-link">💘 课件</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-说出vuex有哪些键" class="sidebar-link">🌟 说出vuex有哪些键</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-说出vuex工作流" class="sidebar-link">🌟 说出vuex工作流</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-说出vuex数据持久化" class="sidebar-link">🌟 说出vuex数据持久化</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-2109" class="sidebar-link">🌟 2109</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-说一下登录如何实现的" class="sidebar-link">🌟 说一下登录如何实现的</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-如何判断用户是否登录" class="sidebar-link">🌟 如何判断用户是否登录</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-登录是如何鉴权的" class="sidebar-link">🌟 登录是如何鉴权的</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-说一下token过期机制" class="sidebar-link">🌟 说一下token过期机制</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-项目中是前端路由还是后端路由" class="sidebar-link">🌟 项目中是前端路由还是后端路由</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-权限菜单如何实现的" class="sidebar-link">🌟 权限菜单如何实现的</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟" class="sidebar-link">🌟 ....</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-项目做了哪些优化" class="sidebar-link">🌟 项目做了哪些优化</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-说出路由懒加载原理" class="sidebar-link">🌟 说出路由懒加载原理</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-周边-async、await具体怎么用的" class="sidebar-link">🌟 周边：async、await具体怎么用的</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-说一下diff算法" class="sidebar-link">🌟 说一下Diff算法</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-【事件循环】谈谈你对event-loop的理解" class="sidebar-link">🌟 【事件循环】谈谈你对Event Loop的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-【事件循环】谈谈你对浏览器的event-loop理解" class="sidebar-link">🌟 【事件循环】谈谈你对浏览器的Event Loop理解</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌛【事件循环】谈谈你对node-js中的event-loop理解" class="sidebar-link">🌛【事件循环】谈谈你对Node.js中的Event Loop理解</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-【事件循环】说出宏任务、微任务各有哪些" class="sidebar-link">🌟 【事件循环】说出宏任务、微任务各有哪些</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-【事件循环】说出先执行宏任务还是微任务" class="sidebar-link">🌟 【事件循环】说出先执行宏任务还是微任务</a></li><li class="sidebar-sub-header"><a href="/面试题/03.vue面试题.html#🌟-【事件循环】浏览器和node中event-loop区别" class="sidebar-link">🌟 【事件循环】浏览器和node中event loop区别</a></li></ul></li><li><a href="/面试题/04.react面试题.html" class="sidebar-link">react面试题</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6cbeab0a data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a></h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>夏至</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2023
+        </a></span></div></div> <div data-v-4698c43e><main class="page"><!----> <div class="page-title" style="display:none;"><h1>vue面试题</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>夏至</span></i> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default" style="display:none;"><h1 id="vue面试题"><a href="#vue面试题" class="header-anchor">#</a> vue面试题</h1> <p>💘 课题</p> <p>🌟 常见重要</p> <p>🌛 需要有印象的</p> <p>🆕 v3新特性</p> <h1 id="■-week1-day1-基本语法"><a href="#■-week1-day1-基本语法" class="header-anchor">#</a> ■ week1-day1 基本语法</h1> <h2 id="💘-课题"><a href="#💘-课题" class="header-anchor">#</a> 💘 课题</h2> <p>week1-day1  Vue基础（基本语法：简介、模板语法、列表渲染、条件渲染、事件处理）</p> <h2 id="🆕-先学vue3基本语法"><a href="#🆕-先学vue3基本语法" class="header-anchor">#</a> 🆕 先学vue3基本语法</h2> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>root<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>{{msg}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>content<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>addFn<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>添加<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item in todos<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{item.id}} {{item.title}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://unpkg.com/vue@next<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token comment">// 以前：new Vue({el,data,methods....})</span>
+<span class="token comment">// 以前：new Vue({data,methods....}).$mount('#root')</span>
+<span class="token comment">// 现在：Vue.createApp({data,methods}).mount('#root')</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">createApp</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">msg</span><span class="token operator">:</span> <span class="token string">&quot;hello vue3&quot;</span><span class="token punctuation">,</span>
+
+            <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">todos</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'吃饭'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'睡觉'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'挤痘痘'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>   
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token function">addFn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>todos<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>todos<span class="token punctuation">.</span>length<span class="token punctuation">,</span>
+                <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>content
+            <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">'#root'</span><span class="token punctuation">)</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="🌟-说出vue常用的指令"><a href="#🌟-说出vue常用的指令" class="header-anchor">#</a> 🌟 说出vue常用的指令</h2> <div class="language- extra-class"><pre class="language-text"><code>{{}} 两个大括号
+v-text
+v-html
+v-bind  简写 :
+v-for
+v-if、v-else-if、v-else
+v-show
+v-on   简写 @
+
+v-pre   跳过编译（几乎99%不会用）
+v-once  仅渲染一次（几乎99%不会用）
+v-cloak 插值闪烁问题  
+
+v-model 第二天知识点
+</code></pre></div><h2 id="🌟-mvvm、mvc面试题"><a href="#🌟-mvvm、mvc面试题" class="header-anchor">#</a> 🌟  MVVM、MVC面试题</h2> <ul><li>谈谈你对MVC的理解</li></ul> <div class="language- extra-class"><pre class="language-text"><code>MVC是软件开发中常见的开发模式，主要应用于后端，将程序划分为M模型、V视图、C控制器从而便于团队协作开发，减少代码冗余
+</code></pre></div><ul><li>谈谈你对MVVM理解</li></ul> <div class="language- extra-class"><pre class="language-text"><code>MVVM是Model-View-ViewModel缩写，也就是将MVC中的Controller演变成ViewModel
+Model层代表数据模型、
+View层代表UI组件
+ViewModel是Model、View层的桥梁，数据会绑定到ViewModel并自动将数据渲染到页面，视图变化会通知ViewModel层更新数据。
+
+或者 
+
+随着移动互联网的发展，MVVM思想借鉴MVC、MVP思想演变而来，M模型负责数据维护，V视图负责数据展示，VM则是M和V的桥梁，监控M模型数据变化自动更新V视图，从而解决传统前后端分离JQ架构弊端
+
+开发者在代码中大量调用相同的 DOM API, 处理繁琐 ，操作冗余，使得代码难以维护。
+大量的DOM 操作使页面渲染性能降低，加载速度变慢，影响用户体验。
+当 Model 频繁发生变化，开发者需要主动更新到View ；当用户的操作导致 Model 发生变化，开发者同样需要将变化的数据同步到Model 中，这样的工作不仅繁琐，而且很难维护复杂多变的数据状态。
+</code></pre></div><ul><li>谈谈MVVM和MVC区别</li></ul> <div class="language- extra-class"><pre class="language-text"><code>相同点：都是软件开发常见的开发模式或者开发思想
+不同点：
+1- MVC后端居多，MVVM前端
+2- MVC单向通信 目的将M和V代码分离，MVVM则是双向通信，不需要手动操作DOM
+
+或
+
+最初MVC最早出现在后端   M代表模型负责数据处理、V代表视图负责数据战士、C代表控制器负责调度
+后来前端也有了MVC库，最早实现的就是backbone.js 但是V和M并没有很好的解耦
+因此出现了MVVM模式，
+MVVM是Model-View-ViewModel缩写，也就是将MVC中的Controller演变成ViewModel
+Model层代表数据模型、
+View层代表UI组件
+ViewModel是Model、View层的桥梁，数据会绑定到ViewModel并自动将数据渲染到页面，视图变化会通知ViewModel层更新数据。
+</code></pre></div><blockquote><p>多说一嘴：VUE不是纯MVVM框架</p> <p>https://cn.vuejs.org/v2/guide/instance.html#%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA-Vue-%E5%AE%9E%E4%BE%8B</p> <p>虽然没有完全遵循 <a href="https://zh.wikipedia.org/wiki/MVVM" target="_blank" rel="noopener noreferrer">MVVM 模型<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，但是 Vue 的设计也受到了它的启发。因此在文档中经常会使用 <code>vm</code> (ViewModel 的缩写) 这个变量名表示 Vue 实例。</p></blockquote> <h2 id="🌟-说一下v-show、v-if的区别"><a href="#🌟-说一下v-show、v-if的区别" class="header-anchor">#</a> 🌟  说一下v-show、v-if的区别</h2> <p>相同点：都可以用户判断控制元素隐藏显示</p> <p>不同点：1-v-if语法更强、2-v-if控制DOM、v-show控制CSS</p> <p>如何选：高频切换例如二维码、登录弹框、提示框、删除提示框、tab选项卡，推荐使用v-show 来减少DOM频繁删除创建所产生的额外性能开销</p> <p>高逼格</p> <div class="language- extra-class"><pre class="language-text"><code>v-if 是真正的条件渲染，因为它会确保在切换过程中条件块内的事件监听器和子组件适当地被销毁和重建；也是惰性的：如果在初始渲染时条件为假，则什么也不做——直到条件第一次变为真时，才会开始渲染条件块。
+v-show 就简单得多——不管初始条件是什么，元素总是会被渲染，并且只是简单地基于 CSS 的 “display” 属性进行切换。
+所以，v-if 适用于在运行时很少改变条件，不需要频繁切换条件的场景；v-show 则适用于需要非常频繁切换条件的场景。
+</code></pre></div><h2 id="🆕-判断循环v-if、v-for优先级"><a href="#🆕-判断循环v-if、v-for优先级" class="header-anchor">#</a> 🆕 判断循环v-if、v-for优先级</h2> <ul><li>手册</li></ul> <div class="language- extra-class"><pre class="language-text"><code>https://cn.vuejs.org/v2/guide/list.html#v-for-%E4%B8%8E-v-if-%E4%B8%80%E5%90%8C%E4%BD%BF%E7%94%A8
+https://cn.vuejs.org/v2/guide/conditional.html#v-if-%E4%B8%8E-v-for-%E4%B8%80%E8%B5%B7%E4%BD%BF%E7%94%A8 
+</code></pre></div><ul><li><p>在 vue 2.x 中，在一个元素上同时使用 <code>v-if</code> 和 <code>v-for</code> 时， <code>v-for</code> 会优先作用。</p></li> <li><p>在 vue 3.x 中， <code>v-if</code> 总是优先于 <code>v-for</code> 生效。</p></li> <li><p>vue2</p></li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>root<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>vue2 v-for&gt;v-if（仅仅指同一个标签上）<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    
+
+    <span class="token comment">&lt;!-- 判断假的，压根不会遍历 --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>state<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item in todos<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{item.title}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- 同一个标签先v-for走三次生成3个p  然后挨个判断都隐藏删掉   脱裤子放屁的感觉 --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item in todos<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>state<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{item.title}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://cdn.jsdelivr.net/npm/vue/dist/vue.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">const</span> vm <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">el</span><span class="token operator">:</span> <span class="token string">&quot;#root&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+   	 	<span class="token literal-property property">state</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    
+        <span class="token literal-property property">todos</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token literal-property property">title</span><span class="token operator">:</span><span class="token string">'a'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token literal-property property">title</span><span class="token operator">:</span><span class="token string">'b'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token literal-property property">title</span><span class="token operator">:</span><span class="token string">'c'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ul><li>vue3  优化</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>root2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>vue3 v-if &gt; v-for<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    
+    
+    <span class="token comment">&lt;!-- 不循环 --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item in todos<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>state<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{item.title}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span><span class="token punctuation">&gt;</span></span>
+    
+
+    <span class="token comment">&lt;!-- 不循环 --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>state<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item in todos<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{item.title}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- 
+        多学一招：为了避免指令写在同一个标签上可读性查，因此代码提升/指令提升 也就是将v-if写在父级标签上
+        但是影响布局，
+        解决用template标签  不会
+    --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>state<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item in todos<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{item.title}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+    
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://unpkg.com/vue@next<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+Vue<span class="token punctuation">.</span><span class="token function">createApp</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">state</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+            <span class="token literal-property property">todos</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token literal-property property">title</span><span class="token operator">:</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token literal-property property">show</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token literal-property property">title</span><span class="token operator">:</span><span class="token string">'b'</span><span class="token punctuation">,</span> <span class="token literal-property property">show</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span><span class="token literal-property property">id</span><span class="token operator">:</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token literal-property property">title</span><span class="token operator">:</span><span class="token string">'c'</span><span class="token punctuation">,</span> <span class="token literal-property property">show</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">'#root2'</span><span class="token punctuation">)</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h1 id="■-week1-day2-特殊语法"><a href="#■-week1-day2-特殊语法" class="header-anchor">#</a> ■ week1-day2  特殊语法</h1> <h2 id="💘-课题-2"><a href="#💘-课题-2" class="header-anchor">#</a> 💘 课题</h2> <p>week1-day2  Vue基础（特殊语法：表单输入绑定、购物车案例）</p> <p>无，都在【week1-day6  Vue原理】课件中</p> <h1 id="■-week1-day3-花式思想"><a href="#■-week1-day3-花式思想" class="header-anchor">#</a> ■ week1-day3 花式思想</h1> <h2 id="💘-课件"><a href="#💘-课件" class="header-anchor">#</a> 💘 课件</h2> <p>week1-day3  Vue基础（花式思想：Class与Style绑定、计算属性、侦听器、过滤器、自定义指令、ref属性、混入）</p> <h2 id="🌛-class与style绑定工作有用过吗"><a href="#🌛-class与style绑定工作有用过吗" class="header-anchor">#</a> 🌛 Class与Style绑定工作有用过吗</h2> <ul><li><p>为啥有：减少视图操作</p></li> <li><p>是什么：就是class和style属性去使用模型数据</p></li> <li><p>啥语法：:class=&quot;数组或对象&quot;  :style=&quot;对象&quot;</p></li> <li><p>哪里用：tab选项卡、两栏布局菜单</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>:class=&quot;item.icon&quot;
+:style=&quot;{ width: item.payload ? item.payload.width : '100%' }&quot;
+:style=&quot;{ width: item.width || '70px' }&quot;
+
+
+案例1：https://vant-contrib.gitee.io/vant/#/zh-CN/tab
+源码1：https://unpkg.com/browse/vant@1.0.0/packages/tab/index.vue
+案例3：https://element.eleme.io/#/zh-CN/component/tabs 
+源码3：https://unpkg.com/browse/element-ui@2.15.5/packages/tabs/src/tab-bar.vue
+案例3：https://element.eleme.io/#/zh-CN/component/button
+源码3：https://unpkg.com/browse/element-ui@2.15.5/packages/button/src/button.vue
+</code></pre></div><h2 id="🌟-计算属性和-侦听器区别、使用场景"><a href="#🌟-计算属性和-侦听器区别、使用场景" class="header-anchor">#</a> 🌟 计算属性和=侦听器区别、使用场景</h2> <p>计算属性：计算属性有缓存、并且是响应式依赖缓存，调用不加小括号</p> <p>侦听器：侦听器无缓存，侦听模型数据变化，不能调用</p> <p>使用场景</p> <p>计算属性：</p> <div class="language- extra-class"><pre class="language-text"><code>一个数据依赖另一个数据计算的结果、或者需要缓存提升性能、还有vuex大量使用。
+</code></pre></div><p>侦听器：</p> <div class="language- extra-class"><pre class="language-text"><code>当需要监控模型数据变化时候，全选全不选、搜索、日期筛选、监控弹框是否显示等等
+</code></pre></div><blockquote><ul><li>相同点</li></ul> <ol><li>语法角度（ a 从思想上都是普通方法升级版  b 都可以写函数或对象</li> <li>研发角度：计算属性-减少冗余、缓存提升性能、侦听器-减少DOM操作 符合VUE响应式思想</li></ol> <ul><li>不同点</li></ul> <ol><li>从语法角度：调用时，计算属性调用不加小括号，侦听器不能调用</li> <li>从功能角度：计算属性有缓存、响应式依赖，侦听器没有缓存常用于搜索、监控数据变化、代替事件等</li></ol></blockquote> <h2 id="🌟-watch监控失效场景-解决方案"><a href="#🌟-watch监控失效场景-解决方案" class="header-anchor">#</a> 🌟 watch监控失效场景&amp;解决方案</h2> <p>针对于对象类型的数据，需要加deep属性深度监听/侦听</p> <h2 id="🌟-watch两大属性应用场景"><a href="#🌟-watch两大属性应用场景" class="header-anchor">#</a> 🌟 watch两大属性应用场景</h2> <ul><li>deep是什么哪里用</li></ul> <blockquote><p>a-锋团Admin项目中：监控路由变化，通过meta路由元信息重置面包屑🍞</p> <div class="language- extra-class"><pre class="language-text"><code>// watch: {
+//   // 针对于复杂类型的深度监听（注：深度监听场景）
+//   // params(newData) {
+//   //   console.log(newData);
+//   // },
+//   params: {
+//     deep: true,
+//     handler(newData) { // 也可以直接用日期组件的change事件
+//       console.log(newData);
+//  	   this.params.start_time = newData.date[0];
+//   		 this.params.end_time = newData.date[1];
+//     },
+//   },
+// },
+</code></pre></div><p>b-锋团Admin项目中：给角色分配权限 重置树🌲型控件</p> <div class="language- extra-class"><pre class="language-text"><code>editAuth.vue 
+// 获取所有权限  当前行数据变化获取最新的权限数据
+watch: {
+  row: {
+    deep: true,
+    handler() {
+      getAuthsApi().then((res) =&gt; {
+      	this.authsData = res.data;
+      });
+    },
+  },
+},
+</code></pre></div><p>C-锋团Admin项目中：基于elementui二次封装的form编辑默认显示数据要监控row变化</p> <div class="language- extra-class"><pre class="language-text"><code>watch: { // qf-form封装的表单组件中，编辑传递的row当前行数据变化同步更改
+   // row(newData) {
+   //   console.log(&quot;watch&quot;, newData);
+   // },
+   row: {
+     handler(newData) {
+        if (!newData) return;
+        this.formData = newData;
+    },
+    immediate: true,
+  },
+},
+</code></pre></div></blockquote> <ul><li>immediate是什么哪里用</li></ul> <blockquote><p>a-锋团Admin项目中：meat路由元信息【首次】重置面包屑🍞</p> <div class="language- extra-class"><pre class="language-text"><code>watch: { // 监控路由变化同步面包屑
+  // $route(newData) {
+  //   // console.log(newData);
+  //   this.name1 = newData.meta.name1;
+  //   this.name2 = newData.meta.name2;
+  // },
+  $route: {
+    handler(newData) {
+      this.name1 = newData.meta.name1;
+      this.name2 = newData.meta.name2;
+    },
+  	immediate: true,
+  },
+},
+</code></pre></div><p>b-锋团Admin项目中：基于elementui二次封装的form编辑默认显示数据要监控row变化</p> <div class="language- extra-class"><pre class="language-text"><code>watch: { // qf-form封装的表单组件中，编辑传递的row当前行数据变化同步更改
+// row(newData) {
+   //   console.log(&quot;watch&quot;, newData);
+   // },
+   row: {
+     handler(newData) {
+        if (!newData) return;
+        this.formData = newData;
+    },
+    immediate: true,
+   },
+  },
+</code></pre></div></blockquote> <h2 id="🌟-谈谈你对过滤器的理解有没有用过"><a href="#🌟-谈谈你对过滤器的理解有没有用过" class="header-anchor">#</a> 🌟 谈谈你对过滤器的理解有没有用过</h2> <p>作用：项目用来过滤数据，减少视图代码量</p> <p>语法：</p> <div class="language-vue extra-class"><pre class="language-vue"><code>{{ data中的键 | 过滤器名称 }}
+{{ data中的键 | 过滤器名称(实参2,...) }}
+
+Vue.filter('过滤器名称', (管道左边数据, 小括号里面的) =&gt; {
+  return 结果
+})
+</code></pre></div><p>场景：订单状态、商品状态、性别、支付状态、发货状态。</p> <h2 id="🌟-谈谈你对混入的理解有没有用过"><a href="#🌟-谈谈你对混入的理解有没有用过" class="header-anchor">#</a> 🌟  谈谈你对混入的理解有没有用过</h2> <p>作用：封装代码，减少代码冗余</p> <p>语法</p> <div class="language-js extra-class"><pre class="language-js"><code>Vue<span class="token punctuation">.</span><span class="token function">mixin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">return</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">methods</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token operator">...</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>场景：封装项目跳转、项目删除提示等等</p> <h2 id="🌛-自定义指令有没有用过"><a href="#🌛-自定义指令有没有用过" class="header-anchor">#</a> 🌛 自定义指令有没有用过</h2> <p>- 为啥有：自定义指令封装DOM操作语法</p> <p>- 是什么：vue官方提供的API</p> <div class="language-js extra-class"><pre class="language-js"><code>Vue<span class="token punctuation">.</span><span class="token function">directives</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token comment">//....</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>- 哪里用：拖拽、点击复制、删除标签等等</p> <h1 id="■-week1-day4-组件编程"><a href="#■-week1-day4-组件编程" class="header-anchor">#</a> ■ week1-day4 组件编程</h1> <h2 id="💘-课件-2"><a href="#💘-课件-2" class="header-anchor">#</a> 💘 课件</h2> <p>week1-day4  Vue基础（组件编程：组件化开发思想、组件封装、props、$emit、组件通信、插槽slot、仿写UI组件库、动态组件等）</p> <h2 id="🌟-为啥data要写函数里面返回对象"><a href="#🌟-为啥data要写函数里面返回对象" class="header-anchor">#</a> 🌟 为啥data要写函数里面返回对象</h2> <blockquote><p>说明1</p> <div class="language- extra-class"><pre class="language-text"><code>一个组件被复用多次，也就会创建多个实例，本质上都是基于同一个构造函数，如果data直接是对象，因为对象是引用类型，所以会影响到所有实例。
+因此：为了保证组件不同的实例之间data不冲突，data必须是一个函数
+</code></pre></div><p>或说法2</p> <div class="language- extra-class"><pre class="language-text"><code>当一个组件被定义，data 必须声明为返回一个初始数据对象的函数，因为组件可能被用来创建多个实例。如果 data 仍然是一个纯粹的对象，则所有的实例将共享引用同一个数据对象！通过提供 data 函数，每次创建一个新实例后，我们能够调用 data 函数，从而返回初始数据的一个全新副本数据对象
+</code></pre></div><p>或说法3</p> <div class="language- extra-class"><pre class="language-text"><code>因为组件是用来复用的，且 JS 里对象是引用关系，
+如果组件中 data 是一个对象，那么这样作用域没有隔离，
+子组件中的 data 属性值会相互影响，如果组件中 data 选项是一个函数，
+那么每个实例可以维护一份被返回对象的独立的拷贝，
+组件实例之间的 data 属性值不会互相影响；而 new Vue 的实例，
+是不会被复用的，因此不存在引用对象的问题。
+
+
+
+function Component() {}
+Component.prototype.data = {
+  name: &quot;jack&quot;,
+  age: 22,
+};
+var componentA = new Component();
+var componentB = new Component();
+componentA.data.age = 55;
+// componentA 和 componentB data之间指向了同一个内存地址，
+// 相互污染
+console.log(componentA, componentB);
+
+
+
+function Component() {
+  this.data = this.data();
+}
+Component.prototype.data = function () {
+  return {
+    name: &quot;jack&quot;,
+    age: 22,
+  };
+};
+var componentA = new Component();
+var componentB = new Component();
+componentA.data.age = 55; // 互补影响
+console.log(componentA, componentB);
+
+
+ps.
+let a = {}
+let b = {}   互补影响
+----------
+let a = {}
+let b = a    相互影响（一个对象赋值给另一个对象  才会相互影响
+</code></pre></div></blockquote> <h2 id="🌛谈谈你对单向数据流的理解"><a href="#🌛谈谈你对单向数据流的理解" class="header-anchor">#</a> 🌛谈谈你对单向数据流的理解</h2> <p>单向数据流指在组件化思想，开发的项目中，数据由根或者父组件传递给子组件，禁止🈲子组件中直接更改，而是由父更改后重新传递给子数据使用</p> <div class="language- extra-class"><pre class="language-text"><code>// 在vue中 只能父数据传递给子 父修改后会自动同步到子
+// 不允许子修改父  
+// 生活中：你妈给你多少钱 就用多少，不允许你直接去拿 否则长大了完犊子
+// 代码中：父给你就用，你自己直接改 容易后期搞懵逼谁串改了数据
+</code></pre></div><h2 id="🌟-如何实现组件通信"><a href="#🌟-如何实现组件通信" class="header-anchor">#</a> 🌟 如何实现组件通信？</h2> <p>常用：状态管理工具 vuex<br>
+常用：父传子 props、子传父$emit、兄弟 eventBus
+常用：slot插槽
+概率：通过组件实例  ref获取、     =》   $parent获取、$root获取、$children获取
+概率：v-model
+了解：利用provide、inject</p> <h2 id="🌟-事件-native作用"><a href="#🌟-事件-native作用" class="header-anchor">#</a> 🌟 事件.native作用</h2> <p>概念：直接在组件上绑定原生事件</p> <p>举例：使用elemenui、vantui封装的弹框、input等组件，需要使用官方原生事件</p> <h2 id="🌟-在组件上写原生事件失效解决方案"><a href="#🌟-在组件上写原生事件失效解决方案" class="header-anchor">#</a> 🌟 在组件上写原生事件失效解决方案</h2> <blockquote><p>方法1：通过自定义事件重写原生事件</p> <p>方法2：加.native修饰符</p></blockquote> <h2 id="🌟-在组件上使用v-model原理"><a href="#🌟-在组件上使用v-model原理" class="header-anchor">#</a> 🌟 在组件上使用v-model原理</h2> <p>工作极少</p> <p>但是笔试可能需要手写</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;组件名 v-model=&quot;data中的键&quot;&gt;&lt;/组件名&gt;
+&lt;组件名 :value=&quot;data中的键&quot; @input=&quot;data =&gt; data中的键 = data&quot;&gt;&lt;/组件名&gt;
+</code></pre></div><h2 id="🌛-修饰符-sync原理"><a href="#🌛-修饰符-sync原理" class="header-anchor">#</a> 🌛 修饰符.sync原理</h2> <div class="language- extra-class"><pre class="language-text"><code>&lt;组件名 v-bind:属性名.sync=&quot;data中的键&quot;&gt;&lt;/组件名&gt;
+&lt;组件名 v-bind:属性名=&quot;data中的键&quot;  @update:必须一样的属性名=&quot;data =&gt; data中的键 = data&quot;&gt;&lt;/组件名&gt;
+</code></pre></div><h1 id="■-week1-day5-剩余知识-生命周期、keep-alive等等"><a href="#■-week1-day5-剩余知识-生命周期、keep-alive等等" class="header-anchor">#</a> ■ week1-day5 剩余知识：生命周期、keep-alive等等</h1> <h2 id="💘-课件-3"><a href="#💘-课件-3" class="header-anchor">#</a> 💘 课件</h2> <p>week1-day5  Vue基础（剩余知识：虚拟DOM、浏览器运行机制、回流重绘、生命周期、keep-alive、transition过渡</p> <h2 id="🌟-说出浏览器运行机制"><a href="#🌟-说出浏览器运行机制" class="header-anchor">#</a> 🌟 说出浏览器运行机制</h2> <p>浏览器主进程，负责创建和销毁tab进程、负责交互前进后退、负责网页文件下载等
+渲染进程：每个tab对应一个渲染进程，下面有GUI渲染线程、JS引擎线程、事件线程、定时器线程、异步请求线程
+GPU进程：负责3D图绘制
+第三方插件进程：负责第三方插件处理，例如跨域、广告拦截插件等</p> <h2 id="🌟-说出浏览器输入网址干了啥"><a href="#🌟-说出浏览器输入网址干了啥" class="header-anchor">#</a> 🌟 说出浏览器输入网址干了啥</h2> <div class="language- extra-class"><pre class="language-text"><code>浏览器输入网址回车
+去DNS服务器找网址对应的IP地址 
+根据IP地址加端口访问服务器软件 
+服务器返回数据
+浏览器通过renderer是渲染进程处理，
+其中GUI线程主要负责页面布局，解析HTML、CSS构建DOM树、CSS规则树、然后结合成渲染树、最终绘制显示
+</code></pre></div><h2 id="🌛-说出js为什么是单线程"><a href="#🌛-说出js为什么是单线程" class="header-anchor">#</a> 🌛 说出JS为什么是单线程</h2> <blockquote><h3 id="先看一个比喻"><a href="#先看一个比喻" class="header-anchor">#</a> 先看一个比喻</h3> <p>进程就是一个公司，每个公司都有自己的资源可以调度；公司之间是相互独立的；而线程就是公司中的每个员工(你，我，他)，多个员工一起合作，完成任务，公司可以有一名员工或多个，员工之间共享公司的空间</p> <h3 id="什么是进程"><a href="#什么是进程" class="header-anchor">#</a> 什么是进程？</h3> <p>进程：是cpu分配资源的最小单位；（是能拥有资源和独立运行的最小单位）</p> <h3 id="什么是线程"><a href="#什么是线程" class="header-anchor">#</a> 什么是线程？</h3> <p>线程：是cpu调度的最小单位；（线程是建立在进程的基础上的一次程序运行单位，一个进程中可以有多个线程）</p> <h4 id="浏览器是多进程的"><a href="#浏览器是多进程的" class="header-anchor">#</a> 浏览器是多进程的</h4> <p>放在浏览器中，每打开一个tab页面，其实就是新开了一个进程，在这个进程中，还有ui渲染线程，js引擎线程，http请求线程等。 所以，浏览器是一个多进程的。</p> <h3 id="大家都在说js是单线程的-但是为什么要设计成单线程"><a href="#大家都在说js是单线程的-但是为什么要设计成单线程" class="header-anchor">#</a> 大家都在说js是单线程的，但是为什么要设计成单线程？</h3> <p>这主要和js的用途有关，js是作为浏览器的脚本语言，主要是实现用户与浏览器的交互，以及操作dom；这决定了它只能是单线程，否则会带来很复杂的同步问题。</p> <p>举个例子：如果js被设计了多线程，如果有一个线程要修改一个dom元素，另一个线程要删除这个dom元素，此时浏览器就会一脸茫然，不知所措。所以，为了避免复杂性，从一诞生，JavaScript就是单线程，这已经成了这门语言的核心特征，将来也不会改变.</p> <h4 id="为了利用多核cpu的计算能力-html5提出web-worker标准-允许javascript脚本创建多个线程-但是子线程完全受主线程控制-且不得操作dom。所以-这个新标准并没有改变javascript单线程的本质。"><a href="#为了利用多核cpu的计算能力-html5提出web-worker标准-允许javascript脚本创建多个线程-但是子线程完全受主线程控制-且不得操作dom。所以-这个新标准并没有改变javascript单线程的本质。" class="header-anchor">#</a> 为了利用多核CPU的计算能力，HTML5提出Web Worker标准，允许JavaScript脚本创建多个线程，但是子线程完全受主线程控制，且不得操作DOM。所以，这个新标准并没有改变JavaScript单线程的本质。</h4></blockquote> <h2 id="🌛-说出js是单线程-为什么不存在执行效率问题"><a href="#🌛-说出js是单线程-为什么不存在执行效率问题" class="header-anchor">#</a> 🌛 说出JS是单线程 为什么不存在执行效率问题</h2> <p>JS是单线程执行程序代码，形成一个执行栈，挨个处理；</p> <p>但是遇到特别耗费时间的代码 ，例如异步请求，事件等，</p> <p>不会堵塞等待执行，而是交给浏览器其他线程处理后，再丢到执行栈中处理，从而保证还行效率</p> <h2 id="🌟-谈谈你对回流重绘的理解"><a href="#🌟-谈谈你对回流重绘的理解" class="header-anchor">#</a> 🌟 谈谈你对回流重绘的理解</h2> <p>回流/重排：页面布局流发生改变就叫做回流，例如：width、height、border、top等
+重绘：重绘元素自身的样式发生改变但是不会影响布局流，例如：color、background、box-shadow等</p> <h2 id="🌟-哪些属性导致回流、哪些属性导致重绘"><a href="#🌟-哪些属性导致回流、哪些属性导致重绘" class="header-anchor">#</a> 🌟 哪些属性导致回流、哪些属性导致重绘</h2> <p>例如：width、height、border、top等
+例如：color、background、box-shadow等</p> <div class="language- extra-class"><pre class="language-text"><code>1、添加或删除可见的DOM元素
+2、元素的位置发生变化
+3、元素的尺寸发生变化（包括外边距、内边框、边框大小、高度和宽度等）
+4、内容发生变化，比如文本变化或图片被另一个不同尺寸的图片所替代。
+5、页面一开始渲染的时候（这肯定避免不了）
+6、浏览器的窗口尺寸变化（因为回流是根据视口的大小来计算元素的位置和大小的）
+
+而重绘是指在布局不变得情况下，比如background-color,或者改动一下字体颜色的color等。
+</code></pre></div><h2 id="🌟-如何避免或减少回流重绘"><a href="#🌟-如何避免或减少回流重绘" class="header-anchor">#</a> 🌟 如何避免或减少回流重绘</h2> <blockquote><p><strong>JavaScript优化法</strong></p> <div class="language- extra-class"><pre class="language-text"><code>（1）避免频繁操作样式，最好一次性重写style属性，或者将样式列表定义为class并一次性更改class属性。
+（2）避免频繁操作DOM，创建一个documentFragment，在它上面应用所有DOM操作，最后再把它添加到文档中，也就是虚拟DOM
+（3）避免频繁读取会引发回流/重绘的属性，如果确实需要多次使用，就用一个变量缓存起来。
+</code></pre></div><p><strong>CSS优化法</strong></p> <div class="language- extra-class"><pre class="language-text"><code>（1）使用 transform 替代 top
+（2）使用 visibility 替换 display: none ，因为前者只会引起重绘，后者会引发回流（改变了布局
+（3）避免使用table布局，可能很小的一个小改动会造成整个 table 的重新布局。
+（4）尽可能在DOM树的最末端改变class，回流是不可避免的，但可以减少其影响。尽可能在DOM树的最末端改变class，可以限制了回流的范围，使其影响尽可能少的节点。
+（5）避免设置多层内联样式，CSS 选择符从右往左匹配查找，避免节点层级过多。
+（6）将动画效果应用到position属性为absolute或fixed的元素上，避免影响其他元素的布局，这样只是一个重绘，而不是回流，同时，控制动画速度可以选择 requestAnimationFrame，详见探讨 requestAnimationFrame。
+（7）避免使用CSS表达式，可能会引发回流。
+（8）将频繁重绘或者回流的节点设置为图层，图层能够阻止该节点的渲染行为影响别的节点，例如will-change、video、iframe等标签，浏览器会自动将该节点变为图层。
+（9）CSS3 硬件加速（GPU加速），使用css3硬件加速，可以让transform、opacity、filters这些动画不会引起回流重绘 。但是对于动画的其它属性，比如background-color这些，还是会引起回流重绘的，不过它还是可以提升这些动画的性能。
+</code></pre></div></blockquote> <h2 id="🌟-谈谈你对虚拟dom的理解"><a href="#🌟-谈谈你对虚拟dom的理解" class="header-anchor">#</a> 🌟 谈谈你对虚拟DOM的理解</h2> <p>通过js对象来描述真实的DOM，从而减少回流重绘</p> <blockquote><p>减少了同一时间内的页面多处内容修改所触发的浏览器reflow和repaint的次数，可能把多个不同的DOM操作集中减少到了几次甚至一次，优化了触发浏览器reflow和repaint的次数。。</p></blockquote> <h2 id="🌟-说出vue有哪些生命周期并说出应用场景"><a href="#🌟-说出vue有哪些生命周期并说出应用场景" class="header-anchor">#</a> 🌟 说出VUE有哪些生命周期并说出应用场景</h2> <p>before开头的实际不用</p> <p>非before开头</p> <div class="language- extra-class"><pre class="language-text"><code>created   异步请求
+mounted   异步请求、DOM操作（swiper、echarts、聊天默认滚到底部）
+updated   监控数据变化进一步DOM操作，例如聊天窗口到底部、订单可视化图表重置等等
+destroyed 清理非vue资源防止内存泄露，例如登陆倒计时定时器
+</code></pre></div><p>剩余</p> <div class="language- extra-class"><pre class="language-text"><code>activated	   组件被keep-alive缓存后，执行场景场景数据，例如添加后列表更新最新数据
+deactivated  组件被keep-alive缓存后代替destroyed工作
+errorCaptured 当页面发生错误是优雅降级，显示友好提示页面，react框架提示就是参考这一做法
+</code></pre></div><blockquote><p>tips</p> <p>优雅降级(<code>graceful degradation</code>)：一开始就构建站点的完整功能，然后针对浏览器测试和修复。</p> <p>ive enhancement`)：一开始只构建站点的最少特性，然后不断针对各浏览器追加功能。</p></blockquote> <p>渐进增强：针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进，达到更好的用户体验。</p> <p>优雅降级：一开始就构建完整的功能，然后再针对低版本浏览器进行兼容。</p> <p>2109班面试追问</p> <div class="language- extra-class"><pre class="language-text"><code>问1：created、和mounted区别
+答1：created不可以dom操作 
+问2：真的不可以吗
+答2：可以通过 this.$nextTick()
+问3：父子组件嵌套、生命周期执行顺序 created、mounted
+答2：大方向  父created、子created、子mounted、父mounted
+</code></pre></div><h2 id="🌟-created里面可以操作dom吗"><a href="#🌟-created里面可以操作dom吗" class="header-anchor">#</a> 🌟 created里面可以操作DOM吗</h2> <p>通过ref不行，原生JS可以，因为该钩子函数触发还没有编译（不推荐</p> <p>非要通过ref操作，可以写this.$nextTick来实现</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div id=&quot;root&quot;&gt;
+  &lt;button ref=&quot;btn&quot;&gt;a&lt;/button&gt;
+&lt;/div&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  const vm = new Vue({
+    el: &quot;#root&quot;,
+    data: {},
+    created() {
+      let btnObj = document.querySelector(&quot;button&quot;);
+      console.log(&quot;js可以&quot;, btnObj);
+      console.log(&quot;ref不行🚫&quot;, this.$refs.btn);
+
+      this.$nextTick(() =&gt; {
+        console.log(&quot;ref可以&quot;, this.$refs.btn);
+      });
+    },
+  });
+&lt;/script&gt;
+</code></pre></div><blockquote><p>追问1：created 定时器打印1   this.$nextTick 打印2   定时器打印3</p> <p>回答1:  2、1、3</p> <p>追问2：created Promise.then打印1   this.$nextTick 打印2   定时器打印3</p> <p>回答2：1、 2、 3</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>// 追问1：created 定时器打印1   this.$nextTick 打印2   定时器打印3
+// 回答1:  2、1、3
+// setTimeout(() =&gt; console.log(1), 1000) 
+// // Promise.resolve().then(() =&gt; console.log(2))
+// this.$nextTick(() =&gt; console.log(2))
+// setTimeout(() =&gt; console.log(3), 1000) 
+
+// 追问2：created Promise.then打印1   this.$nextTick 打印2   定时器打印3
+// 回答2：1、 2、 3
+// Promise.resolve().then(() =&gt; console.log(1)) 
+// this.$nextTick(() =&gt; console.log(2))
+// setTimeout(() =&gt; console.log(3), 1000) 
+</code></pre></div><h2 id="🌛-watch与created-哪个先执行"><a href="#🌛-watch与created-哪个先执行" class="header-anchor">#</a> 🌛 watch与created() 哪个先执行？</h2> <p>watch 中的 immediate 会让监听在初始值声明的时候去执行监听计算，否则就是 created 先执行</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div id=&quot;root&quot;&gt;
+  &lt;h1&gt;{{msg}}&lt;/h1&gt;
+&lt;/div&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  const vm = new Vue({
+    el: &quot;#root&quot;,
+    data: {
+      msg: &quot;hello&quot;,
+    },
+    created() {
+      console.log(&quot;后created&quot;);
+    },
+    watch: {
+      msg: {
+        handler() {
+          console.log(&quot;先watch&quot;);
+        },
+        immediate: true,
+      },
+    },
+  });
+&lt;/script&gt;
+
+</code></pre></div><h2 id="🌛数据可视化-echarts"><a href="#🌛数据可视化-echarts" class="header-anchor">#</a> 🌛数据可视化 echarts</h2> <p>在项目中的使用细节，数据的使用，修改，销毁？</p> <p>细节1：首次实例化渲染，mounted中注意dom是否挂载，特别是操作子组件</p> <p>细节2：重置echarts数据，如果页面没有遍历显示数据明细，无法在updated钩子函数监控</p> <blockquote><p>解决：watch或者更新后直接调用methods方法</p></blockquote> <p>细节3：重置echarts数据，得重新实例化才能显示最新数据</p> <p>细节4：离开组件手动关闭连接  ws.close()  （注：如果定时器写的要清除定时器</p> <h2 id="🌟-谈谈你对keep-alive的理解-并说出应用场景"><a href="#🌟-谈谈你对keep-alive的理解-并说出应用场景" class="header-anchor">#</a> 🌟 谈谈你对keep-alive的理解，并说出应用场景</h2> <p>vue中内置组件，主要将组件相关数据缓存到内存中，避免重复挂载卸载产生的性能开销</p> <p>场景：后台管理系统数据、移动端长列表、tab选项卡等</p> <p>周边问题</p> <blockquote><p>1-缓存组件使用哪个属性？</p> <div class="language- extra-class"><pre class="language-text"><code>  :include、:exclude、:max
+</code></pre></div><p>2-此时多的哪两个钩子函数？</p> <div class="language- extra-class"><pre class="language-text"><code>activated 、deactivated
+</code></pre></div><p>3-页面加载刷新的时候，被缓存的组件，会执行其中的方法吗？</p> <div class="language- extra-class"><pre class="language-text"><code>刷新就相当于首次打开  所以created、activated又重新出发
+</code></pre></div></blockquote> <h2 id="🌟-谈谈你对-nexttick的理解-并说出应用场景"><a href="#🌟-谈谈你对-nexttick的理解-并说出应用场景" class="header-anchor">#</a> 🌟 谈谈你对$nextTick的理解，并说出应用场景</h2> <p>理解：vue中用来确保，在下次 DOM 更新循环结束之后执行延迟回调。在修改数据之后立即使用这个方法，获取更新后的 DOM。</p> <p>场景：对话框放登录二维码，放表单选项获取数据、获取焦点，点击事件修改对话框状态后开始加载DOM，为确保能获取并操作DOM使用$nextTick包起来。</p> <p>语法:</p> <div class="language- extra-class"><pre class="language-text"><code>// 修改数据
+vm.msg = 'Hello'
+// DOM 还没有更新
+Vue.nextTick(function () {
+  // DOM 更新了
+})
+
+// 作为一个 Promise 使用 (2.1.0 起新增，详见接下来的提示)
+Vue.nextTick()
+  .then(function () {
+    // DOM 更新了
+  })
+</code></pre></div><blockquote><p>vue确保模型数据更新完毕之后执行$nextTick里面的callback代码</p></blockquote> <h2 id="🌟-说出-nexttick原理"><a href="#🌟-说出-nexttick原理" class="header-anchor">#</a> 🌟 说出$nextTick原理</h2> <blockquote><p>Vue 在更新 DOM 时是异步执行的。只要侦听到数据变化，Vue 将开启一个队列，并缓冲在同一事件循环中发生的所有数据变更。如果同一个 watcher 被多次触发，只会被推入到队列中一次。这种在缓冲时去除重复数据对于避免不必要的计算和 DOM 操作是非常重要的。然后，在下一个的事件循环“tick”中，Vue 刷新队列并执行实际 (已去重的) 工作。Vue 在内部对异步队列尝试使用原生的 Promise.then、MutationObserver 和 setImmediate，如果执行环境不支持，则会采用 setTimeout(fn, 0) 代替。</p></blockquote> <p>Vue底层监控的数据更新会开启一个队列进行优化处理，然后在下一个的事件循环中去触发nextTick的callback执行，也就是会把nextTick的callback依次尝试放到用原生的 Promise.then、MutationObserver 和 setImmediate、setTimeout中，底层核心代码大致思路如下</p> <div class="language- extra-class"><pre class="language-text"><code>1. 把回调函数放入callbacks等待执行
+2. 将执行函数放到微任务或者宏任务中
+3. 事件循环到了微任务或者宏任务，执行函数依次执行callbacks中的回调
+</code></pre></div><p>https://github.com/vuejs/vue/blob/dev/src/core/global-api/index.js#L46</p> <p>https://github.com/vuejs/vue/blob/dev/src/core/util/next-tick.js#L87</p> <div class="language- extra-class"><pre class="language-text"><code>export function nextTick (cb?: Function, ctx?: Object) {
+  let _resolve
+  callbacks.push(() =&gt; { // 将拿到的回调函数存放到数组中
+    if (cb) {
+      try { // 错误捕获
+        cb.call(ctx)
+      } catch (e) {
+        handleError(e, ctx, 'nextTick')
+      }
+    } else if (_resolve) {
+      _resolve(ctx)
+    }
+  })
+  if (!pending) { // 如果当前没有在pending的时候，就会执行timeFunc
+    pending = true
+    timerFunc() // 多次执行nextTick只会执行一次，timerFunc就是一个异步方法
+  }
+  if (!cb &amp;&amp; typeof Promise !== 'undefined') {
+    return new Promise(resolve =&gt; {
+      _resolve = resolve
+    })
+  }
+}
+//
+</code></pre></div><p>https://github.com/vuejs/vue/blob/dev/src/core/util/next-tick.js#L33</p> <div class="language- extra-class"><pre class="language-text"><code>const callbacks = []
+let pending = false
+
+function flushCallbacks () {
+  pending = false
+  const copies = callbacks.slice(0)
+  callbacks.length = 0
+  for (let i = 0; i &lt; copies.length; i++) {
+    copies[i]()
+  }
+}
+
+
+let timerFunc
+
+//判断1：是否原生支持Promise
+if (typeof Promise !== 'undefined' &amp;&amp; isNative(Promise)) {
+  const p = Promise.resolve()
+  timerFunc = () =&gt; {
+    p.then(flushCallbacks)
+    if (isIOS) setTimeout(noop)
+  }
+  isUsingMicroTask = true
+} else if (!isIE &amp;&amp; typeof MutationObserver !== 'undefined' &amp;&amp; (
+	//判断2：是否原生支持MutationObserver
+  isNative(MutationObserver) ||
+  MutationObserver.toString() === '[object MutationObserverConstructor]'
+)) {
+  let counter = 1
+  const observer = new MutationObserver(flushCallbacks)
+  const textNode = document.createTextNode(String(counter))
+  observer.observe(textNode, {
+    characterData: true
+  })
+  timerFunc = () =&gt; {
+    counter = (counter + 1) % 2
+    textNode.data = String(counter)
+  }
+  isUsingMicroTask = true
+} else if (typeof setImmediate !== 'undefined' &amp;&amp; isNative(setImmediate)) {
+  //判断3：是否原生支持setImmediate
+  timerFunc = () =&gt; {
+    setImmediate(flushCallbacks)
+  }
+} else {
+  //判断4：上面都不行，直接用setTimeout
+  timerFunc = () =&gt; {
+    setTimeout(flushCallbacks, 0)
+  }
+}
+</code></pre></div><h1 id="■-week1-day6-vue原理"><a href="#■-week1-day6-vue原理" class="header-anchor">#</a> ■ week1-day6  Vue原理</h1> <h2 id="💘-课题-3"><a href="#💘-课题-3" class="header-anchor">#</a> 💘 课题</h2> <p>week1-day6  Vue原理（语法原理：v-model语法原理、响应式原理、Vue源码分析、自定义Vue库）</p> <h2 id="🌟-说一下v-model原理"><a href="#🌟-说一下v-model原理" class="header-anchor">#</a> 🌟 说一下v-model原理</h2> <p>v-model其实是个语法糖底层是基于【:value】和【@input】 封装</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;input type=&quot;text&quot; :value=&quot;msg&quot; @input=&quot;msg = $event.target.value&quot;&gt;
+</code></pre></div><h2 id="🌟-vue2响应式原理-中级"><a href="#🌟-vue2响应式原理-中级" class="header-anchor">#</a> 🌟 VUE2响应式原理（中级）</h2> <p>Vue2在初始化数据时，会使用Object.defineProperty语法对data中的所有属性进行数据劫持，如果属性发生变化就会通知进行更新操作</p> <h2 id="🌟-vue2响应式原理-高级"><a href="#🌟-vue2响应式原理-高级" class="header-anchor">#</a> 🌟 VUE2响应式原理（高级）</h2> <div class="language- extra-class"><pre class="language-text"><code>底层通过Object.defineProperty进行数据劫持，然后通过发布订阅通知视图更新。
+
+或者
+
+vue在初始化数据时，会使用Object.defineProperty重新定义data中所有属性，当页面使用对应属性时，首先会进行依赖收集（watcher，如果属性发生变化就会通知相关依赖进行更新操作（发布订阅。
+并且底层针对于对象、数组做了特殊处理，对象类型多次递归，数组类型重写数组方法
+</code></pre></div><h2 id="🌟-vue2响应式数据无法劫持原因、和解决方案"><a href="#🌟-vue2响应式数据无法劫持原因、和解决方案" class="header-anchor">#</a> 🌟 VUE2响应式数据无法劫持原因、和解决方案</h2> <p>原因：是因为原生Object.defineProperty针对复杂数据修改无法劫持，因此无法通知视图更新</p> <p>解决：</p> <div class="language- extra-class"><pre class="language-text"><code>自己解决：递归全搞定
+VUE解决：
+1-对象递归
+2-数组重写（因为深度监听需要递归到底，而数组相对数据很多，一次性计算量大  所以改用重写方式）
+3-增加额外api 
+this.$forceUpdate()   
+this.$set(this.data数据, 要劫持得数组索引或对象键, 默认值)
+</code></pre></div><h2 id="🌟-forceupdate-原理"><a href="#🌟-forceupdate-原理" class="header-anchor">#</a> 🌟 $forceUpdate 原理</h2> <p>这个之前有大概看过源码</p> <p>就是notify强制视图所有数据更新</p> <h2 id="🌟-set-原理"><a href="#🌟-set-原理" class="header-anchor">#</a> 🌟 $set 原理</h2> <p>1、他是vue原型上的一个方法</p> <blockquote><p>https://github.com/vuejs/vue/blob/dev/src/core/instance/state.js#L345</p> <p>https://github.com/vuejs/vue/blob/dev/src/core/instance/state.js#L14</p></blockquote> <p>2、这个之前有大概看过源码</p> <p>主要两大核心</p> <p>1、通过defineReactive进行数据劫持</p> <p>2、通过notify进行视图更新</p> <blockquote><p>https://github.com/vuejs/vue/blob/dev/src/core/observer/index.js#L201</p></blockquote> <h2 id="🌛-delete-原理"><a href="#🌛-delete-原理" class="header-anchor">#</a> 🌛 $delete 原理</h2> <p>删除对象的属性。如果对象是响应式的，确保删除能触发更新视图。这个方法主要用于避开 <code>Vue</code> 不能检测到属性被删除的限制，但是你应该很少会使用它。</p> <p>语法：this.Vue.$delete(target，propertyName/index)</p> <p>1、他是vue原型上的一个方法</p> <blockquote><p>https://github.com/vuejs/vue/blob/dev/src/core/instance/state.js#L346</p> <p>https://github.com/vuejs/vue/blob/dev/src/core/instance/state.js#L14</p></blockquote> <p>2、这个之前有大概看过源码</p> <p>主要两大核心</p> <p>1、通过delete 删除对象的属性</p> <p>2、通过notify进行视图更新</p> <blockquote><p>https://github.com/vuejs/vue/blob/dev/src/core/observer/index.js#L236</p></blockquote> <h2 id="🌟-vue-set-delete-原理"><a href="#🌟-vue-set-delete-原理" class="header-anchor">#</a> 🌟 Vue.set/delete 原理</h2> <p>https://github.com/vuejs/vue/blob/0603ff695d2f41286239298210113cbe2b209e28/src/core/global-api/index.js#L44</p> <div class="language- extra-class"><pre class="language-text"><code>import { set } from '../observer/index'
+
+...
+Vue.set = set
+...
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>import { set } from '../observer/index'
+
+...
+Vue.prototype.$set = set
+...
+
+</code></pre></div><p>都是从 ../observer/index 文件中导出的</p> <p>区别在于Vue.set()是将set函数绑定在Vue构造函数上，this.$set()是将set函数绑定在Vue原型上。</p> <h2 id="🆕-响应式原理"><a href="#🆕-响应式原理" class="header-anchor">#</a> 🆕 响应式原理</h2> <p>为啥VUE3要选择proxy和reflect</p> <div class="language- extra-class"><pre class="language-text"><code>- Object.defineProperty 拦截的是对象的属性，会改变原对象。 proxy 是拦截整个对象，通过 new 生成一个新对象，不会改变原对象。
+- proxy 语法更强，拦截方式除了上面的 get 和 set ，还有 11 种，以前就6个
+- proxy 特性更强，可以监听未定义的，针对于N层则get时判断递归添加proxy拦截即可
+</code></pre></div><p>不用reflect可以吗</p> <div class="language- extra-class"><pre class="language-text"><code>- 简单场景可以，复杂场景不行
+- 举例：https://blog.csdn.net/qq_34629352/article/details/114210386  存在BUG
+- 其次：用了更方便推荐结合用 例如 has、deleteProperty、defineProperty友好提示等
+</code></pre></div><h1 id="■-week2-day1-路由相关"><a href="#■-week2-day1-路由相关" class="header-anchor">#</a> ■ week2-day1  路由相关</h1> <h2 id="💘-课件-4"><a href="#💘-课件-4" class="header-anchor">#</a> 💘 课件</h2> <p>week2-day1  Vue进阶（项目准备：路由、重定向、路由模式、路由原理、路由参数、路由传参、嵌套路由、命名视图、导航守卫、路由addRoute）</p> <h2 id="🌛-路由-对象里面的键"><a href="#🌛-路由-对象里面的键" class="header-anchor">#</a> 🌛 路由-对象里面的键</h2> <p>{</p> <p>​	path,</p> <p>​	component,</p> <p>​	name,</p> <p>​	redirect,</p> <p>​	alias</p> <p>​	children,</p> <p>​	components</p> <p>​	meta</p> <p>....</p> <p>}</p> <h2 id="🌟-路由-你说下vue路由模式有几种"><a href="#🌟-路由-你说下vue路由模式有几种" class="header-anchor">#</a> 🌟 路由-你说下vue路由模式有几种？</h2> <p><a href="https://router.vuejs.org/zh/api/#mode" target="_blank" rel="noopener noreferrer">https://router.vuejs.org/zh/api/#mode<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>常用路由模式有2个，分别为hash和history  直接修改路 由构造函数加个mode键即可</p> <p>准确说有3个，hash/history用于客户端，abstract用户服务端</p> <h2 id="🌟-路由-你说下vue路由原理"><a href="#🌟-路由-你说下vue路由原理" class="header-anchor">#</a> 🌟 路由-你说下vue路由原理？</h2> <p>首先vue路由是基于SPA单页面应用思想去开发的</p> <p>利用BOM API 来使用</p> <p>hash模式        通过 BOM  location对象的hash属性来改变路由   window.onhashchange</p> <p>history模式     通过BOM  history对象的pushState方法来改变路由    window.onpopstate</p> <h2 id="🌟-路由-history有什么问题-如何解决"><a href="#🌟-路由-history有什么问题-如何解决" class="header-anchor">#</a> 🌟 路由-history有什么问题，如何解决？</h2> <p>刷新无法加载网页问题</p> <p>可以通过服务器配置来解决</p> <h2 id="🌟-路由-什么是单页面应用spa优缺点-如何选择"><a href="#🌟-路由-什么是单页面应用spa优缺点-如何选择" class="header-anchor">#</a> 🌟 路由-什么是单页面应用SPA优缺点，如何选择</h2> <p>SPA优点：减少HTTP请求、加载响应数据、提高用户体验度，方便增加动画
+SPA缺点：首屏加载过慢、不利于SEO优化（就是百度可以搜到你）</p> <p>如何选择
+根据项目需求，老板没有明确说就不管，
+但是老板说需要seo优化则通过：Vue.js 服务器端渲染（nuxt.js）</p> <blockquote><p>tips</p> <p>1-为什么单页面(SPA)网站无法被seo？：https://www.zhihu.com/question/416192007/answer/1424413130</p> <p>2-多页面应用(MPA)也就是二升三锋团PC项目也是不利于seo优化，最终是否利于seo主要还是看页面数据是直接和html一起返回的、还是要重新发送ajax请求的。</p> <p>3-vue中想利于seo则通过nuxt.js技术，react则通过next.js</p></blockquote> <h2 id="🌟-路由-参数周边种类、方式"><a href="#🌟-路由-参数周边种类、方式" class="header-anchor">#</a> 🌟 路由-参数周边种类、方式</h2> <p>参数种类：query、params</p> <p>传参方式</p> <div class="language- extra-class"><pre class="language-text"><code>query、path
+this.$router.push( {query, path} )		定义路由时【不用管】刷新【不丢失】
+
+params、name 写冒号  
+this.$router.push( {params, name} )  定义路由时【需要管】刷新【不丢失】 
+
+params、name 不写冒号
+this.$router.push( {params, name} )  定义路由时【不用管】刷新【丢失】
+</code></pre></div><h2 id="🌟-路由-谈谈你对编程式导航的理解"><a href="#🌟-路由-谈谈你对编程式导航的理解" class="header-anchor">#</a> 🌟 路由-谈谈你对编程式导航的理解</h2> <p>作用：就是利用js跳转网页</p> <p>留心：声明式就是用a标签跳转</p> <p>场景：登陆、添加按钮、删除按钮等</p> <p>语法</p> <div class="language-markdown extra-class"><pre class="language-markdown"><code>this.$router.push( { path:'/路径', query: {参数名:值} } )
+
+this.$router.push( { name:'名称', params: {参数名:值} } )
+
+获取：this.$route.query/params.参数名
+</code></pre></div><h2 id="🌟-路由-说出嵌套路由-命名视图的场景"><a href="#🌟-路由-说出嵌套路由-命名视图的场景" class="header-anchor">#</a> 🌟 路由-说出嵌套路由&amp;命名视图的场景</h2> <p>嵌套路由</p> <div class="language- extra-class"><pre class="language-text"><code>概念：一个路由，显示多个组件，并且有父子关系所以通过children来定义
+语法：子路由通过children来定义，然后父的组件内容通过router-view来显示匹配的子组件
+场景：后台管理系统经典两栏布局 点击左侧菜单，右侧显示子组件内容
+</code></pre></div><p>命名视图</p> <div class="language- extra-class"><pre class="language-text"><code>概念：一个路由，显示多个组件，并且有兄弟关系所以component改为components
+语法：定义路由把component改为components，然后视图给router-view 加name属性
+场景：移动端navBar、tabBar
+</code></pre></div><h2 id="🌟-路由-全局导航守卫登陆鉴权"><a href="#🌟-路由-全局导航守卫登陆鉴权" class="header-anchor">#</a> 🌟 路由-全局导航守卫登陆鉴权</h2> <p>作用；没登陆不可以访问会员中心、后台首页</p> <p>语法：router.beforeEach    判断h5  next</p> <div class="language- extra-class"><pre class="language-text"><code>// 全局前置守卫
+// 导航守卫：导航/地址栏门卫，监控路由变化
+router.beforeEach((to, from, next) =&gt; {
+  // ...
+  // to 存放新的路由数据
+  // from 存放旧的路由数据
+  // next()    写- 允许后续代码执行，可以看到组件内容
+  // next()   不写- 阻止后续代码执行，因此组件不渲染看不到内容
+  // next({path: '/login'}) 跳转到login页面
+
+  // console.log(to);
+  // 检查当前访问的路径
+  // 在数组中就直接next 不用检查是否登录
+  // 白名单
+  if ([&quot;/login&quot;, &quot;/404&quot;].includes(to.path)) {
+    next();
+  } else {
+    // 上述白名单直接忽略不用判断
+    // 但是其他得判断
+    let token = localStorage.getItem(&quot;token&quot;);
+    if (token) {
+      next();
+    } else {
+      next({ path: &quot;/login&quot; });
+    }  
+  }
+</code></pre></div><h2 id="🌟-路由-导航守卫种类-作用"><a href="#🌟-路由-导航守卫种类-作用" class="header-anchor">#</a> 🌟 路由-导航守卫种类&amp;作用</h2> <p>种类：全局、路由、组件内</p> <blockquote><div class="language- extra-class"><pre class="language-text"><code>全局：beforeEach				 登录状态、网页加载进度条
+全局：beforeResolve	    不用（路由、组件守卫被解析也就是被调用后）
+全局：afterEach			    关闭网页加载进度条 NProgress
+
+路由：beforeEnter		    不用
+
+组件：beforeRouteEnter   组件被创建前（注：不能用this）
+组件：beforeRouteUpdate   动态路由匹配/动态获取路由参数
+组件：beforeRouteLeave   未保存离开组件/清除定时器/切换组件保存数据等
+</code></pre></div></blockquote> <p>全局</p> <blockquote><p><strong>全局前置守卫</strong> beforeEach</p> <div class="language- extra-class"><pre class="language-text"><code>场景1：登录验证，判断用户是否登录，登录-next()，没登录-重定向到登录页 next({path:'/login'})
+场景2：显示网页加载进度条
+
+
+// 导航守卫（监控路由变化）
+// to 路由对象（新页面路由对象  to.path 可以获取当前新页面路由路径
+// form 路由对象（旧页面路由对象  form.path 可以获取当前旧页面路由路径
+// next 函数  可以控制页面正常访问或者重定向
+import store from &quot;@/store&quot;;
+import router from &quot;@/router&quot;;
+import NProgress from &quot;nprogress&quot;;
+import &quot;nprogress/nprogress.css&quot;;
+
+const whiteList = [&quot;/login&quot;, &quot;/404&quot;, &quot;/login/sms&quot;, &quot;/login/token&quot;];
+
+router.beforeEach((to, from, next) =&gt; {
+  NProgress.start();
+  // ...
+  // 1 判断你访问的是什么页面
+  if (whiteList.indexOf(to.path) != -1) {
+    next();
+  } else {
+    // 登录相关的页面、404 直接next
+    // 其他 判断token是否存在
+    // let token = this.$store.state.login.token
+    let token = store.state.login.token;
+    // - 存在 next({})
+    // - 不存在 next({path: '/login'})
+    if (token) {
+      if (store.state.auths.menus.length &lt;= 0) {
+        console.log(&quot;重新获取权限菜单&quot;);
+        store.dispatch(&quot;auths/FETCH_MENUS&quot;);
+      }
+      next();
+    } else {
+      next({ path: &quot;/login&quot; });
+    }
+  }
+});
+
+router.afterEach(() =&gt; {
+  NProgress.done();
+});
+
+</code></pre></div><p><strong>全局解析守卫</strong>beforeResolve    2.5.0+</p> <div class="language- extra-class"><pre class="language-text"><code>场景：不用
+触发：路由、组件守卫被解析也就是被调用后
+</code></pre></div><p><strong>全局后置钩子</strong>afterEach</p> <div class="language- extra-class"><pre class="language-text"><code>场景：关闭网页加载进度条 NProgress
+触发：最后、特色没有next不会改变导航本身：
+
+
+router.afterEach(() =&gt; {
+  	NProgress.done();
+});
+</code></pre></div></blockquote> <p>路由</p> <blockquote><div class="language- extra-class"><pre class="language-text"><code>{
+	path,
+	component,
+	...
+	beforeEnter: (to, from, next) =&gt; {
+	// ...
+}
+}
+</code></pre></div></blockquote> <p>组件</p> <blockquote><div class="language- extra-class"><pre class="language-text"><code>Vue.component(组件名, {
+	beforeRouteEnter    组件被创建前（注：不能用this）
+	beforeRouteUpdate (2.2 新增)   动态路由匹配/动态获取路由参数
+	beforeRouteLeave   未保存离开组件/清除定时器/切换组件保存数据等
+})
+
+beforeRouteLeave (to, from, next) {
+// 禁止用户在还未保存修改前突然离开
+const answer = window.confirm('Do you really want to leave? you have unsaved changes!')
+if (answer) {
+ next()
+} else {
+ next(false)
+}
+}
+或
+beforeRouteLeave (to, from, next) {
+window.clearInterval(this.timer) //清楚定时器
+next()
+}
+或
+beforeRouteLeave (to, from, next) {
+ // 当用户需要关闭页面时, 可以将公用的信息保存到session或Vuex中
+ localStorage.setItem(name, content); //保存到localStorage中
+ next()
+}
+</code></pre></div></blockquote> <h2 id="🌛-路由-导航守卫执行顺序"><a href="#🌛-路由-导航守卫执行顺序" class="header-anchor">#</a> 🌛 路由-导航守卫执行顺序</h2> <div class="language- extra-class"><pre class="language-text"><code>导航被触发。
+在失活的组件里调用 beforeRouteLeave 守卫。
+调用全局的  beforeEach 守卫。
+在重用的组件里调用 beforeRouteUpdate 守卫 (2.2+)。
+在路由配置里调用 beforeEnter。
+解析异步路由组件。
+在被激活的组件里调用 beforeRouteEnter。
+调用全局的 beforeResolve 守卫 (2.5+)。
+导航被确认。
+调用全局的 afterEach 钩子。
+触发 DOM 更新。
+调用 beforeRouteEnter 守卫中传给 next 的回调函数，创建好的组件实例会作为回调函数的参数传入。
+</code></pre></div><p>组件内 离开	beforeRouteLeave</p> <p>全局beforeEach</p> <p>组件内 更新	beforeRouteUpdate</p> <p>全局afterEach</p> <p>组件内 进入	beforeRouteEnter</p> <h2 id="🌟-路由-动态路由如何实现"><a href="#🌟-路由-动态路由如何实现" class="header-anchor">#</a> 🌟 路由-动态路由如何实现</h2> <p>面试提问</p> <div class="language- extra-class"><pre class="language-text"><code>如何实现权限控制
+如何实现菜单权限
+如何实现动态路由
+如何动态添加路由规则
+项目是前端路由还是后端路由
+</code></pre></div><p>实战项目回答</p> <div class="language- extra-class"><pre class="language-text"><code>见下面👇 
+</code></pre></div><p>作用&amp;语法</p> <blockquote><p>作用：不同角色，权限菜单看到的不一样</p> <p>步骤1：页面菜单导航根据接口数据渲染</p> <p>步骤2：路由不能全部写死，而是全部注释掉，利用addRoutes或addRoute动态添加路由规则</p> <div class="language- extra-class"><pre class="language-text"><code>举个栗子：商品列表、用户列表、权限列表、订单列表等等
+1、api目录定义接口导出
+2、组件内导入
+3、最后组件内的created钩子函数中调用
+
+
+
+动态路由特殊：
+1-首先api目录定义接口导出
+2-接着在vuex auth文件中去定义actions获取权限菜单数据
+然后再全局导航守卫beforeEach中判断用户登录了，但是没有菜单数据 就通过dispatch触发actions获取权限菜单数据 
+
+目的1：登录页  跳转到  欢迎页    beforeEach  发现vuex中没有菜单数据  请求接口保存到vuex中
+目的2：后期页面刷新vuex就丢了，没事 刷新页面也就是路由变化了 beforeEach 也会触发   发现vuex中没有菜单数据  请求接口保存到vuex中
+
+
+
+或
+1、在vuex中定义actions获取权限菜单数据   actions拿到数据后 触发mutations添加动态路由addRoute并且保存到模型中
+2、在全局导航守卫中   判断vuex中是否有权限菜单数据 ，没有就触发actions 去获取权限菜单数据 并保存到模型中
+</code></pre></div></blockquote> <h2 id="🌟-路由-元信息有啥用"><a href="#🌟-路由-元信息有啥用" class="header-anchor">#</a> 🌟 路由-元信息有啥用</h2> <p>meta 存放面包屑、也可以加标识控制是否缓存组件</p> <p>实现1：页面菜单导航根据接口数据渲染</p> <p>实现2：路由不能全部写死，利用addRoutes或addRoute动态添加路由规则</p> <div class="language-js extra-class"><pre class="language-js"><code>router<span class="token punctuation">.</span><span class="token function">addRoute</span><span class="token punctuation">(</span><span class="token string">&quot;admin&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">path</span><span class="token operator">:</span> twoMenu<span class="token punctuation">.</span>url<span class="token punctuation">,</span>
+  <span class="token function-variable function">component</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">&quot;@/views/&quot;</span> <span class="token operator">+</span> twoMenu<span class="token punctuation">.</span>component<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">meta</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">name1</span><span class="token operator">:</span> twoMenu<span class="token punctuation">.</span>auth_pname<span class="token punctuation">,</span>
+    <span class="token literal-property property">name2</span><span class="token operator">:</span> twoMenu<span class="token punctuation">.</span>auth_name<span class="token punctuation">,</span>
+    <span class="token literal-property property">keep_alive</span><span class="token operator">:</span> twoMenu<span class="token punctuation">.</span>keep_alive<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="🌛-路由-过渡特效场景"><a href="#🌛-路由-过渡特效场景" class="header-anchor">#</a> 🌛 路由-过渡特效场景</h2> <p>项目中会用到</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>transition</span> <span class="token attr-name">class-enter-class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>animated 类名<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>router-view</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>router-view</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>transition</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h1 id="■-week2-day2-脚手架相关"><a href="#■-week2-day2-脚手架相关" class="header-anchor">#</a> ■ week2-day2  脚手架相关</h1> <h2 id="💘-课件-5"><a href="#💘-课件-5" class="header-anchor">#</a> 💘 课件</h2> <p>week2-day2  Vue进阶（项目准备：脚手架、ToDoList案例、组件封装、全局组件、Vue.config.js配置）</p> <h2 id="🌟-说出框架中做了哪些配置vue-config-js"><a href="#🌟-说出框架中做了哪些配置vue-config-js" class="header-anchor">#</a> 🌟 说出框架中做了哪些配置vue.config.js</h2> <p>别名</p> <p>跨域（最终上线还得后端或运维处理</p> <p>移出console</p> <p>图片压缩</p> <p>引入外部CDN</p> <p>等等</p> <p>面试追问：为啥要引入外部cdn</p> <p>回答：减轻应用/代码服务器压力/并发，请求负载均衡/分发到其他服务器（注：银行原来有一个取款机，现在有n个）</p> <h2 id="🌟-说出跨域的解决方案"><a href="#🌟-说出跨域的解决方案" class="header-anchor">#</a> 🌟 说出跨域的解决方案</h2> <p>常用的</p> <p>谷歌命令</p> <p>谷歌插件</p> <p>JSONP</p> <p>http-proxy-middleware</p> <p>等等</p> <p>追问：项目中如何配置</p> <div class="language- extra-class"><pre class="language-text"><code>vue中配置  devServer  配置就可以了
+</code></pre></div><p>追问：在哪个文件中</p> <div class="language- extra-class"><pre class="language-text"><code>vue.config.js 中
+
+module.exports = {
+	 // ...
+	 devServer: {}
+	 // ...
+}
+</code></pre></div><h2 id="🌟-说出vue-use原理"><a href="#🌟-说出vue-use原理" class="header-anchor">#</a> 🌟 说出Vue.use原理</h2> <p>Vue.use主要用来在框架中全局注册插件，例如注册全局的组件等，</p> <p>然后底层源码大致做了两件事</p> <div class="language- extra-class"><pre class="language-text"><code>1 检查传递的插件有没有重复注册
+2 判断plugin.install是不是函数 或 plugin 是不是函数  然后分别用apply调用让函数执行  注册，
+
+Vue.component(组件名, 单文件组件)
+</code></pre></div><p>源码 https://github.com/vuejs/vue/blob/dev/src/core/global-api/use.js</p> <div class="language- extra-class"><pre class="language-text"><code>export function initUse (Vue: GlobalAPI) {
+  // 接受一个plugin参数，限制为 Function | Object两种类型
+  Vue.use = function (plugin: Function | Object) {
+    // _installedPlugins 存储所有注册过的 plugin
+    const installedPlugins = (this._installedPlugins || (this._installedPlugins = []))
+    // 保存注册组件的数组，不存在则创建，存在则直接返回，不允许重复注册
+    if (installedPlugins.indexOf(plugin) &gt; -1) {
+      return this
+    }
+
+    // additional parameters
+    // 将传入的参数转换成数组
+    const args = toArray(arguments, 1)
+    // 将Vue对象拼接到数组头部
+    args.unshift(this)
+    // 如果提供了 install 方法，则直接调用
+    if (typeof plugin.install === 'function') {
+      // 如果组件是对象，且提供install方法，调用install方法将参数数组传入，改变`this`指针为该组件
+      plugin.install.apply(plugin, args)
+    } else if (typeof plugin === 'function') {
+      // 否则直接执行
+      plugin.apply(null, args)
+    }
+    // 将plugin存储到  installedPlugins，表示y已经注册过
+    installedPlugins.push(plugin)
+    return this
+  }
+}
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>/**
+ * Convert an Array-like object to a real Array.
+ */
+export function toArray (list: any, start?: number): Array&lt;any&gt; {
+  start = start || 0
+  let i = list.length - start
+  const ret: Array&lt;any&gt; = new Array(i)
+  while (i--) {
+    ret[i] = list[i + start]
+  }
+  return ret
+}
+</code></pre></div><h1 id="■-week2-day3-ui组件库"><a href="#■-week2-day3-ui组件库" class="header-anchor">#</a> ■ week2-day3  UI组件库</h1> <h2 id="💘-课件-6"><a href="#💘-课件-6" class="header-anchor">#</a> 💘 课件</h2> <p>week2-day3  Vue进阶am（项目准备：UI组件库ElemenUI、IView、AntdV、Vant、Mint等、自研UI组件库）</p> <h2 id="🌛-说出ui组件库-ui框架原理"><a href="#🌛-说出ui组件库-ui框架原理" class="header-anchor">#</a> 🌛 说出UI组件库/UI框架原理</h2> <p>步骤1：首选通过vue单页面应用定义好公共组件</p> <p>步骤2：定义所有UI组件导出入口文件 src/components/index.js</p> <div class="language- extra-class"><pre class="language-text"><code>import Kuangkuang from '@/components/kuangkuang/Index.vue'
+import Page from '@/components/page/Index.vue'
+
+export default Vue =&gt; {
+ // 语法：Vue.component(后期调用的组件名, 单文件组件)
+ // 注册：后期就可以直接调用，不需要单独导入
+ // Vue.component('qfui-kuangkuang', Kuangkuang)
+ // Vue.component('qfui-page', Page)
+ // Vue.component(Kuangkuang.name, Kuangkuang)
+ // Vue.component(Page.name, Page)
+
+   const coms = [Kuangkuang, Page]
+   coms.forEach(com =&gt; {
+     Vue.component(com.name, com)
+   })
+}
+</code></pre></div><p>步骤3：接着打包</p> <blockquote><div class="language- extra-class"><pre class="language-text"><code>&quot;scripts&quot;: {
+ &quot;serve&quot;: &quot;vue-cli-service serve&quot;,
+ &quot;build&quot;: &quot;vue-cli-service build&quot;,
+ 																			    	       打包后文件名 打包后存的目录  打包的组件在哪
+ 																									      -----			   ----		------------------
+ &quot;build:ui&quot;: &quot;vue-cli-service build --target lib --name qf-ui --dest dist2 ./src/components/index.js&quot;
+},
+</code></pre></div></blockquote> <p>步骤4：最后按照node包发布就可以使用</p> <h1 id="■-week2-day4-5-vue锋团项目布局"><a href="#■-week2-day4-5-vue锋团项目布局" class="header-anchor">#</a> ■ week2-day4/5  Vue锋团项目布局</h1> <h2 id="🌟-项目开发中有没有封装过组件"><a href="#🌟-项目开发中有没有封装过组件" class="header-anchor">#</a> 🌟 项目开发中有没有封装过组件</h2> <p>有</p> <p>或者用语言：开发过</p> <h2 id="🌟-项目中封装了哪些组件"><a href="#🌟-项目中封装了哪些组件" class="header-anchor">#</a> 🌟 项目中封装了哪些组件</h2> <p>有很多，</p> <p>比如封装了公共的table、form等组件，</p> <p>还有很多页面组件，例如例如编辑用户、分配角色，分配权限、门店创建、分类编辑等都有封装提取页面组件，从而便于后期维护</p> <h2 id="🌟-组件如何封装的"><a href="#🌟-组件如何封装的" class="header-anchor">#</a> 🌟 组件如何封装的</h2> <p>页面组件：首先在页面中完成功能，然后再views/模块名/components中定义单文件组件，然后导入使用，从而让组件更便于后期维护</p> <blockquote><p>概念：将组件中不同逻辑的代码提取封装，便于后期维护</p></blockquote> <p>公共组件：首先在src/components定义form公共组件，然后全局注册导入使用，最终根据需求利用props接受参数&amp;创建自定义事件</p> <h2 id="🌟-样式相关"><a href="#🌟-样式相关" class="header-anchor">#</a> 🌟 样式相关</h2> <ul><li>题目1：如何防止样式的污染？</li></ul> <div class="language- extra-class"><pre class="language-text"><code>scoped
+</code></pre></div><ul><li>题目2：scoped解决样式污染原理</li></ul> <blockquote><p>说明：vue在编译的时候通过在DOM元素以及css样式上加上唯一标记，实现样式私有化，不污染全局样式。</p> <p>举例：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;my-class&quot;&gt;&lt;/div&gt;
+编译为
+&lt;div class=&quot;my-class&quot; data-v-56e7f952&gt;&lt;/div&gt;
+对应的样式.my-class编译为
+.my-class[data-v-56e7f952]
+</code></pre></div><p>原理：利用前端自动化构建工具webpack结合PostCSS模块编译实现css模块化</p> <p>https://www.postcss.com.cn/</p></blockquote> <ul><li>题目3：项目中开启样式私有化后，无法修改子组件例如elementui、antdv如何解决</li></ul> <div class="language- extra-class"><pre class="language-text"><code>通过【深度作用选择器】，你可以使用 &gt;&gt;&gt; 操作符；有些像 Sass 之类的预处理器无法正确解析 &gt;&gt;&gt;。这种情况下你可以使用 /deep/ 或 ::v-deep 操作符取而代之——两者都是 &gt;&gt;&gt; 的别名，同样可以正常工作。   
+</code></pre></div><p>https://vue-loader.vuejs.org/zh/guide/scoped-css.html#%E6%B7%B1%E5%BA%A6%E4%BD%9C%E7%94%A8%E9%80%89%E6%8B%A9%E5%99%A8</p> <h2 id="🌟-用户角色权限三者是如何关联的"><a href="#🌟-用户角色权限三者是如何关联的" class="header-anchor">#</a> 🌟 用户角色权限三者是如何关联的</h2> <p>首先在权限管理可以添加删除权限，实现后端路由</p> <p>接着可以添加删除角色，然后给角色分配权限</p> <p>最后在用户管理给用户分配角色，</p> <p>后期不同用户登录就可以看到不同点权限菜单/导航</p> <h1 id="■-week3-day1-异步请求"><a href="#■-week3-day1-异步请求" class="header-anchor">#</a> ■ week3-day1  异步请求</h1> <h2 id="💘-课件-7"><a href="#💘-课件-7" class="header-anchor">#</a> 💘 课件</h2> <p>week3-day1  Vue基础（项目准备：axios、fetch数据请求</p> <h2 id="🌟-谈谈你对http理解"><a href="#🌟-谈谈你对http理解" class="header-anchor">#</a> 🌟 谈谈你对HTTP理解</h2> <div class="language- extra-class"><pre class="language-text"><code>超文本传输协议、规定客户端和服务端如何通信，
+
+他是是请求行，响应行，请求头，响应头，请求体，响应体组成，
+之前我做项目的回收 请求行你们主要查看请求地址、请求状态、请求方式、请求体头里面主要放cookie、token、content-type等，请求体主要看参数有没有传递给后端、响应体后端返回的数据进行项目调试。
+</code></pre></div><h2 id="🌟-谈谈你对状态码的理解"><a href="#🌟-谈谈你对状态码的理解" class="header-anchor">#</a> 🌟 谈谈你对状态码的理解</h2> <div class="language- extra-class"><pre class="language-text"><code>2xx  200成功 201成功并创建新资源
+3xx  301永久重定向 302临时重定向 304浏览器缓存
+4xx  400参数有误 401密码错误 403无权访问 404文件不存在 405请求方式有误
+5xx  500服务器错误
+</code></pre></div><h2 id="🌟-post、get区别"><a href="#🌟-post、get区别" class="header-anchor">#</a> 🌟 post、get区别</h2> <div class="language- extra-class"><pre class="language-text"><code>安全角度   post对象安全 get地址栏 后期可以通过历史记录查看登陆密码
+数据角度   get地址栏 不同浏览器地址栏长度限制   post后端规定 2M 8M
+</code></pre></div><h2 id="🌟-xhr、fetch区别"><a href="#🌟-xhr、fetch区别" class="header-anchor">#</a> 🌟 xhr、fetch区别</h2> <div class="language- extra-class"><pre class="language-text"><code>xhr、fetch
+
+相同点：1-都可以发送异步请求、2-都是ECMA定义的
+不同点：前者异步回调地狱，后者promise
+</code></pre></div><blockquote><p>其他了解</p> <div class="language- extra-class"><pre class="language-text"><code>最初ajax（XMLHttpRequest ECMA组织）   瑕疵：1-语法麻烦太多，2-异步回调地狱，3-语法有兼容性问题
+后台jq（第三方作者） 
+	明确：JQ里面的$.ajax/get/post是基于XMLHttpRequest封装的  function + ajax + callback
+	好处：语法更简单、解决很多兼容性问题
+	瑕疵：异步回调地狱还在
+
+	解决：通过promise技术
+
+最后fetch（ECMA组织）  ：结合promise技术而生，代替传统xhr
+</code></pre></div></blockquote> <h2 id="🌟-fetch、axios区别"><a href="#🌟-fetch、axios区别" class="header-anchor">#</a> 🌟 fetch、axios区别</h2> <div class="language- extra-class"><pre class="language-text"><code>相同点：1 都可以发送异步请求，2 都是promise
+不同点：1 fetch官方、axios社区，2 axios更强并发、拦截器等
+</code></pre></div><h2 id="🌟-axios之前有没有封装过"><a href="#🌟-axios之前有没有封装过" class="header-anchor">#</a> 🌟 axios之前有没有封装过</h2> <div class="language- extra-class"><pre class="language-text"><code>- 封装axios导出request实例对象（timeout、baseURL、headers content-type、.env
+- 请求拦截器（开启Loading、token、CancelToken
+- 响应拦截器-成功（关闭Loading、res.data.data过滤 、 接口权限、TOKEN过期
+- 响应拦截器-失败（关闭Loading、timeout处理 、404、canceled、邮件报警捕捉前端异常
+</code></pre></div><h2 id="🌟-axios原理"><a href="#🌟-axios原理" class="header-anchor">#</a> 🌟  axios原理</h2> <p>基于xmlhttprequest构造函数、和node中的http模块封装实现，动态判断浏览器环境、还是服务端环境</p> <p>去选择对应语法返回promise对象</p> <h2 id="🌟-跨域如何解决"><a href="#🌟-跨域如何解决" class="header-anchor">#</a> 🌟 跨域如何解决</h2> <p>常用的</p> <p>谷歌命令</p> <p>谷歌插件</p> <p>前端代理 http-proxy-middleware</p> <p>JSONP</p> <p>留心：不管前端咋操作最终上线都得后端或者服务器配置</p> <p>追问：项目中如何配置</p> <div class="language- extra-class"><pre class="language-text"><code>vue中配置  devServer  配置就可以了
+</code></pre></div><p>追问：在哪个文件中</p> <div class="language- extra-class"><pre class="language-text"><code>vue.config.js 中
+
+module.exports = {
+	 // ...
+	 devServer: {}
+	 // ...
+}
+</code></pre></div><h1 id="■-week3-day2-状态管理vuex相关"><a href="#■-week3-day2-状态管理vuex相关" class="header-anchor">#</a> ■ week3-day2  状态管理vuex相关</h1> <h2 id="💘-课件-8"><a href="#💘-课件-8" class="header-anchor">#</a> 💘 课件</h2> <p>week3-day2  Vue进阶（项目准备：VUEX单库、VUEX数据持久化b、VUEX单库模块化、VUEX框架模块化b）</p> <h2 id="🌟-说出vuex有哪些键"><a href="#🌟-说出vuex有哪些键" class="header-anchor">#</a> 🌟 说出vuex有哪些键</h2> <div class="language- extra-class"><pre class="language-text"><code>state、getters、mutations、actions、plugins、modules
+</code></pre></div><h2 id="🌟-说出vuex工作流"><a href="#🌟-说出vuex工作流" class="header-anchor">#</a> 🌟 说出vuex工作流</h2> <div class="language- extra-class"><pre class="language-text"><code>state存放数据、
+getters过滤
+mutations更新
+actions异步请求
+</code></pre></div><h2 id="🌟-说出vuex数据持久化"><a href="#🌟-说出vuex数据持久化" class="header-anchor">#</a> 🌟 说出vuex数据持久化</h2> <p>H5存储</p> <p>第三方模块</p> <h2 id="🌟-2109"><a href="#🌟-2109" class="header-anchor">#</a> 🌟 2109</h2> <div class="language- extra-class"><pre class="language-text"><code>问1：vuex工作流
+答1：通过state定义状态、通过getters过滤状态、通过mutations更新状态、通过actions异步请求
+ - 追问：里面具体怎么写、或者面试官问的是vuex具体怎么写的？
+ - 回答：state是对对象 里面写键:值，getter是对象  里面写函数  返回过滤的数据，mutations 是对象  里面写函数  形参是state。
+ - 追问：vuex在项目中怎么用？
+ - 回答：store文件中通过module模块化定义状态，然后通过辅助函数mapState、mapMutations去获取
+ - 追问：具体场景呢？
+ - 回答：比如我之前做xxx项目，登录成功之后用户名、角色、token、权限菜单等等就是存在vuex中，然后通过辅助函数获取显示；
+ - 追问：怎么获取state的数据怎么取？
+ - 回答：可以通过 this.$store.state.键获取   但是我之前做xxx项目主要使用vuex的辅助函数mapState
+ - 追问：vuex属性之间的联系，还有辅助函数
+ - 回答：getter过滤state里面，mutations去更新state里面，actions主要发送异步请求然后触发mutations更新state里面的数据；
+ - 追问：为什么在action里面写异步请求，而不会mutation
+ - 回答：首先mutation也可以写异步请求，但是官方推荐在action里面写，从而确保拿到数据之后再更新状态，避免mutation写异步请求存在同步异步问题，也就是拿到数据【之前】更新了状态。
+ 
+问2：vuex有哪些键
+vuex中的键，和其他工作流，具体mutation和action的相同点，怎么用
+问3：vuex怎么用
+问4：vuex数据是永久的还是临时的
+</code></pre></div><h1 id="■-week3-day3-4-5-vue锋团项目接口"><a href="#■-week3-day3-4-5-vue锋团项目接口" class="header-anchor">#</a> ■ week3-day3/4/5  Vue锋团项目接口</h1> <h2 id="🌟-说一下登录如何实现的"><a href="#🌟-说一下登录如何实现的" class="header-anchor">#</a> 🌟 说一下登录如何实现的</h2> <p>1、通过elementui布局 表单验证</p> <p>2、给登录绑定点击事件，...</p> <p>3、然后通过vuex辅助函数 调用 actions 去请求接口</p> <p>4、失败弹框提示，成功将token、uname、roleName存储vuex中，然后提示登录成功&amp;&amp;重定向</p> <div class="language- extra-class"><pre class="language-text"><code>1 vuex周边问题 比如数据持久化、比如有哪些键
+2 axios周边问题
+3 token周边问题（过期问题
+</code></pre></div><h2 id="🌟-如何判断用户是否登录"><a href="#🌟-如何判断用户是否登录" class="header-anchor">#</a> 🌟 如何判断用户是否登录</h2> <h2 id="🌟-登录是如何鉴权的"><a href="#🌟-登录是如何鉴权的" class="header-anchor">#</a> 🌟 登录是如何鉴权的</h2> <p>通过全局导航守卫判断，白名单直接next、非白名单判断h5或vuex中是否存在  不存在重定向到 登录页即可</p> <h2 id="🌟-说一下token过期机制"><a href="#🌟-说一下token过期机制" class="header-anchor">#</a> 🌟 说一下token过期机制</h2> <p>纯前端处理</p> <div class="language- extra-class"><pre class="language-text"><code>1 登录既要存token  又要额外存一个时间
+2 axios请求拦截器里面  判断是否过期 提示token过期，然后就重定向到登录页
+</code></pre></div><p>前后端结合处理</p> <div class="language- extra-class"><pre class="language-text"><code>1 登录就存token晚吃
+2 请求拦截器每次请求携带token
+3 相应拦截器判断是否过期  提示token过期，过期就重定向登录页
+</code></pre></div><h2 id="🌟-项目中是前端路由还是后端路由"><a href="#🌟-项目中是前端路由还是后端路由" class="header-anchor">#</a> 🌟 项目中是前端路由还是后端路由</h2> <h2 id="🌟-权限菜单如何实现的"><a href="#🌟-权限菜单如何实现的" class="header-anchor">#</a> 🌟 权限菜单如何实现的</h2> <p>后端路由</p> <p>追问：后端路由如何实现的？</p> <p>回答：几个关键词  请求接口、addRoute、菜单还的遍历搞出来、vuex</p> <div class="language- extra-class"><pre class="language-text"><code>1、首先通过vuex定义actions获取当前用户的权限数据，然后触发mutations、保存到state中、并且通过addRoute添加动态路由
+2、在导航守卫中判断store中的权限数据是否存在，存在next不存在全局导航守卫beforeEach触发action获取
+
+
+
+3、后台首页layout下面的menu中通过辅助函数获取遍历显示
+</code></pre></div><p>其他备注：一般token有效期7200s  也就是2小时  具体看公司</p> <h2 id="🌟"><a href="#🌟" class="header-anchor">#</a> 🌟 ....</h2> <p>​</p> <h2 id="🌟-项目做了哪些优化"><a href="#🌟-项目做了哪些优化" class="header-anchor">#</a> 🌟 项目做了哪些优化</h2> <ul><li>交互角度</li></ul> <div class="language- extra-class"><pre class="language-text"><code>animate.css     
+vue-lazyload  
+nprogress
+loading
+preventReClick
+等
+</code></pre></div><ul><li>代码角度</li></ul> <div class="language- extra-class"><pre class="language-text"><code>混入
+过滤器
+页面组件提取封装
+公共组件提取封装
+axios封装
+全局配置文件  process.env
+等等
+</code></pre></div><ul><li>性能角度  webpack</li></ul> <div class="language- extra-class"><pre class="language-text"><code>关闭prefetch预加载 
+图片压缩  		  原理：image-webpack-loader
+引入外部cdn  	   原理：configureWebpack  -&gt; externals 
+UI框架按需加载    原理：babel-plugin-import 实现自动按需引入
+路由/组件懒加载   原理：es6 import动态加载 + webapck文件分割
+等等
+</code></pre></div><ul><li>性能优化  web server 或 code</li></ul> <div class="language- extra-class"><pre class="language-text"><code>nginx服务器配置：开启强制缓存expires缓存（注：这个单词cookie中碰到过）
+nginx服务器配置：开启gzip压缩
+keep-alive组件缓存
+等等
+</code></pre></div><p>​</p> <h2 id="🌟-说出路由懒加载原理"><a href="#🌟-说出路由懒加载原理" class="header-anchor">#</a> 🌟 说出路由懒加载原理</h2> <p>es6 动态导入 + webpack文件分割</p> <blockquote><p>普通导入：import  组件名  from  路径及文件名      打开就触发</p> <p>动态导入：component: () =&gt; import(路径及文件名)   访问才触发</p></blockquote> <h2 id="🌟-周边-async、await具体怎么用的"><a href="#🌟-周边-async、await具体怎么用的" class="header-anchor">#</a> 🌟 周边：async、await具体怎么用的</h2> <p>就是钩子函数中、或者vuex的actions中不经常需要写api请求接口吗</p> <p>然后通过async、await来修饰完成功能</p> <p>举例：比如权限菜单、各种登录咱们都用了</p> <h1 id="■-查缺补漏"><a href="#■-查缺补漏" class="header-anchor">#</a> ■ 查缺补漏</h1> <h2 id="🌟-说一下diff算法"><a href="#🌟-说一下diff算法" class="header-anchor">#</a> 🌟 说一下Diff算法</h2> <p>算法规则</p> <div class="language- extra-class"><pre class="language-text"><code>1 步骤一：用JS对象模拟DOM树
+2 步骤二：比较两棵虚拟DOM树的差异（切记切记切记：一层一层比）
+3 步骤三：把差异应用到真正的DOM树上
+4 步骤四：在页面展示
+
+虚拟DOM介绍：https://www.jianshu.com/p/616999666920  
+如何实现一个Virtual DOM 算法：https://github.com/livoras/blog/issues/13 
+深入理解Diff算法：https://blog.csdn.net/lunahaijiao/article/details/86741739
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>&lt;div id=&quot;root&quot;&gt;
+    &lt;div v-for=&quot;item in todos&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;&quot;&gt;
+        {{item.title}}
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+const vm = new Vue({
+    el: &quot;#root&quot;,
+    data: {
+        todos: [
+            {id:1, title:'吃饭'},
+            {id:2, title:'睡觉'},
+            {id:3, title:'挤痘痘'},
+        ]
+    }
+})
+&lt;/script&gt;
+
+步骤1：通过浏览器运行 ，给第二个checkbox打钩
+步骤2：在控制台 vm.todos.splice(1,1)
+</code></pre></div><p>什么是虚拟DOM：就是使用javascript的对象来描述了DOM结构</p> <p>为什么要虚拟DOM：提升性能（因为回流、重绘   浏览器工作机制）</p> <p>如何更新DOM数据：通过diff算法（同层比较）</p> <div class="language- extra-class"><pre class="language-text"><code>1 步骤一：用JS对象模拟DOM树
+2 步骤二：比较两棵虚拟DOM树的差异(注：后期如果写写遍历 加上:key 提升性能的)
+3 步骤三：把差异应用到真正的DOM树上
+</code></pre></div><p>切记：当遍历数据的时候要写key   提升性能、也是避免BUG</p> <h1 id="■-周边"><a href="#■-周边" class="header-anchor">#</a> ■ 周边</h1> <h2 id="🌟-【事件循环】谈谈你对event-loop的理解"><a href="#🌟-【事件循环】谈谈你对event-loop的理解" class="header-anchor">#</a> 🌟 【事件循环】谈谈你对Event Loop的理解</h2> <p><code>Event Loop</code>即事件循环，</p> <p>是指浏览器或<code>Node</code>的一种确保javaScript单线程运行时不会阻塞的一种机制，</p> <p>也就是我们经常使用<strong>异步</strong>的原理。</p> <p>种类：浏览器的Event Loop、Node.js中的Event Loop</p> <h2 id="🌟-【事件循环】谈谈你对浏览器的event-loop理解"><a href="#🌟-【事件循环】谈谈你对浏览器的event-loop理解" class="header-anchor">#</a> 🌟 【事件循环】谈谈你对浏览器的Event Loop理解</h2> <p>浏览器输入网址服务器响应数据后，</p> <p>浏览器会通过render进程开始解析工作</p> <p>GUI线程负责页面渲染</p> <p>JS引擎线程负责执行JS代码</p> <p>遇到异步代码会交给其他线程处理，然后放到队列中，</p> <p>事件循环主要是从队列中取出代码放到执行栈中交给js引擎线程处理</p> <h2 id="🌛【事件循环】谈谈你对node-js中的event-loop理解"><a href="#🌛【事件循环】谈谈你对node-js中的event-loop理解" class="header-anchor">#</a> 🌛【事件循环】谈谈你对Node.js中的Event Loop理解</h2> <blockquote><p>libuv引擎中的事件循环分为 6 个阶段，它们会按照顺序反复运行。每当进入某一个阶段的时候，都会从对应的回调队列中取出函数去执行。当队列为空或者执行的回调函数数量到达系统设定的阈值，就会进入下一阶段。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>timers 阶段：这个阶段执行timer（setTimeout、setInterval）的回调
+I/O callbacks 阶段：处理一些上一轮循环中的少数未执行的 I/O 回调
+idle, prepare 阶段：仅node内部使用
+poll 阶段：获取新的I/O事件, 适当的条件下node将阻塞在这里（轮训阶段）  
+check 阶段：执行 setImmediate() 的回调
+close callbacks 阶段：执行 socket 的 close 事件回调
+</code></pre></div><h2 id="🌟-【事件循环】说出宏任务、微任务各有哪些"><a href="#🌟-【事件循环】说出宏任务、微任务各有哪些" class="header-anchor">#</a> 🌟 【事件循环】说出宏任务、微任务各有哪些</h2> <blockquote><p>单词含义：I input 输入、 O output 输出</p> <p>用户角度IO操作：鼠标键盘-是计算机输入信息，显示器-是输出设备</p> <p>电脑角度IO操作：CPU、内存与其他设备之间数据转移过程就是IO操作，例如数据从磁盘读到内存，或者内存写到磁盘</p> <p>编程角度IO操作：进程读取数据操作</p></blockquote> <ul><li>宏任务：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>整体代码（script）
+定时器（setTimeout、setInterval）
+I/O操作（DOM事件、AJAX异步请求）
+
+setImmediate（node环境）
+requestAnimationFrame（浏览器环境）
+</code></pre></div><ul><li>微任务</li></ul> <div class="language- extra-class"><pre class="language-text"><code>Promise.then catch finally
+async/await（底层还是promise）
+process.nextTick（node环境） 
+MutationObserver（浏览器环境）
+</code></pre></div><h2 id="🌟-【事件循环】说出先执行宏任务还是微任务"><a href="#🌟-【事件循环】说出先执行宏任务还是微任务" class="header-anchor">#</a> 🌟 【事件循环】说出先执行宏任务还是微任务</h2> <p>算整体代码script：1宏n微</p> <p>不算整体代码script：先n微，再1宏 -&gt;  n微，再1宏</p> <h2 id="🌟-【事件循环】浏览器和node中event-loop区别"><a href="#🌟-【事件循环】浏览器和node中event-loop区别" class="header-anchor">#</a> 🌟 【事件循环】浏览器和node中event loop区别</h2> <p>浏览器：一个宏走完清空所有微任务</p> <p>node：一个阶段走完  再清空所有微</p></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----></main> <!----> <div class="comments-wrapper" data-v-4698c43e><!----></div></div></div></div></div></div><div class="global-ui"><!----><div></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 Fade away
+    </div> <div class="operation" style="left:380px;bottom:20px;display:none;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="left:250px;bottom:0px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><div class="Sakura" data-v-248d85d6><canvas id="canvas_sakura" style="z-index:-1;" data-v-248d85d6></canvas></div><!----><div id="goTop" class="hide-cat" data-v-bf92849a></div></div></div>
+    <script src="/assets/js/app.99624b8a.js" defer></script><script src="/assets/js/3.a9f58784.js" defer></script><script src="/assets/js/1.a344c94a.js" defer></script><script src="/assets/js/146.55527375.js" defer></script><script src="/assets/js/30.7d28a2d6.js" defer></script>
+  </body>
+</html>

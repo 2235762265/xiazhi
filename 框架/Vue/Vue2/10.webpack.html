@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>十、webpack | Fade away</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script type="text/javascript" src="/js/mouseClick.js"></script>
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="花有重开日，人无在少年">
+    <meta name="keywords" content="随便写写">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="robots" content="all">
+    <meta name="author" content="xiazhi">
+    
+    <link rel="preload" href="/assets/css/0.styles.91dd29b7.css" as="style"><link rel="preload" href="/assets/js/app.99624b8a.js" as="script"><link rel="preload" href="/assets/js/3.a9f58784.js" as="script"><link rel="preload" href="/assets/js/1.a344c94a.js" as="script"><link rel="preload" href="/assets/js/132.d6776d37.js" as="script"><link rel="preload" href="/assets/js/30.7d28a2d6.js" as="script"><link rel="prefetch" href="/assets/js/10.513c5d67.js"><link rel="prefetch" href="/assets/js/100.331ca440.js"><link rel="prefetch" href="/assets/js/101.f600eae1.js"><link rel="prefetch" href="/assets/js/102.701a3771.js"><link rel="prefetch" href="/assets/js/103.1a52eead.js"><link rel="prefetch" href="/assets/js/104.47329018.js"><link rel="prefetch" href="/assets/js/105.57317b7d.js"><link rel="prefetch" href="/assets/js/106.7c24c08f.js"><link rel="prefetch" href="/assets/js/107.9fdd48da.js"><link rel="prefetch" href="/assets/js/108.73ecc853.js"><link rel="prefetch" href="/assets/js/109.7abf6317.js"><link rel="prefetch" href="/assets/js/11.5ef240f5.js"><link rel="prefetch" href="/assets/js/110.7027a417.js"><link rel="prefetch" href="/assets/js/111.ebaca92a.js"><link rel="prefetch" href="/assets/js/112.f1b3db2d.js"><link rel="prefetch" href="/assets/js/113.1ddfd958.js"><link rel="prefetch" href="/assets/js/114.48e05a14.js"><link rel="prefetch" href="/assets/js/115.5b1f83cc.js"><link rel="prefetch" href="/assets/js/116.5f0c8321.js"><link rel="prefetch" href="/assets/js/117.1a418555.js"><link rel="prefetch" href="/assets/js/118.ff87b9d2.js"><link rel="prefetch" href="/assets/js/119.037a1943.js"><link rel="prefetch" href="/assets/js/12.4a7003f3.js"><link rel="prefetch" href="/assets/js/120.cee1015b.js"><link rel="prefetch" href="/assets/js/121.52ac3e89.js"><link rel="prefetch" href="/assets/js/122.a3560045.js"><link rel="prefetch" href="/assets/js/123.721257bf.js"><link rel="prefetch" href="/assets/js/124.e2045af2.js"><link rel="prefetch" href="/assets/js/125.495ee0cb.js"><link rel="prefetch" href="/assets/js/126.fac66553.js"><link rel="prefetch" href="/assets/js/127.f59af0ba.js"><link rel="prefetch" href="/assets/js/128.f40cdaa1.js"><link rel="prefetch" href="/assets/js/129.67b3d27d.js"><link rel="prefetch" href="/assets/js/13.d4371f04.js"><link rel="prefetch" href="/assets/js/130.aa06024b.js"><link rel="prefetch" href="/assets/js/131.dee3e4e5.js"><link rel="prefetch" href="/assets/js/133.48b0028d.js"><link rel="prefetch" href="/assets/js/134.615b85e9.js"><link rel="prefetch" href="/assets/js/135.1ecf85e0.js"><link rel="prefetch" href="/assets/js/136.6fe1b198.js"><link rel="prefetch" href="/assets/js/137.5b56922f.js"><link rel="prefetch" href="/assets/js/138.4ad4e9d9.js"><link rel="prefetch" href="/assets/js/139.9a979a18.js"><link rel="prefetch" href="/assets/js/14.e51087d8.js"><link rel="prefetch" href="/assets/js/140.70982156.js"><link rel="prefetch" href="/assets/js/141.6006a4c5.js"><link rel="prefetch" href="/assets/js/142.09d04a53.js"><link rel="prefetch" href="/assets/js/143.00574315.js"><link rel="prefetch" href="/assets/js/144.56c8a90a.js"><link rel="prefetch" href="/assets/js/145.17e7e39c.js"><link rel="prefetch" href="/assets/js/146.55527375.js"><link rel="prefetch" href="/assets/js/147.ba67a557.js"><link rel="prefetch" href="/assets/js/15.f139a61b.js"><link rel="prefetch" href="/assets/js/16.98e04b9a.js"><link rel="prefetch" href="/assets/js/17.28b86c6e.js"><link rel="prefetch" href="/assets/js/18.0855c83f.js"><link rel="prefetch" href="/assets/js/19.1ddb5980.js"><link rel="prefetch" href="/assets/js/20.e0af366f.js"><link rel="prefetch" href="/assets/js/21.a6d28092.js"><link rel="prefetch" href="/assets/js/22.41b481ae.js"><link rel="prefetch" href="/assets/js/23.5ded2918.js"><link rel="prefetch" href="/assets/js/24.9f77e0f8.js"><link rel="prefetch" href="/assets/js/25.15cc72ab.js"><link rel="prefetch" href="/assets/js/26.fe75f118.js"><link rel="prefetch" href="/assets/js/27.2e89380e.js"><link rel="prefetch" href="/assets/js/28.f9766ddb.js"><link rel="prefetch" href="/assets/js/29.df3bae1e.js"><link rel="prefetch" href="/assets/js/31.773fff91.js"><link rel="prefetch" href="/assets/js/32.a519b5bb.js"><link rel="prefetch" href="/assets/js/33.c54ccdbf.js"><link rel="prefetch" href="/assets/js/34.bcc19a82.js"><link rel="prefetch" href="/assets/js/35.72d1b42a.js"><link rel="prefetch" href="/assets/js/36.ac818ff6.js"><link rel="prefetch" href="/assets/js/37.4c919707.js"><link rel="prefetch" href="/assets/js/38.e2cb4341.js"><link rel="prefetch" href="/assets/js/39.ad223721.js"><link rel="prefetch" href="/assets/js/4.03f95861.js"><link rel="prefetch" href="/assets/js/40.ded09630.js"><link rel="prefetch" href="/assets/js/41.61954733.js"><link rel="prefetch" href="/assets/js/42.19fab9ef.js"><link rel="prefetch" href="/assets/js/43.8c4fd22e.js"><link rel="prefetch" href="/assets/js/44.6b6add1a.js"><link rel="prefetch" href="/assets/js/45.5adaa0dd.js"><link rel="prefetch" href="/assets/js/46.274bbf17.js"><link rel="prefetch" href="/assets/js/47.b0ce2c47.js"><link rel="prefetch" href="/assets/js/48.69800b3e.js"><link rel="prefetch" href="/assets/js/49.c567847f.js"><link rel="prefetch" href="/assets/js/5.76fa7a68.js"><link rel="prefetch" href="/assets/js/50.6abd0bf4.js"><link rel="prefetch" href="/assets/js/51.1d7ed678.js"><link rel="prefetch" href="/assets/js/52.b0664139.js"><link rel="prefetch" href="/assets/js/53.4cb0e403.js"><link rel="prefetch" href="/assets/js/54.6c84bf77.js"><link rel="prefetch" href="/assets/js/55.9d68b9fb.js"><link rel="prefetch" href="/assets/js/56.520092f0.js"><link rel="prefetch" href="/assets/js/57.9dc9d2d0.js"><link rel="prefetch" href="/assets/js/58.5fa2435a.js"><link rel="prefetch" href="/assets/js/59.7f3705fd.js"><link rel="prefetch" href="/assets/js/6.54231d4c.js"><link rel="prefetch" href="/assets/js/60.9c9bd024.js"><link rel="prefetch" href="/assets/js/61.6eb0c0bb.js"><link rel="prefetch" href="/assets/js/62.149eb308.js"><link rel="prefetch" href="/assets/js/63.be303c2d.js"><link rel="prefetch" href="/assets/js/64.27592e06.js"><link rel="prefetch" href="/assets/js/65.e8f30ad3.js"><link rel="prefetch" href="/assets/js/66.67a34028.js"><link rel="prefetch" href="/assets/js/67.c395f7ed.js"><link rel="prefetch" href="/assets/js/68.d9142a8a.js"><link rel="prefetch" href="/assets/js/69.4f7f28f1.js"><link rel="prefetch" href="/assets/js/7.db62a644.js"><link rel="prefetch" href="/assets/js/70.20b76f9a.js"><link rel="prefetch" href="/assets/js/71.7ad2ee77.js"><link rel="prefetch" href="/assets/js/72.36864641.js"><link rel="prefetch" href="/assets/js/73.9c9e473d.js"><link rel="prefetch" href="/assets/js/74.469ada63.js"><link rel="prefetch" href="/assets/js/75.503f5154.js"><link rel="prefetch" href="/assets/js/76.d34c55f7.js"><link rel="prefetch" href="/assets/js/77.cdd50449.js"><link rel="prefetch" href="/assets/js/78.324b5df5.js"><link rel="prefetch" href="/assets/js/79.31e8cb64.js"><link rel="prefetch" href="/assets/js/8.7b245108.js"><link rel="prefetch" href="/assets/js/80.31dca687.js"><link rel="prefetch" href="/assets/js/81.3dd21cf7.js"><link rel="prefetch" href="/assets/js/82.eeeee6cf.js"><link rel="prefetch" href="/assets/js/83.5d03d2d9.js"><link rel="prefetch" href="/assets/js/84.7e956720.js"><link rel="prefetch" href="/assets/js/85.a3b6227a.js"><link rel="prefetch" href="/assets/js/86.b2f71436.js"><link rel="prefetch" href="/assets/js/87.f9f3b65a.js"><link rel="prefetch" href="/assets/js/88.4c9d4599.js"><link rel="prefetch" href="/assets/js/89.cca52254.js"><link rel="prefetch" href="/assets/js/9.63b5e451.js"><link rel="prefetch" href="/assets/js/90.dad44872.js"><link rel="prefetch" href="/assets/js/91.3995bce6.js"><link rel="prefetch" href="/assets/js/92.f311f03c.js"><link rel="prefetch" href="/assets/js/93.911f57cc.js"><link rel="prefetch" href="/assets/js/94.3392f97b.js"><link rel="prefetch" href="/assets/js/95.1787563a.js"><link rel="prefetch" href="/assets/js/96.2a256f43.js"><link rel="prefetch" href="/assets/js/97.cdcd9405.js"><link rel="prefetch" href="/assets/js/98.4eae5b0f.js"><link rel="prefetch" href="/assets/js/99.0b6820bb.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.91dd29b7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-4698c43e><div data-v-4698c43e><div id="loader-wrapper" class="loading-wrapper" data-v-1c4f0192 data-v-4698c43e data-v-4698c43e><div class="loader-main" data-v-1c4f0192><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-6cbeab0a data-v-4698c43e data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>Fade away</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>夏至</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-4698c43e><header class="navbar" data-v-4698c43e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Fade away</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      前端三剑客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Html</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/Html/01.Html初识.html" class="nav-link"><i class="iconfont undefined"></i>
+  Html
+</a></li></ul></li><li class="dropdown-item"><h4>CSS</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS/01.引入css样式表.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS3/01.新增选择器.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS3
+</a></li></ul></li><li class="dropdown-item"><h4>JavaScript</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js基础/01.js基础语法.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js基础
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js高级/01.this关键字.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js高级
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Vue</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/Vue/Vue2/01.Vue基础.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue2
+</a></li><li class="dropdown-subitem"><a href="/框架/Vue/Vue3/1.创建Vue3项目.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue3
+</a></li></ul></li><li class="dropdown-item"><h4>React</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/React/01.React入门.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>小程序</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/小程序/01.mina.html" class="nav-link"><i class="iconfont undefined"></i>
+  mina
+</a></li><li class="dropdown-subitem"><a href="/框架/小程序/02.uni-app.html" class="nav-link"><i class="iconfont undefined"></i>
+  uni-app
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Node.js/01.初识Node.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></div><div class="nav-item"><a href="/学习git/git学习.html" class="nav-link"><i class="iconfont undefined"></i>
+  学习git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      可视化
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/可视化/Canvas/01.认识Canvas.html" class="nav-link"><i class="iconfont undefined"></i>
+  Canvas
+</a></li><li class="dropdown-item"><!----> <a href="/可视化/Three.js/01.认识Three.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Three.js
+</a></li></ul></div></div><div class="nav-item"><a href="/收藏的网站/收藏的网站.html" class="nav-link"><i class="iconfont undefined"></i>
+  收藏网址
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4698c43e></div> <aside class="sidebar" data-v-4698c43e><div class="personal-info-wrapper" data-v-6c8ffc9c><!----> <h3 class="name" data-v-6c8ffc9c>
+    夏至
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>0</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>0</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      前端三剑客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Html</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/Html/01.Html初识.html" class="nav-link"><i class="iconfont undefined"></i>
+  Html
+</a></li></ul></li><li class="dropdown-item"><h4>CSS</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS/01.引入css样式表.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS3/01.新增选择器.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS3
+</a></li></ul></li><li class="dropdown-item"><h4>JavaScript</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js基础/01.js基础语法.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js基础
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js高级/01.this关键字.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js高级
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Vue</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/Vue/Vue2/01.Vue基础.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue2
+</a></li><li class="dropdown-subitem"><a href="/框架/Vue/Vue3/1.创建Vue3项目.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue3
+</a></li></ul></li><li class="dropdown-item"><h4>React</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/React/01.React入门.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>小程序</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/小程序/01.mina.html" class="nav-link"><i class="iconfont undefined"></i>
+  mina
+</a></li><li class="dropdown-subitem"><a href="/框架/小程序/02.uni-app.html" class="nav-link"><i class="iconfont undefined"></i>
+  uni-app
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Node.js/01.初识Node.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></div><div class="nav-item"><a href="/学习git/git学习.html" class="nav-link"><i class="iconfont undefined"></i>
+  学习git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      可视化
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/可视化/Canvas/01.认识Canvas.html" class="nav-link"><i class="iconfont undefined"></i>
+  Canvas
+</a></li><li class="dropdown-item"><!----> <a href="/可视化/Three.js/01.认识Three.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Three.js
+</a></li></ul></div></div><div class="nav-item"><a href="/收藏的网站/收藏的网站.html" class="nav-link"><i class="iconfont undefined"></i>
+  收藏网址
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue2</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/框架/Vue/Vue2/01.Vue基础.html" class="sidebar-link">一、Vue核心</a></li><li><a href="/框架/Vue/Vue2/02.组件化编程.html" class="sidebar-link">二、组件化编程</a></li><li><a href="/框架/Vue/Vue2/03.组件通信.html" class="sidebar-link">三、组件通信</a></li><li><a href="/框架/Vue/Vue2/04.过渡与动画.html" class="sidebar-link">四、过渡与动画</a></li><li><a href="/框架/Vue/Vue2/05.配置代理.html" class="sidebar-link">五、配置代理</a></li><li><a href="/框架/Vue/Vue2/06.插槽.html" class="sidebar-link">六、slot 插槽</a></li><li><a href="/框架/Vue/Vue2/07.Vuex.html" class="sidebar-link">七、Vuex</a></li><li><a href="/框架/Vue/Vue2/08.路由Router.html" class="sidebar-link">八、路由Router</a></li><li><a href="/框架/Vue/Vue2/09.fetch、axios.html" class="sidebar-link">九、fetch、axios</a></li><li><a href="/框架/Vue/Vue2/10.webpack.html" class="active sidebar-link">十、webpack</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#铺垫" class="sidebar-link">铺垫</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#_1、gzip" class="sidebar-link">1、GZIP</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#_3、expires" class="sidebar-link">3、expires</a></li></ul></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#一、webpack简介" class="sidebar-link">一、webpack简介</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#_1-什么是webpack" class="sidebar-link">1.什么是webpack</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#_2-为啥学" class="sidebar-link">2.为啥学</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#_3-能干吗" class="sidebar-link">3.能干吗</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#_4-下载webpack" class="sidebar-link">4.下载webpack</a></li></ul></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#二、webpack-plugin配置" class="sidebar-link">二、webpack：plugin配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#练习" class="sidebar-link">练习</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#mini-css-extract-plugin插件" class="sidebar-link">mini-css-extract-plugin插件</a></li></ul></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#三、webpack-loaders-配置" class="sidebar-link">三、webpack：loaders 配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#_1-css-loader" class="sidebar-link">1.css-loader</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#_2-sass-loader" class="sidebar-link">2.sass-loader</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#_3-file-loader" class="sidebar-link">3.file-loader</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#_4-url-loader" class="sidebar-link">4.url-loader</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#_5-babel-loader" class="sidebar-link">5.babel-loader</a></li></ul></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#五、创建自己的脚手架" class="sidebar-link">五、创建自己的脚手架</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#public-index-html" class="sidebar-link">public/index.html</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#src-assets-css-reset-scss" class="sidebar-link">src/assets/css/reset.scss</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#src-assets-imgs" class="sidebar-link">src/assets/imgs</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#src-assets-js-qf-js" class="sidebar-link">src/assets/js/qf.js</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#src-router-index-js" class="sidebar-link">src/router/index.js</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#src-utils-request-js" class="sidebar-link">src/utils/request.js</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#src-views-qf-vue" class="sidebar-link">src/views/Qf.vue</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#src-app-vue" class="sidebar-link">src/App.vue</a></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#src-main-js" class="sidebar-link">src/main.js</a></li></ul></li><li class="sidebar-sub-header"><a href="/框架/Vue/Vue2/10.webpack.html#发布" class="sidebar-link">发布</a></li></ul></li><li><a href="/框架/Vue/Vue2/11.vue2移动端.html" class="sidebar-link">十一、自适应解决方案</a></li><li><a href="/框架/Vue/Vue2/12.跨标签页通信.html" class="sidebar-link">十二、跨标签页通信</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6cbeab0a data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a></h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>夏至</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2023
+        </a></span></div></div> <div data-v-4698c43e><main class="page"><!----> <div class="page-title" style="display:none;"><h1>十、webpack</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>夏至</span></i> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default" style="display:none;"><h1 id="十、webpack"><a href="#十、webpack" class="header-anchor">#</a> 十、webpack</h1> <h2 id="铺垫"><a href="#铺垫" class="header-anchor">#</a> 铺垫</h2> <h3 id="_1、gzip"><a href="#_1、gzip" class="header-anchor">#</a> 1、GZIP</h3> <p>压缩响应数据，加快传输速度</p> <p>配置：打开nginx的配置文件，在server中增加上述代码并重启即可</p> <div class="language- extra-class"><pre class="language-text"><code>server
+{
+    listen 9999;
+    server_name 180.76.176.125;
+    index index.html;
+    root /www/test1;
+    # location /api/ {
+    #     proxy_pass http://kg.zhaodashen.cn/mt/admin/;
+    # }
+    # location / {
+    #     try_files $uri $uri/ /index.html;
+    # }
+    
+    gzip on;			     #开启Gzip压缩
+    gzip_min_length 1k;	 #不压缩临界值，大于1K的才压缩
+    gzip_comp_level 6;   #压缩级别（1-9）越大越慢，同时也最消耗CPU
+    #声明压缩文件（MIME类型）
+    gzip_types text/plain application/x-javascript text/css application/xml text/javascript image/jpeg;
+    gzip_disable &quot;MSIE [1-6]\.&quot;; #禁用IE1-6
+}
+</code></pre></div><h3 id="_3、expires"><a href="#_3、expires" class="header-anchor">#</a> 3、expires</h3> <p>作用：设置expires减少不必要的http请求</p> <p>场景：将静态资源（css、js、图片）等缓存到客户端，减轻服务区压力</p> <p>首先：f12  查看修改js文件实时生效</p> <p>接着：配置服务器</p> <div class="language- extra-class"><pre class="language-text"><code>location ~ \.(gif|jpg|jpeg|png|bmp|ico|js|css)$ {
+    expires 1d;  #1d （天）  1h（时）  1m（分）  1s（秒）
+}
+</code></pre></div><h2 id="一、webpack简介"><a href="#一、webpack简介" class="header-anchor">#</a> 一、webpack简介</h2> <h3 id="_1-什么是webpack"><a href="#_1-什么是webpack" class="header-anchor">#</a> 1.什么是webpack</h3> <p>前端静态<strong>模块</strong>打包工具</p> <blockquote><p>前端：就是你</p> <p>静态：就是css、js、img等等</p> <p>模块：就是支持导入导出   （注：gulp并没有强调这一点  gulp强调的是定义一个个任务去处理  没有模块化思想</p> <p>打包工具：压缩代码合并代码的软件</p></blockquote> <h3 id="_2-为啥学"><a href="#_2-为啥学" class="header-anchor">#</a> 2.为啥学</h3> <p>1、减少开发者工作量</p> <blockquote><p>之前通过 前端自动化构建工具  就可以压缩代码体积</p></blockquote> <p>2、加快网站访问速度</p> <blockquote><p>可以变向解决首屏加载过慢的问题</p></blockquote> <p>3、避免缓存BUG</p> <blockquote><p>xxx.js?v=1.0    xxx.js?v=2.0       xxx.随机.js</p></blockquote> <h3 id="_3-能干吗"><a href="#_3-能干吗" class="header-anchor">#</a> 3.能干吗</h3> <p>打包：将多个JS文件打包成一个文件（1-减少HTTP请求、2-压缩去空格去注释减轻服务器压力</p> <p>转换：把扩展语法转换为普通的JS  让浏览器能够正常运行</p> <p>优化：1-复杂的开发流程 模块化、2-性能问题 去空格 去注释 减少HTTP请求  等等</p> <h3 id="_4-下载webpack"><a href="#_4-下载webpack" class="header-anchor">#</a> 4.下载webpack</h3> <p>cnpm i webpack@5.70.0 webpack-cli@4.9.2  -D</p> <h2 id="二、webpack-plugin配置"><a href="#二、webpack-plugin配置" class="header-anchor">#</a> 二、webpack：plugin配置</h2> <p>loader概念：<strong>处理非js代码</strong></p> <p>plugin概念：<strong>让webpack变的更强</strong></p> <div class="language- extra-class"><pre class="language-text"><code>运行在整个项目的编译时期
+plugin插件：赋予了webpack各种灵活的功能，如打包优化，资源管理，环境变量，注入等，目的是为了解决loader无法实现的功能。
+
+运行在项目打包之前
+loader：是文件加载器，能够加载资源文件，并对文件进行一些处理，如编译，压缩 等，最终一起打包到指定的文件中。
+</code></pre></div><h3 id="练习"><a href="#练习" class="header-anchor">#</a> 练习</h3> <p>步骤1：安装</p> <blockquote><div class="language- extra-class"><pre class="language-text"><code>cnpm i html-webpack-plugin -D
+</code></pre></div></blockquote> <p>步骤2：创建public目录\index.html文件</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+ &lt;meta charset=&quot;UTF-8&quot;&gt;
+ &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+ &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+ &lt;!-- &lt;title&gt;仿写vue脚手架学习&lt;/title&gt; --&gt;
+ &lt;title&gt;&lt;%= htmlWebpackPlugin.options.title %&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div><p>步骤3：根据手册修改vue.config.js文件</p> <blockquote><div class="language- extra-class"><pre class="language-text"><code>// 导入模块
+const path = require(&quot;path&quot;);
+const { VueLoaderPlugin } = require(&quot;vue-loader&quot;);
+const HtmlWebpackPlugin = require(&quot;html-webpack-plugin&quot;);
+
+// 导出配置
+module.exports = {
+// 入口
+entry: &quot;./src/main.js&quot;,
+// 出口
+output: {
+ path: path.resolve(__dirname, &quot;dist&quot;),
+ filename: &quot;js/[name].[chunkhash:7].js&quot;,
+},
+// 运行在整个项目的编译时期
+// plugin插件：赋予了webpack各种灵活的功能，如打包优化，资源管理，环境变量，注入等，目的是为了解决loader无法实现的功能。
+plugins: [
+ new VueLoaderPlugin(),
+ //说明：功能让webpack变得更强
+ //作用：给public/index.html自动引入打包后的js等文件
+ //new HtmlWebpackPlugin()
+ new HtmlWebpackPlugin({
+   // 自定义变量
+   title: &quot;仿写vue脚手架学习 - 神龙教&quot;,
+   desc: &quot;神龙教主、洪福齐天、寿与天齐&quot;,
+   // 输出到dist下面的名称、默认index.html
+   filename: &quot;index.html&quot;,
+   // 模板文件
+   template: &quot;public/index.html&quot;,
+ }),
+ // ...
+],
+// 运行在项目打包之前
+// loader：是文件加载器，能够加载资源文件，并对文件进行一些处理，如编译，压缩 等，最终一起打包到指定的文件中。
+module: {
+ rules: [
+   {
+     test: /\.vue$/,
+     loader: &quot;vue-loader&quot;,
+   },
+   // ...
+ ],
+},
+};
+
+</code></pre></div></blockquote> <p>步骤4：测试 重新build</p> <h3 id="mini-css-extract-plugin插件"><a href="#mini-css-extract-plugin插件" class="header-anchor">#</a> mini-css-extract-plugin插件</h3> <p>步骤1：安装模块</p> <div class="language- extra-class"><pre class="language-text"><code>cnpm i mini-css-extract-plugin -D
+</code></pre></div><p>步骤2：修改vue.config.js</p> <div class="language- extra-class"><pre class="language-text"><code>...
+const MiniCssExtractPlugin = require(&quot;mini-css-extract-plugin&quot;);
+
+...
+  module: {
+    rules: [
+      // 处理vue文件
+      {
+        test: /\.vue$/,
+        loader: &quot;vue-loader&quot;,
+      },
+      // 处理css文件：单独打包存放css文件
+      {
+        test: /\.css$/i,
+        // use: [&quot;style-loader&quot;, &quot;css-loader&quot;],
+        use: [MiniCssExtractPlugin.loader, &quot;css-loader&quot;],
+      },
+			// ...
+    ],
+  },
+...
+</code></pre></div><h2 id="三、webpack-loaders-配置"><a href="#三、webpack-loaders-配置" class="header-anchor">#</a> 三、webpack：loaders 配置</h2> <h3 id="_1-css-loader"><a href="#_1-css-loader" class="header-anchor">#</a> 1.css-loader</h3> <p>安装</p> <div class="language- extra-class"><pre class="language-text"><code>cnpm i style-loader@2.0.0 css-loader@5.2.4 -D
+</code></pre></div><p>配置vue.config.js</p> <p>在<code>module</code>中<code>rules</code>添加相应配置</p> <div class="language- extra-class"><pre class="language-text"><code>  module: {
+    rules: [
+      // 处理vue文件
+      {
+        test: /\.vue$/,
+        loader: &quot;vue-loader&quot;,
+      },
+      // 处理css文件
+      {
+        test: /\.css$/i,
+        use: [&quot;style-loader&quot;, &quot;css-loader&quot;],
+      },
+			// ...
+    ],
+  },
+};
+
+</code></pre></div><h3 id="_2-sass-loader"><a href="#_2-sass-loader" class="header-anchor">#</a> 2.sass-loader</h3> <p>1.安装</p> <div class="language- extra-class"><pre class="language-text"><code>cnpm i sass sass-loader dart-sass -D
+</code></pre></div><p>2.配置</p> <div class="language- extra-class"><pre class="language-text"><code>module: {
+rules: [
+     	 // ....
+       // 处理scss文件
+       {
+         test: /\.s[ac]ss$/i,
+         // use: ['style-loader', 'css-loader', 'sass-loader',],
+         use: [MiniCssExtractPlugin.loader, &quot;css-loader&quot;, &quot;sass-loader&quot;],
+       },
+     // ....
+],
+},
+</code></pre></div><h3 id="_3-file-loader"><a href="#_3-file-loader" class="header-anchor">#</a> 3.file-loader</h3> <p>安装模块</p> <div class="language- extra-class"><pre class="language-text"><code>cnpm i file-loader -D
+</code></pre></div><p>修改webapck.config.js配置文件</p> <div class="language- extra-class"><pre class="language-text"><code>// 处理图片文件
+{
+  test: /\.(png|jpe?g|gif)$/i,
+  loader: 'file-loader',
+  options: {
+    name: 'imgs/[name].[ext]',
+    publicPath: '/',
+  },
+},
+// ...
+</code></pre></div><h3 id="_4-url-loader"><a href="#_4-url-loader" class="header-anchor">#</a> 4.url-loader</h3> <ul><li>步骤1：安装模块 -&gt; 配置</li></ul> <div class="language- extra-class"><pre class="language-text"><code>cnpm i url-loader -D
+</code></pre></div><ul><li>步骤2：修改webpack.config.js配置文件</li></ul> <div class="language- extra-class"><pre class="language-text"><code>// 处理图片文件
+// {
+//   test: /\.(png|jpe?g|gif)$/i,
+//   loader: &quot;file-loader&quot;,
+//   options: {
+//     name: &quot;imgs/[name].[ext]&quot;,
+//     publicPath: &quot;/&quot;,
+//   },
+// },
+{
+  test: /\.(png|jpg|gif)$/i,
+  use: [
+    {
+      loader: &quot;url-loader&quot;,
+      options: {
+        limit: 1024 * 1024 * 1, // 1M   图片超过指定字节不编码
+        name: &quot;imgs/[name].[ext]&quot;,
+        publicPath: &quot;/&quot;,
+      },
+    },
+  ],
+},
+// ...
+</code></pre></div><blockquote><p>多学一招：</p> <div class="language- extra-class"><pre class="language-text"><code>问：什么是字节
+答：计算机计量单位，类似生活中的克、千克等
+----------------------------------------
+问：还是不理解
+答：你的硬盘用了多少   1G  10G
+----------------------------------------
+问：这个多少G跟我们的字节有什么关系呢
+公式
+
+// 字节是计算机中的一种计量单位，表示数据量的多少 
+// 1字节（Byte）= 8位（bit）
+// 1KB = 1024Byte（字节）    
+// 1M  = 1024KB
+// 1G  = 1024M
+</code></pre></div></blockquote> <h3 id="_5-babel-loader"><a href="#_5-babel-loader" class="header-anchor">#</a> 5.babel-loader</h3> <p>安装babel-loader</p> <div class="language- extra-class"><pre class="language-text"><code>cnpm i babel-loader @babel/core @babel/preset-env @babel/plugin-transform-runtime -D
+</code></pre></div><p>配置</p> <div class="language- extra-class"><pre class="language-text"><code>// 处理逻辑文件
+{
+  test: /\.m?js$/,
+  exclude: /(node_modules|bower_components)/,
+  use: {
+    loader: &quot;babel-loader&quot;,
+    options: {
+      presets: [&quot;@babel/preset-env&quot;],
+      plugins: [&quot;@babel/plugin-transform-runtime&quot;]
+    },
+  },
+},
+// ...
+</code></pre></div><h2 id="五、创建自己的脚手架"><a href="#五、创建自己的脚手架" class="header-anchor">#</a> 五、创建自己的脚手架</h2> <p>步骤1：创建【04-快速复习】目录</p> <p>步骤2：初始化目录结构</p> <blockquote><h3 id="public-index-html"><a href="#public-index-html" class="header-anchor">#</a> public/index.html</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+ &lt;meta charset=&quot;UTF-8&quot;&gt;
+ &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+ &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+ &lt;!-- &lt;title&gt;仿写vue脚手架学习&lt;/title&gt; --&gt;
+ &lt;title&gt;
+     &lt;%= htmlWebpackPlugin.options.title %&gt;
+ &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div><h3 id="src-assets-css-reset-scss"><a href="#src-assets-css-reset-scss" class="header-anchor">#</a> src/assets/css/reset.scss</h3> <div class="language- extra-class"><pre class="language-text"><code>* {padding:0;margin:0}
+
+h1 {font-size:30px;color:green;}
+</code></pre></div><h3 id="src-assets-imgs"><a href="#src-assets-imgs" class="header-anchor">#</a> src/assets/imgs</h3> <h3 id="src-assets-js-qf-js"><a href="#src-assets-js-qf-js" class="header-anchor">#</a> src/assets/js/qf.js</h3> <div class="language- extra-class"><pre class="language-text"><code>console.log(&quot;src/assets/js/qf.js&quot;);
+</code></pre></div><h3 id="src-router-index-js"><a href="#src-router-index-js" class="header-anchor">#</a> src/router/index.js</h3> <div class="language- extra-class"><pre class="language-text"><code>import Vue from &quot;vue&quot;;
+import VueRouter from &quot;vue-router&quot;;
+
+Vue.use(VueRouter);
+
+const routes = [
+  {
+    path: &quot;/qf&quot;,
+    component: () =&gt; import(&quot;@/views/Qf.vue&quot;),
+  },
+];
+
+export default new VueRouter({
+  mode: &quot;hash&quot;,
+  routes,
+});
+</code></pre></div><h3 id="src-utils-request-js"><a href="#src-utils-request-js" class="header-anchor">#</a> src/utils/request.js</h3> <div class="language- extra-class"><pre class="language-text"><code>// 后期：axios代码
+// 现在
+
+async function sayBy() {
+  //   const result = await fetch(&quot;https://www.baidu.com/sugrec?prod=pc&amp;wd=html&quot;);
+  const result = await fetch(&quot;/sugrec?prod=pc&amp;wd=html&quot;);
+  console.log(result.json());
+}
+</code></pre></div><h3 id="src-views-qf-vue"><a href="#src-views-qf-vue" class="header-anchor">#</a> src/views/Qf.vue</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;h1&gt;欢迎来到千锋教育 - 学前端还得认准扛把子！！！&lt;/h1&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import &quot;@/utils/request.js&quot;;
+
+export default {};
+&lt;/script&gt;
+
+&lt;style&gt;&lt;/style&gt;
+</code></pre></div><h3 id="src-app-vue"><a href="#src-app-vue" class="header-anchor">#</a> src/App.vue</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;h1&gt;h5@qf hello&lt;/h1&gt;
+    &lt;router-view /&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {};
+&lt;/script&gt;
+
+&lt;style&gt;&lt;/style&gt;
+</code></pre></div><h3 id="src-main-js"><a href="#src-main-js" class="header-anchor">#</a> src/main.js</h3> <div class="language- extra-class"><pre class="language-text"><code>// console.log(666)
+
+// 导入vue模块
+import Vue from &quot;vue&quot;;
+import router from &quot;./router&quot;;
+
+// 导入单文件组件
+import App from &quot;./App.vue&quot;;
+
+// 导入全局配置
+import &quot;./assets/css/reset.scss&quot;;
+
+// 创建实例
+new Vue({
+  // el: '#root',
+  router,
+  render: (h) =&gt; h(App),
+}).$mount(&quot;#root&quot;);
+</code></pre></div></blockquote> <p>步骤3：下载项目所需依赖</p> <div class="language- extra-class"><pre class="language-text"><code>cnpm init -y
+
+cnpm i vue@2.6.14 vue-router@3.5.1 -S
+
+cnpm i @babel/core@7.17.7 @babel/plugin-transform-runtime@7.17.0 @babel/preset-env@7.16.11 babel-loader@8.2.3 css-loader@5.2.4 dart-sass@1.25.0 file-loader@6.2.0 html-webpack-plugin@5.5.0 mini-css-extract-plugin@2.6.0 sass@1.49.9 sass-loader@12.6.0 style-loader@2.0.0 url-loader@4.1.1 vue-loader@15.9.2 vue-template-compiler@2.6.14 webpack@5.70.0 webpack-cli@3.3.12 webpack-dev-server@3.11.2 -D
+</code></pre></div><p>步骤4： 创建配置文件 vue.config.js</p> <div class="language- extra-class"><pre class="language-text"><code>// 导入模块
+const path = require(&quot;path&quot;);
+const resolve = (dir) =&gt; path.resolve(__dirname, dir);
+const { VueLoaderPlugin } = require(&quot;vue-loader&quot;);
+const HtmlWebpackPlugin = require(&quot;html-webpack-plugin&quot;);
+const MiniCssExtractPlugin = require(&quot;mini-css-extract-plugin&quot;);
+
+// 导出配置
+module.exports = {
+  resolve: {
+    // 设置别名
+    alias: {
+      &quot;@&quot;: resolve(&quot;src&quot;), // 这样配置后 @ 可以指向 src 目录
+    },
+  },
+  // 开发服务器配置
+  devServer: {
+    open: true, // cnpm run dev 之后自动打开浏览器
+    port: 8081, // 默认端口
+    proxy: {
+      // 任意名称: {
+      //   target: &quot;真实请求网址&quot;,
+      //   changeOrigin: true, // 是否允许跨域
+      //   secure: false, // 关闭SSL证书验证https协议接口需要改成true
+      //   pathRewrite: {
+      //     // 重写路径请求
+      //     &quot;^/任意名称&quot;: &quot;&quot;, //路径重写
+      //   },
+      // },
+      &quot;/api&quot;: {
+        target: &quot;https://www.baidu.com&quot;,
+        changeOrigin: true, // 是否允许跨域
+        secure: false, // 关闭SSL证书验证https协议接口需要改成true
+        pathRewrite: {
+          // 重写路径请求
+          &quot;^/api&quot;: &quot;&quot;, //路径重写
+        },
+      },
+      // ....
+    },
+  },
+  // 入口
+  entry: &quot;./src/main.js&quot;,
+  // 出口
+  output: {
+    path: path.resolve(__dirname, &quot;dist&quot;),
+    filename: &quot;js/[name].[chunkhash:7].js&quot;,
+  },
+  // 运行在整个项目的编译时期
+  // plugin插件：赋予了webpack各种灵活的功能，如打包优化，资源管理，环境变量，注入等，目的是为了解决loader无法实现的功能。
+  plugins: [
+    new VueLoaderPlugin(),
+    //说明：功能让webpack变得更强
+    //作用：给public/index.js自动引入打包后的js等文件
+    //new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({
+      // 自定义变量
+      title: &quot;仿写vue脚手架学习 - 神龙教&quot;,
+      desc: &quot;神龙教主、洪福齐天、寿与天齐&quot;,
+      // 输出到dist下面的名称、默认index.html
+      filename: &quot;index.html&quot;,
+      // 模板文件
+      template: &quot;public/index.html&quot;,
+    }),
+    //说明：功能让webpack变得更强
+    //作用：CSS单独文件存放
+    new MiniCssExtractPlugin({
+      filename: &quot;css/[name].css&quot;,
+    }),
+    // ...
+  ],
+  // 运行在项目打包之前
+  // loader：是文件加载器，能够加载资源文件，并对文件进行一些处理，如编译，压缩 等，最终一起打包到指定的文件中。
+  module: {
+    rules: [
+      // 处理vue文件
+      {
+        test: /\.vue$/,
+        loader: &quot;vue-loader&quot;,
+      },
+      // 处理css文件：单独打包存放css文件
+      {
+        test: /\.css$/i,
+        // use: [&quot;style-loader&quot;, &quot;css-loader&quot;],
+        use: [MiniCssExtractPlugin.loader, &quot;css-loader&quot;],
+      },
+      // 处理scss文件
+      {
+        test: /\.s[ac]ss$/i,
+        // use: ['style-loader', 'css-loader', 'sass-loader',],
+        use: [MiniCssExtractPlugin.loader, &quot;css-loader&quot;, &quot;sass-loader&quot;],
+      },
+      // 处理图片文件
+      // {
+      //   test: /\.(png|jpe?g|gif)$/i,
+      //   loader: &quot;file-loader&quot;,
+      //   options: {
+      //     name: &quot;imgs/[name].[ext]&quot;,
+      //     publicPath: &quot;/&quot;,
+      //   },
+      // },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: &quot;url-loader&quot;,
+            options: {
+              limit: 1024 * 1024 * 1, // 1M   图片超过指定字节不编码
+              name: &quot;imgs/[name].[ext]&quot;,
+              publicPath: &quot;/&quot;,
+            },
+          },
+        ],
+      },
+      // 处理逻辑文件
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: &quot;babel-loader&quot;,
+          options: {
+            presets: [&quot;@babel/preset-env&quot;],
+            plugins: [&quot;@babel/plugin-transform-runtime&quot;],
+          },
+        },
+      },
+      // ...
+    ],
+  },
+};
+</code></pre></div><p>步骤5：修改package.json</p> <div class="language- extra-class"><pre class="language-text"><code>&quot;build&quot;: &quot;webpack --mode=production --config ./vue.config.js&quot;,
+&quot;serve&quot;: &quot;webpack-dev-server --mode=development --config ./vue.config.js&quot;,
+</code></pre></div><p>步骤6：启动测试</p> <h2 id="发布"><a href="#发布" class="header-anchor">#</a> 发布</h2> <ul><li>步骤1：创建temp目录</li> <li>步骤2：将【04-快速复习】删掉【node_modules】目录，然后【复制】到【temp】目录，改成【example】</li> <li>步骤3：进入目录，生成package.json文件（改模块名、版本、删掉main改成bin如下</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;name&quot;: &quot;webopenfather-myvue-cli&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;webopenfather my vue generator&quot;,
+  &quot;bin&quot;: {
+    &quot;myvue-cli&quot;: &quot;./bin/myvue-cli.js&quot;
+  },
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
+  },
+  &quot;keywords&quot;: [&quot;myvue&quot;, &quot;vue&quot;, &quot;vue-cli&quot;],
+  &quot;author&quot;: &quot;webopenfather&quot;,
+  &quot;license&quot;: &quot;ISC&quot;
+}
+
+</code></pre></div><ul><li>步骤4：创建temp\bin\myvue-cli.js</li></ul> <div class="language- extra-class"><pre class="language-text"><code>#!/usr/bin/env node
+&quot;use strict&quot;;
+
+// 字体颜色 https://bj.96weixin.com/emoji/
+const styles = {
+  bold: &quot;\x1B[1m%s\x1B[22m&quot;,
+  italic: &quot;\x1B[3m%s\x1B[23m&quot;,
+  underline: &quot;\x1B[4m%s\x1B[24m&quot;,
+  inverse: &quot;\x1B[7m%s\x1B[27m&quot;,
+  strikethrough: &quot;\x1B[9m%s\x1B[29m&quot;,
+  white: &quot;\x1B[37m%s\x1B[39m&quot;,
+  grey: &quot;\x1B[90m%s\x1B[39m&quot;,
+  black: &quot;\x1B[30m%s\x1B[39m&quot;,
+  blue: &quot;\x1B[34m%s\x1B[39m&quot;,
+  cyan: &quot;\x1B[36m%s\x1B[39m&quot;,
+  green: &quot;\x1B[32m%s\x1B[39m&quot;,
+  magenta: &quot;\x1B[35m%s\x1B[39m&quot;,
+  red: &quot;\x1B[31m%s\x1B[39m&quot;,
+  yellow: &quot;\x1B[33m%s\x1B[39m&quot;,
+  whiteBG: &quot;\x1B[47m%s\x1B[49m&quot;,
+  greyBG: &quot;\x1B[49;5;8m%s\x1B[49m&quot;,
+  blackBG: &quot;\x1B[40m%s\x1B[49m&quot;,
+  blueBG: &quot;\x1B[44m%s\x1B[49m&quot;,
+  cyanBG: &quot;\x1B[46m%s\x1B[49m&quot;,
+  greenBG: &quot;\x1B[42m%s\x1B[49m&quot;,
+  magentaBG: &quot;\x1B[45m%s\x1B[49m&quot;,
+  redBG: &quot;\x1B[41m%s\x1B[49m&quot;,
+  yellowBG: &quot;\x1B[43m%s\x1B[49m&quot;,
+};
+
+// 导入模块
+const fs = require(&quot;fs&quot;);
+const path = require(&quot;path&quot;);
+
+// 获取控制台参数
+let argv = process.argv;
+let dirname = argv[2];
+
+// 拷贝文件
+if (dirname) {
+  copyFile(path.dirname(__dirname) + `/example`, `${process.cwd()}/${dirname}`);
+  console.log(styles[&quot;green&quot;], `\n😎😎😎 $ cd ${dirname}`);
+  console.log(styles[&quot;green&quot;], `😎😎😎 $ cnpm i`);
+  console.log(styles[&quot;green&quot;], `😎😎😎 $ cnpm run serve \n`);
+} else {
+  console.log(styles[&quot;red&quot;], &quot;\n❌语法错误，请输入项目名 👀👀👀 \n&quot;);
+}
+
+/**
+ * 检查文件是否存在
+ * @param {string} path 路径
+ */
+function isExist(path) {
+  if (!fs.existsSync(path)) {
+    fs.mkdirSync(path);
+  }
+}
+
+/**
+ * 拷贝文件
+ * @param {string} sourcePath 路径
+ * @param {string} targetPath 路径
+ */
+function copyFile(sourcePath, targetPath) {
+  isExist(targetPath);
+
+  const sourceFile = fs.readdirSync(sourcePath, { withFileTypes: true });
+
+  sourceFile.forEach((file) =&gt; {
+    const newSourcePath = path.resolve(sourcePath, file.name);
+    const newTargetPath = path.resolve(targetPath, file.name);
+    if (file.isDirectory()) {
+      isExist(newTargetPath);
+      copyFile(newSourcePath, newTargetPath);
+    } else {
+      fs.copyFileSync(newSourcePath, newTargetPath);
+    }
+  });
+}
+
+</code></pre></div><p>步骤5：README.md</p> <div class="language- extra-class"><pre class="language-text"><code># webopenfather-myvue-cli
+
+[![Build Status][travis-url]][travis-url]
+[![MIT License][license-url]][license-url]
+[![NPM downloads][npm-downloads-image]][npm-downloads-url]
+
+# ⬇️ Install
+
+&gt; cnpm i webopenfather-myvue-cli -g
+
+# 🎨 Usage
+
+&gt; 步骤 1： myvue-cli 项目名
+
+&gt; 步骤 2：根据提示进入目录下载模块启动测试
+
+[travis-url]: https://img.shields.io/badge/build-passing-brightgreen
+[license-url]: https://img.shields.io/badge/license-MIT-informational
+[npm-downloads-image]: https://img.shields.io/badge/downloads-67M%2Fmonth-brightgreen
+[npm-downloads-url]: https://npmcharts.com/compare/webopenfather-date?minimal=true
+
+# 🔒 License
+
+See the LICENSE file for license rights and limitations (ISC).
+
+</code></pre></div><p>步骤6：通过npm发布</p> <div class="language- extra-class"><pre class="language-text"><code>npm config set registry https://registry.npmjs.org/
+npm login
+npm publish
+</code></pre></div></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----></main> <!----> <div class="comments-wrapper" data-v-4698c43e><!----></div></div></div></div></div></div><div class="global-ui"><!----><div></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 Fade away
+    </div> <div class="operation" style="left:380px;bottom:20px;display:none;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="left:250px;bottom:0px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><div class="Sakura" data-v-248d85d6><canvas id="canvas_sakura" style="z-index:-1;" data-v-248d85d6></canvas></div><!----><div id="goTop" class="hide-cat" data-v-bf92849a></div></div></div>
+    <script src="/assets/js/app.99624b8a.js" defer></script><script src="/assets/js/3.a9f58784.js" defer></script><script src="/assets/js/1.a344c94a.js" defer></script><script src="/assets/js/132.d6776d37.js" defer></script><script src="/assets/js/30.7d28a2d6.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>react面试题 | Fade away</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script type="text/javascript" src="/js/mouseClick.js"></script>
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="花有重开日，人无在少年">
+    <meta name="keywords" content="随便写写">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="robots" content="all">
+    <meta name="author" content="xiazhi">
+    
+    <link rel="preload" href="/assets/css/0.styles.91dd29b7.css" as="style"><link rel="preload" href="/assets/js/app.99624b8a.js" as="script"><link rel="preload" href="/assets/js/3.a9f58784.js" as="script"><link rel="preload" href="/assets/js/1.a344c94a.js" as="script"><link rel="preload" href="/assets/js/147.ba67a557.js" as="script"><link rel="preload" href="/assets/js/30.7d28a2d6.js" as="script"><link rel="prefetch" href="/assets/js/10.513c5d67.js"><link rel="prefetch" href="/assets/js/100.331ca440.js"><link rel="prefetch" href="/assets/js/101.f600eae1.js"><link rel="prefetch" href="/assets/js/102.701a3771.js"><link rel="prefetch" href="/assets/js/103.1a52eead.js"><link rel="prefetch" href="/assets/js/104.47329018.js"><link rel="prefetch" href="/assets/js/105.57317b7d.js"><link rel="prefetch" href="/assets/js/106.7c24c08f.js"><link rel="prefetch" href="/assets/js/107.9fdd48da.js"><link rel="prefetch" href="/assets/js/108.73ecc853.js"><link rel="prefetch" href="/assets/js/109.7abf6317.js"><link rel="prefetch" href="/assets/js/11.5ef240f5.js"><link rel="prefetch" href="/assets/js/110.7027a417.js"><link rel="prefetch" href="/assets/js/111.ebaca92a.js"><link rel="prefetch" href="/assets/js/112.f1b3db2d.js"><link rel="prefetch" href="/assets/js/113.1ddfd958.js"><link rel="prefetch" href="/assets/js/114.48e05a14.js"><link rel="prefetch" href="/assets/js/115.5b1f83cc.js"><link rel="prefetch" href="/assets/js/116.5f0c8321.js"><link rel="prefetch" href="/assets/js/117.1a418555.js"><link rel="prefetch" href="/assets/js/118.ff87b9d2.js"><link rel="prefetch" href="/assets/js/119.037a1943.js"><link rel="prefetch" href="/assets/js/12.4a7003f3.js"><link rel="prefetch" href="/assets/js/120.cee1015b.js"><link rel="prefetch" href="/assets/js/121.52ac3e89.js"><link rel="prefetch" href="/assets/js/122.a3560045.js"><link rel="prefetch" href="/assets/js/123.721257bf.js"><link rel="prefetch" href="/assets/js/124.e2045af2.js"><link rel="prefetch" href="/assets/js/125.495ee0cb.js"><link rel="prefetch" href="/assets/js/126.fac66553.js"><link rel="prefetch" href="/assets/js/127.f59af0ba.js"><link rel="prefetch" href="/assets/js/128.f40cdaa1.js"><link rel="prefetch" href="/assets/js/129.67b3d27d.js"><link rel="prefetch" href="/assets/js/13.d4371f04.js"><link rel="prefetch" href="/assets/js/130.aa06024b.js"><link rel="prefetch" href="/assets/js/131.dee3e4e5.js"><link rel="prefetch" href="/assets/js/132.d6776d37.js"><link rel="prefetch" href="/assets/js/133.48b0028d.js"><link rel="prefetch" href="/assets/js/134.615b85e9.js"><link rel="prefetch" href="/assets/js/135.1ecf85e0.js"><link rel="prefetch" href="/assets/js/136.6fe1b198.js"><link rel="prefetch" href="/assets/js/137.5b56922f.js"><link rel="prefetch" href="/assets/js/138.4ad4e9d9.js"><link rel="prefetch" href="/assets/js/139.9a979a18.js"><link rel="prefetch" href="/assets/js/14.e51087d8.js"><link rel="prefetch" href="/assets/js/140.70982156.js"><link rel="prefetch" href="/assets/js/141.6006a4c5.js"><link rel="prefetch" href="/assets/js/142.09d04a53.js"><link rel="prefetch" href="/assets/js/143.00574315.js"><link rel="prefetch" href="/assets/js/144.56c8a90a.js"><link rel="prefetch" href="/assets/js/145.17e7e39c.js"><link rel="prefetch" href="/assets/js/146.55527375.js"><link rel="prefetch" href="/assets/js/15.f139a61b.js"><link rel="prefetch" href="/assets/js/16.98e04b9a.js"><link rel="prefetch" href="/assets/js/17.28b86c6e.js"><link rel="prefetch" href="/assets/js/18.0855c83f.js"><link rel="prefetch" href="/assets/js/19.1ddb5980.js"><link rel="prefetch" href="/assets/js/20.e0af366f.js"><link rel="prefetch" href="/assets/js/21.a6d28092.js"><link rel="prefetch" href="/assets/js/22.41b481ae.js"><link rel="prefetch" href="/assets/js/23.5ded2918.js"><link rel="prefetch" href="/assets/js/24.9f77e0f8.js"><link rel="prefetch" href="/assets/js/25.15cc72ab.js"><link rel="prefetch" href="/assets/js/26.fe75f118.js"><link rel="prefetch" href="/assets/js/27.2e89380e.js"><link rel="prefetch" href="/assets/js/28.f9766ddb.js"><link rel="prefetch" href="/assets/js/29.df3bae1e.js"><link rel="prefetch" href="/assets/js/31.773fff91.js"><link rel="prefetch" href="/assets/js/32.a519b5bb.js"><link rel="prefetch" href="/assets/js/33.c54ccdbf.js"><link rel="prefetch" href="/assets/js/34.bcc19a82.js"><link rel="prefetch" href="/assets/js/35.72d1b42a.js"><link rel="prefetch" href="/assets/js/36.ac818ff6.js"><link rel="prefetch" href="/assets/js/37.4c919707.js"><link rel="prefetch" href="/assets/js/38.e2cb4341.js"><link rel="prefetch" href="/assets/js/39.ad223721.js"><link rel="prefetch" href="/assets/js/4.03f95861.js"><link rel="prefetch" href="/assets/js/40.ded09630.js"><link rel="prefetch" href="/assets/js/41.61954733.js"><link rel="prefetch" href="/assets/js/42.19fab9ef.js"><link rel="prefetch" href="/assets/js/43.8c4fd22e.js"><link rel="prefetch" href="/assets/js/44.6b6add1a.js"><link rel="prefetch" href="/assets/js/45.5adaa0dd.js"><link rel="prefetch" href="/assets/js/46.274bbf17.js"><link rel="prefetch" href="/assets/js/47.b0ce2c47.js"><link rel="prefetch" href="/assets/js/48.69800b3e.js"><link rel="prefetch" href="/assets/js/49.c567847f.js"><link rel="prefetch" href="/assets/js/5.76fa7a68.js"><link rel="prefetch" href="/assets/js/50.6abd0bf4.js"><link rel="prefetch" href="/assets/js/51.1d7ed678.js"><link rel="prefetch" href="/assets/js/52.b0664139.js"><link rel="prefetch" href="/assets/js/53.4cb0e403.js"><link rel="prefetch" href="/assets/js/54.6c84bf77.js"><link rel="prefetch" href="/assets/js/55.9d68b9fb.js"><link rel="prefetch" href="/assets/js/56.520092f0.js"><link rel="prefetch" href="/assets/js/57.9dc9d2d0.js"><link rel="prefetch" href="/assets/js/58.5fa2435a.js"><link rel="prefetch" href="/assets/js/59.7f3705fd.js"><link rel="prefetch" href="/assets/js/6.54231d4c.js"><link rel="prefetch" href="/assets/js/60.9c9bd024.js"><link rel="prefetch" href="/assets/js/61.6eb0c0bb.js"><link rel="prefetch" href="/assets/js/62.149eb308.js"><link rel="prefetch" href="/assets/js/63.be303c2d.js"><link rel="prefetch" href="/assets/js/64.27592e06.js"><link rel="prefetch" href="/assets/js/65.e8f30ad3.js"><link rel="prefetch" href="/assets/js/66.67a34028.js"><link rel="prefetch" href="/assets/js/67.c395f7ed.js"><link rel="prefetch" href="/assets/js/68.d9142a8a.js"><link rel="prefetch" href="/assets/js/69.4f7f28f1.js"><link rel="prefetch" href="/assets/js/7.db62a644.js"><link rel="prefetch" href="/assets/js/70.20b76f9a.js"><link rel="prefetch" href="/assets/js/71.7ad2ee77.js"><link rel="prefetch" href="/assets/js/72.36864641.js"><link rel="prefetch" href="/assets/js/73.9c9e473d.js"><link rel="prefetch" href="/assets/js/74.469ada63.js"><link rel="prefetch" href="/assets/js/75.503f5154.js"><link rel="prefetch" href="/assets/js/76.d34c55f7.js"><link rel="prefetch" href="/assets/js/77.cdd50449.js"><link rel="prefetch" href="/assets/js/78.324b5df5.js"><link rel="prefetch" href="/assets/js/79.31e8cb64.js"><link rel="prefetch" href="/assets/js/8.7b245108.js"><link rel="prefetch" href="/assets/js/80.31dca687.js"><link rel="prefetch" href="/assets/js/81.3dd21cf7.js"><link rel="prefetch" href="/assets/js/82.eeeee6cf.js"><link rel="prefetch" href="/assets/js/83.5d03d2d9.js"><link rel="prefetch" href="/assets/js/84.7e956720.js"><link rel="prefetch" href="/assets/js/85.a3b6227a.js"><link rel="prefetch" href="/assets/js/86.b2f71436.js"><link rel="prefetch" href="/assets/js/87.f9f3b65a.js"><link rel="prefetch" href="/assets/js/88.4c9d4599.js"><link rel="prefetch" href="/assets/js/89.cca52254.js"><link rel="prefetch" href="/assets/js/9.63b5e451.js"><link rel="prefetch" href="/assets/js/90.dad44872.js"><link rel="prefetch" href="/assets/js/91.3995bce6.js"><link rel="prefetch" href="/assets/js/92.f311f03c.js"><link rel="prefetch" href="/assets/js/93.911f57cc.js"><link rel="prefetch" href="/assets/js/94.3392f97b.js"><link rel="prefetch" href="/assets/js/95.1787563a.js"><link rel="prefetch" href="/assets/js/96.2a256f43.js"><link rel="prefetch" href="/assets/js/97.cdcd9405.js"><link rel="prefetch" href="/assets/js/98.4eae5b0f.js"><link rel="prefetch" href="/assets/js/99.0b6820bb.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.91dd29b7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-4698c43e><div data-v-4698c43e><div id="loader-wrapper" class="loading-wrapper" data-v-1c4f0192 data-v-4698c43e data-v-4698c43e><div class="loader-main" data-v-1c4f0192><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div><div data-v-1c4f0192></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-6cbeab0a data-v-4698c43e data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>Fade away</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>夏至</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-4698c43e><header class="navbar" data-v-4698c43e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Fade away</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      前端三剑客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Html</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/Html/01.Html初识.html" class="nav-link"><i class="iconfont undefined"></i>
+  Html
+</a></li></ul></li><li class="dropdown-item"><h4>CSS</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS/01.引入css样式表.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS3/01.新增选择器.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS3
+</a></li></ul></li><li class="dropdown-item"><h4>JavaScript</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js基础/01.js基础语法.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js基础
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js高级/01.this关键字.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js高级
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Vue</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/Vue/Vue2/01.Vue基础.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue2
+</a></li><li class="dropdown-subitem"><a href="/框架/Vue/Vue3/1.创建Vue3项目.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue3
+</a></li></ul></li><li class="dropdown-item"><h4>React</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/React/01.React入门.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>小程序</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/小程序/01.mina.html" class="nav-link"><i class="iconfont undefined"></i>
+  mina
+</a></li><li class="dropdown-subitem"><a href="/框架/小程序/02.uni-app.html" class="nav-link"><i class="iconfont undefined"></i>
+  uni-app
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Node.js/01.初识Node.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></div><div class="nav-item"><a href="/学习git/git学习.html" class="nav-link"><i class="iconfont undefined"></i>
+  学习git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      可视化
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/可视化/Canvas/01.认识Canvas.html" class="nav-link"><i class="iconfont undefined"></i>
+  Canvas
+</a></li><li class="dropdown-item"><!----> <a href="/可视化/Three.js/01.认识Three.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Three.js
+</a></li></ul></div></div><div class="nav-item"><a href="/收藏的网站/收藏的网站.html" class="nav-link"><i class="iconfont undefined"></i>
+  收藏网址
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-4698c43e></div> <aside class="sidebar" data-v-4698c43e><div class="personal-info-wrapper" data-v-6c8ffc9c><!----> <h3 class="name" data-v-6c8ffc9c>
+    夏至
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>0</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>0</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      前端三剑客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Html</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/Html/01.Html初识.html" class="nav-link"><i class="iconfont undefined"></i>
+  Html
+</a></li></ul></li><li class="dropdown-item"><h4>CSS</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS/01.引入css样式表.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/CSS/CSS3/01.新增选择器.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS3
+</a></li></ul></li><li class="dropdown-item"><h4>JavaScript</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js基础/01.js基础语法.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js基础
+</a></li><li class="dropdown-subitem"><a href="/前端三剑客/javascript/js高级/01.this关键字.html" class="nav-link"><i class="iconfont undefined"></i>
+  Js高级
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Vue</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/Vue/Vue2/01.Vue基础.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue2
+</a></li><li class="dropdown-subitem"><a href="/框架/Vue/Vue3/1.创建Vue3项目.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue3
+</a></li></ul></li><li class="dropdown-item"><h4>React</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/React/01.React入门.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>小程序</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/框架/小程序/01.mina.html" class="nav-link"><i class="iconfont undefined"></i>
+  mina
+</a></li><li class="dropdown-subitem"><a href="/框架/小程序/02.uni-app.html" class="nav-link"><i class="iconfont undefined"></i>
+  uni-app
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Node.js/01.初识Node.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></div><div class="nav-item"><a href="/学习git/git学习.html" class="nav-link"><i class="iconfont undefined"></i>
+  学习git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      可视化
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/可视化/Canvas/01.认识Canvas.html" class="nav-link"><i class="iconfont undefined"></i>
+  Canvas
+</a></li><li class="dropdown-item"><!----> <a href="/可视化/Three.js/01.认识Three.js.html" class="nav-link"><i class="iconfont undefined"></i>
+  Three.js
+</a></li></ul></div></div><div class="nav-item"><a href="/收藏的网站/收藏的网站.html" class="nav-link"><i class="iconfont undefined"></i>
+  收藏网址
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>面试题</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/面试题/01.Html+Css面试题.html" class="sidebar-link">Html+Css面试题</a></li><li><a href="/面试题/02.Js+Es6面试题.html" class="sidebar-link">Js+Es6面试题</a></li><li><a href="/面试题/03.vue面试题.html" class="sidebar-link">vue面试题</a></li><li><a href="/面试题/04.react面试题.html" class="active sidebar-link">react面试题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#💘-01-基本语法" class="sidebar-link">💘 01-基本语法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-vue和react区别-待完善" class="sidebar-link">🌟 vue和react区别   待完善</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-diff算法区别-待完善" class="sidebar-link">🌟 diff算法区别   待完善</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌛-jsx的优点" class="sidebar-link">🌛 jsx的优点</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌛babel原理" class="sidebar-link">🌛babel原理</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-函数组件和类组件区别" class="sidebar-link">🌟 函数组件和类组件区别</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-函数组件如何状态管理" class="sidebar-link">🌟 函数组件如何状态管理</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-状态state、和属性props区别-如何选" class="sidebar-link">🌟 状态state、和属性props区别；如何选</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-类组件setstate底层原理-待完成" class="sidebar-link">🌟 类组件setState底层原理   待完成</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌛-类组件继承能继承哪些东西" class="sidebar-link">🌛 类组件继承能继承哪些东西</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-谈谈你对受控组件、非受控组件的理解" class="sidebar-link">🌟 谈谈你对受控组件、非受控组件的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-在react中实现组件通信有哪些方式" class="sidebar-link">🌟 在react中实现组件通信有哪些方式</a></li></ul></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-children属性有啥用-哪里用" class="sidebar-link">🌟 children属性有啥用，哪里用</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#💘-02-生命周期" class="sidebar-link">💘 02-生命周期</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-react生命周期有哪些-应用场景" class="sidebar-link">🌟 react生命周期有哪些&amp;应用场景</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-react16-3新增了哪些、弃用了哪些" class="sidebar-link">🌟 react16.3新增了哪些、弃用了哪些</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-react用来优化性能的是哪一个生命周期-说一下实战如何优化使用" class="sidebar-link">🌟 react用来优化性能的是哪一个生命周期，说一下实战如何优化使用</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-父组件更新状态或者属性如何避免子组件不必要渲染" class="sidebar-link">🌟 父组件更新状态或者属性如何避免子组件不必要渲染</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-说出新增的生命周期各自应用场景" class="sidebar-link">🌟 说出新增的生命周期各自应用场景</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-父子组件mount生命周期执行顺序" class="sidebar-link">🌟 父子组件mount生命周期执行顺序</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-父子组件update生命周期执行顺序" class="sidebar-link">🌟 父子组件update生命周期执行顺序</a></li></ul></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#💘-03-状态管理" class="sidebar-link">💘 03-状态管理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#谈谈你对redux理解" class="sidebar-link">谈谈你对redux理解</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#redux和vuex区别" class="sidebar-link">redux和vuex区别</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-redux工作流" class="sidebar-link">🌟 redux工作流</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌛谈谈你对纯函数、和副作用的理解" class="sidebar-link">🌛谈谈你对纯函数、和副作用的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌛谈谈你对中间件的理解" class="sidebar-link">🌛谈谈你对中间件的理解</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟深浅拷贝" class="sidebar-link">🌟深浅拷贝</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#_15-redux的原理" class="sidebar-link">15.Redux的原理</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#_16-reduce和action的区别" class="sidebar-link">16.Reduce和action的区别</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#_17-redux组件传值" class="sidebar-link">17.Redux组件传值</a></li></ul></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#💘-04-hooks" class="sidebar-link">💘 04-hooks</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-谈谈你对hooks理解" class="sidebar-link">🌟 谈谈你对hooks理解</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-用hooks-意义" class="sidebar-link">🌟 用hooks 意义</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-hook种类" class="sidebar-link">🌟 hook种类</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-自己封装过哪些hook" class="sidebar-link">🌟 自己封装过哪些hook</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#usedispatch和useselector" class="sidebar-link">useDispatch和useSelector</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#useeffect-4种用法" class="sidebar-link">useeffect 4种用法</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#对变量做监控怎么做-vue里呢" class="sidebar-link">对变量做监控怎么做？Vue里呢？</a></li></ul></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#💘-05-路由" class="sidebar-link">💘 05-路由</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#v5语法复习🌛" class="sidebar-link">v5语法复习🌛</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#v5-路由传参-3种类" class="sidebar-link">v5 路由传参 3种类</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#v5-登录鉴权privateroute" class="sidebar-link">v5 登录鉴权PrivateRoute</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#v6-升级语法" class="sidebar-link">v6 升级语法</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#v6-语法复习" class="sidebar-link">v6 语法复习</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#v6-路由传参hooks" class="sidebar-link">v6 路由传参hooks</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#v6登录鉴权requireauth" class="sidebar-link">v6登录鉴权requireAuth</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#v6-集中式路由渲染useroutes" class="sidebar-link">v6 集中式路由渲染useRoutes</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#嵌套路由" class="sidebar-link">嵌套路由</a></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#组件懒加载" class="sidebar-link">组件懒加载</a></li></ul></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#💘-06-项目开发" class="sidebar-link">💘 06-项目开发</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌛-谈谈你react项目怎么实现的" class="sidebar-link">🌛 谈谈你react项目怎么实现的?</a></li></ul></li><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#" class="sidebar-link"></a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/面试题/04.react面试题.html#🌟-项目如何优化" class="sidebar-link">🌟 项目如何优化？</a></li></ul></li></ul></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6cbeab0a data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a></h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>夏至</span>
+            
+          <span data-v-6cbeab0a>2022 - </span>
+          2023
+        </a></span></div></div> <div data-v-4698c43e><main class="page"><!----> <div class="page-title" style="display:none;"><h1>react面试题</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>夏至</span></i> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default" style="display:none;"><h1 id="react面试题"><a href="#react面试题" class="header-anchor">#</a> react面试题</h1> <h2 id="💘-01-基本语法"><a href="#💘-01-基本语法" class="header-anchor">#</a> 💘 01-基本语法</h2> <h3 id="🌟-vue和react区别-待完善"><a href="#🌟-vue和react区别-待完善" class="header-anchor">#</a> 🌟 vue和react区别   待完善</h3> <h3 id="🌟-diff算法区别-待完善"><a href="#🌟-diff算法区别-待完善" class="header-anchor">#</a> 🌟 diff算法区别   待完善</h3> <h3 id="🌛-jsx的优点"><a href="#🌛-jsx的优点" class="header-anchor">#</a> 🌛 jsx的优点</h3> <h3 id="🌛babel原理"><a href="#🌛babel原理" class="header-anchor">#</a> 🌛babel原理</h3> <h3 id="🌟-函数组件和类组件区别"><a href="#🌟-函数组件和类组件区别" class="header-anchor">#</a> 🌟 函数组件和类组件区别</h3> <p>函数组件：无状态也就是模型数据，无生命周期   hooks
+类组件：有状态，有生命周期</p> <h3 id="🌟-函数组件如何状态管理"><a href="#🌟-函数组件如何状态管理" class="header-anchor">#</a> 🌟 函数组件如何状态管理</h3> <p>可以通过redux、或 hook是新技术</p> <h3 id="🌟-状态state、和属性props区别-如何选"><a href="#🌟-状态state、和属性props区别-如何选" class="header-anchor">#</a> 🌟 状态state、和属性props区别；如何选</h3> <p>语法角度</p> <div class="language- extra-class"><pre class="language-text"><code>state可以更新
+props因为单向数据流不可以更改
+</code></pre></div><p>功能角度</p> <div class="language- extra-class"><pre class="language-text"><code>state主要是组件内部状态管理，例如收集表单数据、dialog状态管理等等
+props主要子组件传递属性，例如普通的button按钮、table表格、page分页等等都有大量使用
+</code></pre></div><h3 id="🌟-类组件setstate底层原理-待完成"><a href="#🌟-类组件setstate底层原理-待完成" class="header-anchor">#</a> 🌟 类组件setState底层原理   待完成</h3> <p>数据更新的时候做了些什么</p> <h3 id="🌛-类组件继承能继承哪些东西"><a href="#🌛-类组件继承能继承哪些东西" class="header-anchor">#</a> 🌛 类组件继承能继承哪些东西</h3> <h3 id="🌟-谈谈你对受控组件、非受控组件的理解"><a href="#🌟-谈谈你对受控组件、非受控组件的理解" class="header-anchor">#</a> 🌟 谈谈你对受控组件、非受控组件的理解</h3> <p>受控组件：通过react控制表单的输入输出</p> <p>非受控组件：通过DOM操作表单数据</p> <h3 id="🌟-在react中实现组件通信有哪些方式"><a href="#🌟-在react中实现组件通信有哪些方式" class="header-anchor">#</a> 🌟 在react中实现组件通信有哪些方式</h3> <p>父传子：props</p> <p>子传父：调用父的方法</p> <p>兄弟：状态提升</p> <p>组件实例：ref    =》 属于ref转发、ref引用实现组件通信</p> <p>children属性 =》也是父传子 超文本</p> <p>context</p> <p>状态管理工具：redux、redux-toolkit(RTK)、mobx等</p> <p>等等</p> <h2 id="🌟-children属性有啥用-哪里用"><a href="#🌟-children属性有啥用-哪里用" class="header-anchor">#</a> 🌟 children属性有啥用，哪里用</h2> <p>作用：获取组件双标签里面的数据</p> <p>场景：封装页面组件、公共组件、或者后台两栏布局等等</p> <h2 id="💘-02-生命周期"><a href="#💘-02-生命周期" class="header-anchor">#</a> 💘 02-生命周期</h2> <h3 id="🌟-react生命周期有哪些-应用场景"><a href="#🌟-react生命周期有哪些-应用场景" class="header-anchor">#</a> 🌟 react生命周期有哪些&amp;应用场景</h3> <div class="language- extra-class"><pre class="language-text"><code>单词															触发机制 			    应用场景
+
+挂载
+constructor						  				 首次					  	初始化ref、state等属性
+static getDerivedStateFromProps  首次&amp;状态/属性	    较少，监控props更新state
+componentWillMount				   		 首次			      		弃1
+render							  				  	首次&amp;状态/属性    渲染页面
+componentDidMount				   		   首次				 		   异步请求、操作DOM 如echarts、swiper
+
+更新属性/状态
+
+static getDerivedStateFromProps   首次&amp;状态/属性		较少，监控props更新state
+componentWillReceiveProps		   		仅属性				  	弃2
+shouldComponentUpdate   		   		属性/状态					子组件减少渲染次数  性能优化
+componentWillUpdate				   			属性/状态					弃3
+render							  						首次&amp;状态/属性		 渲染页面
+getSnapshotBeforeUpdate			   		属性/状态	     DOM更新前收集DOM信息交给componentDidUpdate
+componentDidUpdate				   			属性/状态			监控更新进一步操作DOM、聊天、echarts
+
+卸载
+componentWillUnmount			    		组件卸载			清除非react资源 例如登陆定时器
+
+错误
+componentDidCatch				   				后代组件发错异常错误
+</code></pre></div><p>问1：react生命周期有哪些</p> <p>答1：挺多的挂载、更新、卸载等等，然后我常用的就是componentDidMount</p> <p>问2：具体呢</p> <p>答2</p> <div class="language- extra-class"><pre class="language-text"><code>componentWillMount
+render
+componentDidMount
+
+componentWillUpdate
+render
+componentDidUpdate
+
+componentWillUnmount
+...
+</code></pre></div><h3 id="🌟-react16-3新增了哪些、弃用了哪些"><a href="#🌟-react16-3新增了哪些、弃用了哪些" class="header-anchor">#</a> 🌟 react16.3新增了哪些、弃用了哪些</h3> <p>新增</p> <div class="language- extra-class"><pre class="language-text"><code>单词						      						触发机制  	    场景
+static getDerivedStateFromProps   首次&amp;属性/状态    案例较少，主要监控props变化更新state用    
+getSnapshotBeforeUpdate			 		  属性/状态        案例更少，在更新DOM之前收集DOM信息
+</code></pre></div><p>弃用</p> <div class="language- extra-class"><pre class="language-text"><code>componentWillMount				   	  首次			   		 弃1
+componentWillReceiveProps		   	仅属性				  	弃2
+componentWillUpdate				   		属性/状态					弃3
+</code></pre></div><h3 id="🌟-react用来优化性能的是哪一个生命周期-说一下实战如何优化使用"><a href="#🌟-react用来优化性能的是哪一个生命周期-说一下实战如何优化使用" class="header-anchor">#</a> 🌟 react用来优化性能的是哪一个生命周期，说一下实战如何优化使用</h3> <p>shouldComponentUpdate</p> <p>避免父组件更新状态或者属性后避免子组件不必要渲染</p> <h3 id="🌟-父组件更新状态或者属性如何避免子组件不必要渲染"><a href="#🌟-父组件更新状态或者属性如何避免子组件不必要渲染" class="header-anchor">#</a> 🌟 父组件更新状态或者属性如何避免子组件不必要渲染</h3> <p>通过shouldComponentUpdate</p> <p>或者直接继承PureComponent</p> <h3 id="🌟-说出新增的生命周期各自应用场景"><a href="#🌟-说出新增的生命周期各自应用场景" class="header-anchor">#</a> 🌟 说出新增的生命周期各自应用场景</h3> <div class="language- extra-class"><pre class="language-text"><code>单词						      						触发机制  	    场景
+static getDerivedStateFromProps   首次&amp;属性/状态    案例较少，主要监控props变化更新state用    
+getSnapshotBeforeUpdate			 		  属性/状态        案例更少，在更新DOM之前收集DOM信息
+</code></pre></div><h3 id="🌟-父子组件mount生命周期执行顺序"><a href="#🌟-父子组件mount生命周期执行顺序" class="header-anchor">#</a> 🌟 父子组件mount生命周期执行顺序</h3> <h3 id="🌟-父子组件update生命周期执行顺序"><a href="#🌟-父子组件update生命周期执行顺序" class="header-anchor">#</a> 🌟 父子组件update生命周期执行顺序</h3> <div class="language- extra-class"><pre class="language-text"><code>父子嵌套生命周期（一般个1~2个概率）
+	mount 首次刷新或者组件销毁后重新创建**
+		f will mount
+		f render
+			s will mount
+			s render
+			s did mount
+		f did mount
+	update 
+		f will update
+		f render
+			s will receive props
+			s will update
+			s render
+			s did update
+		f did update
+		
+生命周期形参了解：仅给你传递意识 
+</code></pre></div><h2 id="💘-03-状态管理"><a href="#💘-03-状态管理" class="header-anchor">#</a> 💘 03-状态管理</h2> <h3 id="谈谈你对redux理解"><a href="#谈谈你对redux理解" class="header-anchor">#</a> 谈谈你对redux理解</h3> <h3 id="redux和vuex区别"><a href="#redux和vuex区别" class="header-anchor">#</a> redux和vuex区别</h3> <h3 id="🌟-redux工作流"><a href="#🌟-redux工作流" class="header-anchor">#</a> 🌟 redux工作流</h3> <p>首先定义store、reducer</p> <p>然后通过dispatch更新数据</p> <h3 id="🌛谈谈你对纯函数、和副作用的理解"><a href="#🌛谈谈你对纯函数、和副作用的理解" class="header-anchor">#</a> 🌛谈谈你对纯函数、和副作用的理解</h3> <p>纯函数： reducer只能进行状态管理、不能有其他副作用</p> <p>副作用：异步请求、浏览器缓存等都算副作用</p> <h3 id="🌛谈谈你对中间件的理解"><a href="#🌛谈谈你对中间件的理解" class="header-anchor">#</a> 🌛谈谈你对中间件的理解</h3> <p>中间件：主要是request请求层用来过滤处理数据的，然后next继续向后处理</p> <p>redux中的中间件主要用来处理一些【副作用】处理完成之后，再【dispatch】触发reducer处理</p> <p>追问1：你用过哪些中间件</p> <p>回答1：redux-logger、redux-thunk、redux-saga</p> <p>追问2：redux-thunk、redux-saga 区别</p> <p>回答2：redux-thunk 会有很多callback、 redux-saga是基于es6 generator开发的  所以没有这个问题</p> <h3 id="🌟深浅拷贝"><a href="#🌟深浅拷贝" class="header-anchor">#</a> 🌟深浅拷贝</h3> <p>问1：谈谈你对深拷贝、浅拷贝的理解</p> <p>答1：</p> <div class="language- extra-class"><pre class="language-text"><code>浅拷贝：赋值后生成一个新的对象**也就是有新的【堆】地址**，并且这个对象里有原对象的所有数据，其中原始类型拷贝值，引用/对象类型拷贝地址
+深拷贝：赋值后生成一个新的对象**也就是有新的【堆】地址**，并且这个对象里有原对象的所有数据，完全独立互不影响
+</code></pre></div><p>问2：如何实现深拷贝</p> <p>答2：</p> <div class="language- extra-class"><pre class="language-text"><code>浅拷贝：展开运算符、Object.assign()、lodash.clone、Array.prototype.concat/slice
+深拷贝：JSON对象方式、自己写递归、lodash.cloneDeep、immutable
+</code></pre></div><p>问3：JSON实现深拷贝的缺点</p> <div class="language- extra-class"><pre class="language-text"><code>原理：把对象转成基本数据类型后，就等于和之前的堆内存把联系断了，在转成对象开辟了新的堆内存空间
+特点
+如果对象里有bigint类型会报错，对于bigint 类型无法转换
+对于undefined,symbol,function 等类型会丢失对应的属性
+对于error regexp 这些类型，属性值会变空
+对于属性值是date 等类型的，属性值变成字符串，就算再次转换属性值也还是字符串
+</code></pre></div><h3 id="_15-redux的原理"><a href="#_15-redux的原理" class="header-anchor">#</a> 15.Redux的原理</h3> <h3 id="_16-reduce和action的区别"><a href="#_16-reduce和action的区别" class="header-anchor">#</a> 16.Reduce和action的区别</h3> <h3 id="_17-redux组件传值"><a href="#_17-redux组件传值" class="header-anchor">#</a> 17.Redux组件传值</h3> <h2 id="💘-04-hooks"><a href="#💘-04-hooks" class="header-anchor">#</a> 💘 04-hooks</h2> <h3 id="🌟-谈谈你对hooks理解"><a href="#🌟-谈谈你对hooks理解" class="header-anchor">#</a> 🌟 谈谈你对hooks理解</h3> <h3 id="🌟-用hooks-意义"><a href="#🌟-用hooks-意义" class="header-anchor">#</a> 🌟 用hooks 意义</h3> <h3 id="🌟-hook种类"><a href="#🌟-hook种类" class="header-anchor">#</a> 🌟 hook种类</h3> <h3 id="🌟-自己封装过哪些hook"><a href="#🌟-自己封装过哪些hook" class="header-anchor">#</a> 🌟 自己封装过哪些hook</h3> <h3 id="usedispatch和useselector"><a href="#usedispatch和useselector" class="header-anchor">#</a> useDispatch和useSelector</h3> <h3 id="useeffect-4种用法"><a href="#useeffect-4种用法" class="header-anchor">#</a> useeffect 4种用法</h3> <h3 id="对变量做监控怎么做-vue里呢"><a href="#对变量做监控怎么做-vue里呢" class="header-anchor">#</a> 对变量做监控怎么做？Vue里呢？</h3> <h2 id="💘-05-路由"><a href="#💘-05-路由" class="header-anchor">#</a> 💘 05-路由</h2> <h3 id="v5语法复习🌛"><a href="#v5语法复习🌛" class="header-anchor">#</a> v5语法复习🌛</h3> <div class="language- extra-class"><pre class="language-text"><code>import {
+  BrowserRouter as Router, // history模式
+  // 或
+  // HashRouter as Router, // hash模式
+  
+  Route,   // 用于定义路由
+  // Link,    // 用于跳转路由（声明式导航）
+  NavLink,    // 用于跳转路由（声明式导航）
+  Switch,     // 路线匹配Switch
+  Redirect    // 重定向路由
+} from &quot;react-router-dom&quot;;
+
+
+&lt;Router&gt;
+
+        &lt;ul&gt;
+            &lt;li&gt;&lt;NavLink to=&quot;/dy&quot;&gt;电影&lt;/NavLink&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;NavLink to=&quot;/yy&quot;&gt;影院&lt;/NavLink&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;NavLink to=&quot;/th&quot;&gt;特惠&lt;/NavLink&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;NavLink to=&quot;/my&quot;&gt;我的&lt;/NavLink&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;hr /&gt;
+        &lt;Switch&gt;
+          &lt;Route path=&quot;/&quot;  component={Dy} exact /&gt;
+          &lt;Route path=&quot;/dy&quot; component={Dy} /&gt;
+          &lt;Route path=&quot;/yy&quot; component={Yy} /&gt;
+          &lt;Route path=&quot;/th&quot; component={Th} /&gt;
+          &lt;Route path=&quot;/my&quot;&gt; &lt;My /&gt; &lt;/Route&gt;
+          &lt;Route path=&quot;/404&quot; component={()=&gt;&lt;h1&gt;404&lt;/h1&gt;} /&gt;
+          &lt;Redirect to=&quot;/404&quot; /&gt;
+        &lt;/Switch&gt;
+&lt;/Router
+
+</code></pre></div><h3 id="v5-路由传参-3种类"><a href="#v5-路由传参-3种类" class="header-anchor">#</a> v5 路由传参 3种类</h3> <p>参数种类：query、params</p> <p>传参方式：vue</p> <div class="language- extra-class"><pre class="language-text"><code>query、path			     this.$router.push( {query, path} )		定义路由时【不用管】刷新【不丢失】
+params、name 写冒号    this.$router.push( {params, name} )  定义路由时【需要管】刷新【不丢失】 
+params、name 不写冒号	this.$router.push( {params, name} )  定义路由时【不用管】刷新【丢失】
+
+
+获取参数：this.$route.params/query.参数名
+</code></pre></div><p>传参方式：</p> <blockquote><ul><li>params传参：定义路由时【需要管】刷新【不丢失】</li></ul> <div class="language- extra-class"><pre class="language-text"><code>跳转：this.props.history.push({pathname:'/路径/6'})    	
+获取：this.props.match.params.参数名
+</code></pre></div><ul><li>state传参 ：定义路由时【不用管】刷新【BrowserRouter不丢失、HashRouter丢失】</li></ul> <div class="language- extra-class"><pre class="language-text"><code>跳转：this.props.history.push({pathname:'/路径', state:{参数名:值,...}})  
+获取：this.props.location.state.参数名
+</code></pre></div><ul><li>query传参：定义路由时【不用管】刷新【丢失】</li></ul> <blockquote><p>注：此query非比query地址栏是没有? 只是它交query</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>跳转：this.props.history.push({pathname:'/路径', query:{参数名:值,...}})
+获取：this.props.location.query.参数名
+</code></pre></div><ul><li>其他</li></ul> <div class="language- extra-class"><pre class="language-text"><code>this.props.history.go(-1/2数字)
+</code></pre></div></blockquote> <h3 id="v5-登录鉴权privateroute"><a href="#v5-登录鉴权privateroute" class="header-anchor">#</a> v5 登录鉴权PrivateRoute</h3> <div class="language- extra-class"><pre class="language-text"><code>import { Route, Redirect } from &quot;react-router-dom&quot;
+
+function PrivateRoute(props) {
+ // 获取用户信息
+ let token = localStorage.getItem('token')
+ // 判断
+ if (token) {
+     return &lt;Route {...props} /&gt;
+ }
+
+ return &lt;Redirect to=&quot;/login&quot; /&gt;
+}
+
+export default PrivateRoute
+
+
+
+
+
+&lt;PrivateRoute path=&quot;/admin&quot; exact component={Welcome} /&gt;
+&lt;PrivateRoute path=&quot;/admin/users&quot; component={Users} /&gt;
+&lt;PrivateRoute path=&quot;/admin/orders&quot; component={Orders} /&gt;
+</code></pre></div><h3 id="v6-升级语法"><a href="#v6-升级语法" class="header-anchor">#</a> v6 升级语法</h3> <ul><li><p>https://reactrouter.com/docs/en/v6/upgrading/v5</p></li> <li><p><code>&lt;Switch&gt;</code>重命名为<code>&lt;Routes&gt;</code>。</p></li> <li><p><code>&lt;Route&gt;</code>的新特性变更。      注：component、element     不用写exact、element可以直接鉴权</p></li> <li><p>嵌套路由变得更简单。     注：v5插槽、 v6直接写</p></li> <li><p>去掉<code>&lt;Redirect&gt;</code></p></li> <li><p>新钩子<code>useRoutes</code>代替<code>react-router-config</code>。  注：  就是和vue一样的路由</p></li> <li><p>大小减少：从<code>20kb</code>到<code>8kb</code></p></li> <li><p>大量使用<a href="https://reactjs.org/docs/hooks-intro.html" target="_blank" rel="noopener noreferrer">React hooks<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p>等等</p></li></ul> <h3 id="v6-语法复习"><a href="#v6-语法复习" class="header-anchor">#</a> v6 语法复习</h3> <div class="language- extra-class"><pre class="language-text"><code>import {
+  BrowserRouter as Router, // history模式
+  // 或
+  // HashRouter as Router, // hash模式
+  
+  Routes,
+  Route,  	  // 用于定义路由
+  NavLink,    // 用于跳转路由（声明式导航）
+  // Link     // 用于跳转路由（声明式导航）
+  Navigate,   // 重定向代替v5 Redirect
+} from &quot;react-router-dom&quot;;
+
+&lt;Router&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;NavLink to=&quot;/dy&quot;&gt;电影&lt;/NavLink&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;NavLink to=&quot;/yy&quot;&gt;影院&lt;/NavLink&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;NavLink to=&quot;/th&quot;&gt;特惠&lt;/NavLink&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;NavLink to=&quot;/my&quot;&gt;我的&lt;/NavLink&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;hr /&gt;
+  &lt;Routes&gt;
+    &lt;Route path=&quot;/&quot; element={&lt;Dy /&gt;} /&gt;
+    &lt;Route path=&quot;/dy&quot; element={&lt;Dy /&gt;} /&gt;
+    &lt;Route path=&quot;/yy&quot; element={&lt;Yy /&gt;} /&gt;
+    &lt;Route path=&quot;/th&quot; element={&lt;Th /&gt;} /&gt;
+    &lt;Route path=&quot;/my&quot; element={&lt;My /&gt;} /&gt;
+    &lt;Route path='*' element={&lt;Navigate to='/' /&gt;} /&gt;
+  &lt;/Routes&gt;
+&lt;/Router&gt;
+
+</code></pre></div><h3 id="v6-路由传参hooks"><a href="#v6-路由传参hooks" class="header-anchor">#</a> v6 路由传参hooks</h3> <blockquote><p>params传参：定义路由时【需要管】刷新【不丢失】</p> <div class="language- extra-class"><pre class="language-text"><code>跳转：this.props.history.push({pathname:'/路径/6'})    	
+获取：this.props.match.params.参数名
+</code></pre></div><p>state传参 ：定义路由时【不用管】刷新【BrowserRouter不丢失、HashRouter丢失】</p> <div class="language- extra-class"><pre class="language-text"><code>跳转：this.props.history.push({pathname:'/路径', state:{参数名:值,...}})  
+获取：this.props.location.state.参数名
+</code></pre></div><p>query传参：定义路由时【不用管】刷新【丢失】</p> <div class="language- extra-class"><pre class="language-text"><code>跳转：this.props.history.push({pathname:'/路径', query:{参数名:值,...}})
+获取：this.props.location.query.参数名
+</code></pre></div><p>其他</p> <div class="language- extra-class"><pre class="language-text"><code>this.props.history.go(-1/2数字)
+</code></pre></div></blockquote> <table><thead><tr><th>种类</th> <th>hooks名</th> <th>作用</th> <th>语法</th></tr></thead> <tbody><tr><td>params传参</td> <td>useParams</td> <td>获取params参数</td> <td>const {参数名, ..., } = useParams()</td></tr> <tr><td>state传参</td> <td>useLocation</td> <td>获取state参数</td> <td>const location = useLocation()</td></tr> <tr><td>search传参</td> <td>useSearchParams</td> <td>获取带<code>?</code>问号的参数</td> <td>const [search,setSearch] = useSearchParams()    search.get(参数名)   setSearch(参数名=值&amp;..&amp;参数名=值)</td></tr> <tr><td></td> <td></td> <td></td> <td></td></tr> <tr><td>声明式导航</td> <td><Link> 组件</Link></td> <td></td> <td><Link to="路径/1"><Link to="路径?id=1"></Link></Link></td></tr> <tr><td>编程式导航</td> <td>useNavigate</td> <td></td> <td><strong>const</strong> navigate = useNavigate()                                                                                              navigate(  &quot;路径/1&quot;  )                                                                                                                                   navigate(  &quot;路径&quot;, { state:{} }    )                                                                                                                                     navigate(  &quot;路径?id=6&quot;  )                                                                                              navigate(  1或-1 )</td></tr></tbody></table> <h3 id="v6登录鉴权requireauth"><a href="#v6登录鉴权requireauth" class="header-anchor">#</a> v6登录鉴权requireAuth</h3> <div class="language- extra-class"><pre class="language-text"><code>import {Navigate} from 'react-router-dom'
+
+function RequireAuth({ children }) {
+ let token = localStorage.getItem('token') 
+ if (!token)
+ {
+   return &lt;Navigate to=&quot;/login&quot; /&gt;;
+ } 
+
+ return children
+}
+
+export default RequireAuth
+
+
+
+ &lt;&gt;
+   &lt;Router&gt;
+     &lt;Routes&gt;
+       &lt;Route path=&quot;/&quot; element={&lt;Login /&gt;} /&gt;
+       &lt;Route path=&quot;/login&quot; element={&lt;Login /&gt;} /&gt;
+       &lt;Route
+         path=&quot;/admin&quot;
+         element={
+           &lt;RequireAuth&gt;
+             &lt;Layout /&gt;
+           &lt;/RequireAuth&gt;
+         }
+       &gt;
+         &lt;Route index element={&lt;Admin /&gt;} /&gt;
+         &lt;Route path=&quot;users&quot; element={&lt;Users /&gt;} /&gt;
+         &lt;Route path=&quot;orders&quot; element={&lt;Orders /&gt;} /&gt;
+       &lt;/Route&gt;
+       &lt;Route path=&quot;/404&quot; element={&lt;Err404 /&gt;}&gt;&lt;/Route&gt;
+       &lt;Route path=&quot;/500&quot; element={&lt;Err500 /&gt;}&gt;&lt;/Route&gt;
+       &lt;Route path=&quot;*&quot; element={&lt;Navigate to=&quot;/&quot; /&gt;} /&gt;
+     &lt;/Routes&gt;
+   &lt;/Router&gt;
+ &lt;/&gt;
+</code></pre></div><h3 id="v6-集中式路由渲染useroutes"><a href="#v6-集中式路由渲染useroutes" class="header-anchor">#</a> v6 集中式路由渲染useRoutes</h3> <blockquote><h1 id="src-index-js"><a href="#src-index-js" class="header-anchor">#</a> src/index.js</h1> <div class="language- extra-class"><pre class="language-text"><code>import React from &quot;react&quot;;
+import ReactDOM from &quot;react-dom/client&quot;;
+import App from &quot;./App&quot;;
+
+import { BrowserRouter } from &quot;react-router-dom&quot;;
+
+const root = ReactDOM.createRoot(document.getElementById(&quot;root&quot;));
+root.render(
+&lt;BrowserRouter&gt;
+&lt;App /&gt;
+&lt;/BrowserRouter&gt;
+);
+
+</code></pre></div><h1 id="src-app-jsx"><a href="#src-app-jsx" class="header-anchor">#</a> src/App.jsx！！！</h1> <div class="language- extra-class"><pre class="language-text"><code>// import Router from './router'
+
+import { useRoutes } from &quot;react-router-dom&quot;;
+import routes from './router'
+
+function App() {
+return &lt;fieldset&gt;
+ &lt;legend&gt;App&lt;/legend&gt;
+ {/* &lt;Router /&gt; */}
+
+ {useRoutes(routes)}
+&lt;/fieldset&gt;
+}
+
+export default App
+</code></pre></div><h1 id="src-router-requireauth-jsx"><a href="#src-router-requireauth-jsx" class="header-anchor">#</a> src/router/requireAuth.jsx</h1> <div class="language- extra-class"><pre class="language-text"><code>import {Navigate} from 'react-router-dom'
+
+function RequireAuth({ children }) {
+let token = localStorage.getItem('token') 
+if (!token)
+{
+return &lt;Navigate to=&quot;/login&quot; /&gt;;
+} 
+
+return children
+}
+
+export default RequireAuth
+</code></pre></div><h1 id="src-router-index-js"><a href="#src-router-index-js" class="header-anchor">#</a> src/router/index.js！！！</h1> <div class="language- extra-class"><pre class="language-text"><code>import { lazy, Suspense } from &quot;react&quot;;
+import { Navigate } from &quot;react-router-dom&quot;;
+
+import RequireAuth from &quot;./requireAuth&quot;;
+
+const Login = lazy(() =&gt; import(&quot;../pages/login&quot;));
+const Admin = lazy(() =&gt; import(&quot;../pages/admin&quot;));
+const Users = lazy(() =&gt; import(&quot;../pages/users&quot;));
+const Orders = lazy(() =&gt; import(&quot;../pages/orders&quot;));
+const Layout = lazy(() =&gt; import(&quot;../layout&quot;));
+const Err404 = lazy(() =&gt; import(&quot;../components/err/err404&quot;));
+const Err500 = lazy(() =&gt; import(&quot;../components/err/err500&quot;));
+const lazyload = function (children) {
+	return &lt;Suspense fallback={&lt;div&gt;Loading...&lt;/div&gt;}&gt;{children}&lt;/Suspense&gt;;
+};
+
+const routes = [
+  { path: &quot;/&quot;, element: lazyload(&lt;Login /&gt;) },
+  {
+      path: &quot;/admin&quot;,
+      element: lazyload(
+          &lt;RequireAuth&gt;
+          &lt;Layout /&gt;
+          &lt;/RequireAuth&gt;
+      ),
+      children: [
+          { index: true, element: lazyload(&lt;Admin /&gt;) },
+          { path: &quot;users&quot;, element: lazyload(&lt;Users /&gt;) },
+          { path: &quot;orders&quot;, element: lazyload(&lt;Orders /&gt;) },
+      ],
+  },
+  { path: &quot;/404&quot;, element: lazyload(&lt;Err404 /&gt;) },
+  { path: &quot;/500&quot;, element: lazyload(&lt;Err500 /&gt;) },
+  { path: &quot;*&quot;, element: &lt;Navigate to=&quot;/404&quot; /&gt; },
+];
+
+export default routes;
+</code></pre></div></blockquote> <h3 id="嵌套路由"><a href="#嵌套路由" class="header-anchor">#</a> 嵌套路由</h3> <p>v5  插槽技术</p> <p>v6 直接写</p> <h3 id="组件懒加载"><a href="#组件懒加载" class="header-anchor">#</a> 组件懒加载</h3> <p>https://pro.ant.design/zh-CN/</p> <div class="language- extra-class"><pre class="language-text"><code>import { lazy, Suspense } from &quot;react&quot;;
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from &quot;react-router-dom&quot;;
+
+import RequireAuth from &quot;./requireAuth&quot;;
+
+import Layout from &quot;../layout&quot;;
+import Err404 from &quot;../components/err/err404&quot;;
+import Err500 from &quot;../components/err/err500&quot;;
+
+// import Login from &quot;../pages/login&quot;;
+// import Welcome from &quot;../pages/welcome&quot;;
+// import Users from &quot;../pages/users&quot;;
+// import Orders from &quot;../pages/orders&quot;;
+const Login = lazy(() =&gt; import(&quot;../pages/login&quot;));
+const Welcome = lazy(() =&gt; import(&quot;../pages/welcome&quot;));
+const Users = lazy(() =&gt; import(&quot;../pages/users&quot;));
+const Orders = lazy(() =&gt; import(&quot;../pages/orders&quot;));
+const lazyload = function (children) {
+  return &lt;Suspense fallback={&lt;div&gt;Loading...&lt;/div&gt;}&gt;{children}&lt;/Suspense&gt;;
+};
+
+function RouterConfig() {
+  return (
+    &lt;&gt;
+      &lt;Router&gt;
+        &lt;Routes&gt;
+          &lt;Route path=&quot;/&quot; element={lazyload(&lt;Login /&gt;)} /&gt;
+          &lt;Route path=&quot;/login&quot; element={&lt;Login /&gt;} /&gt;
+          &lt;Route
+            path=&quot;/admin&quot;
+            element={
+              &lt;RequireAuth&gt;
+                &lt;Layout /&gt;
+              &lt;/RequireAuth&gt;
+            }
+          &gt;
+            &lt;Route index={true} element={lazyload(&lt;Welcome /&gt;)} /&gt;
+            &lt;Route path=&quot;/admin/users&quot; element={lazyload(&lt;Users /&gt;)} /&gt;
+            &lt;Route path=&quot;/admin/orders&quot; element={lazyload(&lt;Orders /&gt;)} /&gt;
+          &lt;/Route&gt;
+          &lt;Route path=&quot;/404&quot; element={&lt;Err404 /&gt;} /&gt;
+          &lt;Route path=&quot;/500&quot; element={&lt;Err500 /&gt;} /&gt;
+          &lt;Route path=&quot;*&quot; element={&lt;Navigate to=&quot;/404&quot; /&gt;} /&gt;
+        &lt;/Routes&gt;
+      &lt;/Router&gt;
+    &lt;/&gt;
+  );
+}
+
+export default RouterConfig;
+
+</code></pre></div><h2 id="💘-06-项目开发"><a href="#💘-06-项目开发" class="header-anchor">#</a> 💘 06-项目开发</h2> <h3 id="🌛-谈谈你react项目怎么实现的"><a href="#🌛-谈谈你react项目怎么实现的" class="header-anchor">#</a> 🌛 谈谈你react项目怎么实现的?</h3> <h2 id=""><a href="#" class="header-anchor">#</a></h2> <h3 id="🌟-项目如何优化"><a href="#🌟-项目如何优化" class="header-anchor">#</a> 🌟 项目如何优化？</h3> <h1 id="-2"><a href="#-2" class="header-anchor">#</a> ....</h1></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----></main> <!----> <div class="comments-wrapper" data-v-4698c43e><!----></div></div></div></div></div></div><div class="global-ui"><!----><div></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 Fade away
+    </div> <div class="operation" style="left:380px;bottom:20px;display:none;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="left:250px;bottom:0px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><div class="Sakura" data-v-248d85d6><canvas id="canvas_sakura" style="z-index:-1;" data-v-248d85d6></canvas></div><!----><div id="goTop" class="hide-cat" data-v-bf92849a></div></div></div>
+    <script src="/assets/js/app.99624b8a.js" defer></script><script src="/assets/js/3.a9f58784.js" defer></script><script src="/assets/js/1.a344c94a.js" defer></script><script src="/assets/js/147.ba67a557.js" defer></script><script src="/assets/js/30.7d28a2d6.js" defer></script>
+  </body>
+</html>
